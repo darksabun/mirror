@@ -13,12 +13,12 @@
     <link href="/assets/css/styles.css" rel="stylesheet" />
     <link href="/assets/css/table.css" rel="stylesheet" />
     <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
     <link
-      href="https://cdn.datatables.net/v/bs5/dt-1.13.7/datatables.min.css"
+      href="https://cdn.datatables.net/v/bs5/dt-2.0.7/datatables.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
@@ -64,7 +64,7 @@
               <div class="card-body">
                 <div class="table-responsive">
                   <table
-                    id="table_int"
+                    id="tableDiff"
                     class="table table-sm table-striped table-bordered table-hover text-gray-900 text-center m-auto"
                   ></table>
                 </div>
@@ -80,19 +80,19 @@
     </div>
     <!-- Scripts -->
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0-beta/jquery.min.js"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.2/js/bootstrap.bundle.min.js"
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdn.datatables.net/v/bs5/dt-1.13.7/datatables.min.js"
+      src="https://cdn.datatables.net/v/bs5/dt-2.0.7/datatables.min.js"
       crossorigin="anonymous"
     ></script>
     <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/datatables-plugins/1.13.6/sorting/natural.min.js"
+      src="https://cdn.datatables.net/plug-ins/1.13.10/sorting/natural.min.js"
       crossorigin="anonymous"
     ></script>
     <script src="/assets/js/multi_lang.js"></script>
@@ -100,7 +100,7 @@
     <script src="/assets/js/include_html.js"></script>
     <script src="/assets/js/table.js"></script>
     <script>
-      $(function () {
+      document.addEventListener("DOMContentLoaded", function () {
         makeBMSTable();
       });
 
@@ -111,6 +111,7 @@
       const customInfo = true;
 
       data_link = "./old_dp_bms_uploader.json";
+	  
       const tableColumns = [
         {
           title: "Date",
