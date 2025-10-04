@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BK SABUN PAGE</title>
+    <meta charset="UTF-8" />
+    <meta name="bmstable" content="blackhistory_header.json" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Sans+KR&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body class="black">
+    <!--서론-->
+    <div class="headerframe">
+      <a href="insane.html"><img src="black.png" /></a>
+      <p style="color: #ffffff">
+        <span style="font-size: x-large">黒歴史</span>
+      </p>
+      <p style="color: #ffffff">
+        <span style="font-size: medium">-BLACK HISTORY-</span><br />
+      </p>
+    </div>
+
+    <!--서론 끝-->
+    <!--테이블-->
+    <div class="tableframe kuro">
+      <table id="table_int" style="width: 400px"></table>
+    </div>
+    <script>
+      function makeBMSTable(info) {
+        var obj = document.getElementById("table_int");
+        //표 초기화
+        obj.innerHTML =
+          "<thead>" +
+          "<tr style='height:20px;color:white;background-color:#000000;font-size:10pt'>" +
+          "<td style='width: 50%'>差分DL</td>" +
+          "<td style='width: 10%'>難易度</td>" +
+          "<td style='width: 10%'>Movie</td>" +
+          "</tr>" +
+          "</thead>";
+        Array.prototype.forEach.call(info, function (i) {
+          var str = "";
+          var substr = "";
+          var ele = document.createElement("tr");
+          if (i.state == 1) {
+            ele.classList.add("tr_normal");
+          } else {
+            ele.classList.add("tr_black");
+          }
+          //차분 이름
+          str +=
+            "<td class='title'>" +
+            "<a href='" +
+            i.chart +
+            "'>" +
+            i.title +
+            "</a>" +
+            "</td>";
+          //레벨
+          if (typeof i.level === "string") {
+            str += "<td class='level'>" + i.level + "</td>";
+          } else {
+            str +=
+              "<td class='level'>" +
+              (function () {
+                substr = "";
+                i.level.map(function (j) {
+                  substr += j + "<br />";
+                });
+                return substr;
+              })() +
+              "</td>";
+          }
+          //구성
+          if (typeof i.youtube === "string") {
+            str +=
+              "<td class='youtube'>" +
+              "<a href='https://www.youtube.com/watch?v=" +
+              i.youtube +
+              "'>" +
+              "<span style='font-size:small'>■</span>" +
+              "</a>" +
+              "</td>";
+          } else {
+            str +=
+              "<td class='youtube'>" +
+              (function () {
+                substr = "";
+                i.youtube.map(function (j) {
+                  substr +=
+                    "<a href='https://www.youtube.com/watch?v=" +
+                    j +
+                    "'>" +
+                    "<span style='font-size:small'>■</span>" +
+                    "</a>" +
+                    "<br>";
+                });
+                return substr;
+              })() +
+              "</td>";
+          }
+          ele.innerHTML = str;
+          obj.appendChild(ele);
+        });
+      }
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

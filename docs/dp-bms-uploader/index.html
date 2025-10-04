@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <title>DPBMSアップローダー</title>
+    <script src="/assets/js/dark_mode.js"></script>
+    <link href="/assets/css/styles.css" rel="stylesheet" />
+    <link href="/assets/css/table.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      crossorigin="anonymous" />
+    <link
+      href="https://cdn.datatables.net/v/bs5/dt-2.3.4/datatables.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous" />
+  </head>
+
+  <body class="sb-nav-fixed">
+    <nav class="sb-topnav navbar navbar-expand navbar-dark bg-dark">
+      <a class="navbar-brand ps-3" href="/">DARKSABUN</a
+      ><button
+        class="btn btn-link btn-sm order-1 order-lg-0 me-4 me-lg-0"
+        id="sidebarToggle"
+        href="#">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+    <div id="layoutSidenav">
+      <!-- Nav bar -->
+      <div id="layoutSidenav_nav">
+        <nav class="sb-sidenav accordion sb-sidenav-dark" id="sidenavAccordion">
+          <div
+            class="sb-sidenav-menu"
+            data-include-html="/assets/components/navbar.html"></div>
+        </nav>
+      </div>
+      <!-- Main Contents -->
+      <div id="layoutSidenav_content">
+        <main>
+          <div class="container-fluid px-4">
+            <h1 class="mt-4 mb-4">
+              <a
+                href="https://web.archive.org/web/20160501042802/http://www42.tok2.com/home/dpbms/cgi-bin/uploader/"
+                class="text-dark"
+                >DPBMSアップローダー</a
+              >
+            </h1>
+            <div class="card mb-4">
+              <div class="card-header">
+                <i class="fas fa-table me-1"></i>
+                DPBMSアップローダー
+              </div>
+              <div class="card-body">
+                <div class="table-responsive">
+                  <table
+                    id="tableDiff"
+                    class="table table-sm table-striped table-bordered table-hover text-gray-900 text-center m-auto"></table>
+                </div>
+              </div>
+            </div>
+          </div>
+        </main>
+        <footer
+          class="py-4 bg-light-subtle mt-auto"
+          data-include-html="/assets/components/footer.html"></footer>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/4.0.0-rc.1/jquery.min.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.8/js/bootstrap.bundle.min.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.datatables.net/v/bs5/dt-2.3.4/datatables.min.js"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.datatables.net/plug-ins/1.13.10/sorting/natural.min.js"
+      crossorigin="anonymous"></script>
+    <script src="/assets/js/multi_lang.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+    <script src="/assets/js/include_html.js"></script>
+    <script src="/assets/js/table.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        makeBMSTable();
+      });
+
+      const customAutoWidth = false;
+      const customPaging = true;
+      const customPageLength = 50;
+      const customOrder = [[2, "desc"]];
+      const customInfo = true;
+
+      data_link = "./old_dp_bms_uploader.json";
+
+      const tableColumns = [
+        {
+          title: "Date",
+          width: "3%",
+          data: "date",
+          type: "natural",
+        },
+        {
+          title: "Comment",
+          width: "20%",
+          render: function (data, type, row) {
+            return row.comment || "";
+          },
+        },
+        {
+          title: "DL",
+          width: "1%",
+          data: "url_diff",
+          render: function (data) {
+            return "<a href='" + data + "'>" + data.substr(6) + "</a>";
+          },
+        },
+        {
+          title: "File Size",
+          width: "1%",
+          data: "size",
+          type: "natural",
+        },
+      ];
+
+      makeBMSLevelFilter = "";
+    </script>
+  </body>
+</html>

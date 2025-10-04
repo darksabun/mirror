@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BK SABUN PAGE</title>
+    <meta charset="UTF-8" />
+    <meta name="bmstable" content="insane_header.json" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Sans+KR&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body class="diff">
+    <!--서론-->
+    <div class="headerframe">
+      <a href="blackhistory.html"><img src="black.png" /></a>
+      <p style="color: #ffffee">
+        <span style="font-size: x-large">BK 発狂差分ページ</span>
+      </p>
+    </div>
+    <!--서론 끝-->
+    <!--테이블-->
+    <div class="tableframe">
+      <table id="table_int"></table>
+    </div>
+
+    <script>
+      function makeBMSTable(info) {
+        var obj = document.getElementById("table_int");
+        //표 초기화
+        obj.innerHTML =
+          "<thead>" +
+          "<tr style='height:20px;color:white;background-color:#666666;font-size:10pt'>" +
+          "<td style='width: 40%'>差分DL</td>" +
+          "<td style='width: 5%'>曲本</td>" +
+          "<td style='width: 5%'>IR</td>" +
+          "<td style='width: 10%'>難易度</td>" +
+          "<td style='width: 5%'>Movie</td>" +
+          "<td style='width: 35%'>Comment</td>" +
+          "</tr>" +
+          "</thead>";
+        Array.prototype.forEach.call(info, function (i) {
+          var str = "";
+          var substr = "";
+          var ele = document.createElement("tr");
+          if (i.state == 1) {
+            ele.classList.add("tr_1insane");
+          } else if (i.state == 2) {
+            ele.classList.add("tr_2insane");
+          } else if (i.state == 3) {
+            ele.classList.add("tr_3stella");
+          } else if (i.state == 4) {
+            ele.classList.add("tr_4satellite");
+          } else {
+            ele.classList.add("tr_normal");
+          }
+          //차분 이름
+          str +=
+            "<td class='title'>" +
+            "<a href='" +
+            i.chart +
+            "'>" +
+            i.title +
+            "</a></td>";
+          //곡링크
+          str +=
+            "<td>" +
+            "<a href='" +
+            i.song_url +
+            "'>" +
+            "<span style='font-size:small'>■</span>" +
+            "</a>" +
+            "</td>";
+          //IR
+          if (typeof i.ir_id === "string") {
+            str +=
+              "<td class='ir_id'>" +
+              "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsid=" +
+              i.ir_id +
+              "'>" +
+              "<span style='font-size:small'>■</span>" +
+              "</a>" +
+              "</td>";
+          } else {
+            str +=
+              "<td class='ir_id'>" +
+              (function () {
+                substr = "";
+                i.ir_id.map(function (j) {
+                  substr +=
+                    "<a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsid=" +
+                    j +
+                    "'>" +
+                    "<span style='font-size:small'>■</span>" +
+                    "</a>" +
+                    "<br />";
+                });
+                return substr;
+              })() +
+              "</td>";
+          }
+          //레벨
+          if (typeof i.level === "string") {
+            str += "<td class='level'>" + i.level + "</td>";
+          } else {
+            str +=
+              "<td class='level'>" +
+              (function () {
+                substr = "";
+                i.level.map(function (j) {
+                  substr += j + "<br />";
+                });
+                return substr;
+              })() +
+              "</td>";
+          }
+          //구성
+          if (typeof i.youtube === "string") {
+            str +=
+              "<td class='youtube'>" +
+              "<a href='https://www.youtube.com/watch?v=" +
+              i.youtube +
+              "'>" +
+              "<span style='font-size:small'>■</span>" +
+              "</a>" +
+              "</td>";
+          } else {
+            str +=
+              "<td class='youtube'>" +
+              (function () {
+                substr = "";
+                i.youtube.map(function (j) {
+                  substr +=
+                    "<a href='https://www.youtube.com/watch?v=" +
+                    j +
+                    "'>" +
+                    "<span style='font-size:small'>■</span>" +
+                    "</a>" +
+                    "<br>";
+                });
+                return substr;
+              })() +
+              "</td>";
+          }
+          //설명
+          str += "<td>" + i.comment + "</td>";
+          ele.innerHTML = str;
+          obj.appendChild(ele);
+        });
+      }
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>
