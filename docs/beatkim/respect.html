@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BK SABUN PAGE</title>
+    <meta charset="UTF-8" />
+    <meta name="bmstable" content="respect_header.json" />
+    <link href="style.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Sans+JP|Noto+Sans+KR&display=swap"
+      rel="stylesheet" />
+  </head>
+  <body class="diff">
+    <!--서론-->
+    <div class="headerframe">
+      <p style="color: #ffffee">
+        <span style="font-size: x-large">BK RESPECT CUSTOM CHART</span>
+      </p>
+      <p style="color: #ffffee; text-align: center">
+        Ruv-itプレイ用に製作したDJMAX RESPECT Custom
+        Patternを集めたページです。<br />
+        Ruv-it플레이용으로 제작한 DJMAX RESPECT Custom Pattern을 모은
+        페이지입니다.
+      </p>
+    </div>
+    <!--서론 끝-->
+    <!--테이블-->
+    <div class="tableframe">
+      <table id="table_int" style="width: 1000px"></table>
+    </div>
+    <script>
+      function makeBMSTable(info) {
+        var obj = document.getElementById("table_int");
+        //표 초기화
+        obj.innerHTML =
+          "</thead>" +
+          "<tr style='height:20px;color:white;background-color:#666666;font-size:15pt'>" +
+          "<td style='width: 40%'>Song</td>" +
+          "<td style='width: 10%'>Download</td>" +
+          "<td style='width: 10%'>Movie</td>" +
+          "<td style='width: 40%'>contents</td>" +
+          "</tr>" +
+          "</thead>";
+        Array.prototype.forEach.call(info, function (i) {
+          var str = "";
+          var substr = "";
+          var ele = document.createElement("tr");
+          if (i.state == 1) {
+            ele.classList.add("tr_1insane");
+          } else if (i.state == 2) {
+            ele.classList.add("tr_2insane");
+          } else if (i.state == 3) {
+            ele.classList.add("tr_3stella");
+          } else if (i.state == 4) {
+            ele.classList.add("tr_4satellite");
+          } else {
+            ele.classList.add("tr_normal");
+          }
+          //차분 이름
+          str +=
+            "<td class='title'>" +
+            "<a href='" +
+            i.chart +
+            "'>" +
+            i.title +
+            "</a></td>";
+          //곡링크
+          str +=
+            "<td>" +
+            "<a href='" +
+            i.song_url +
+            "'>" +
+            "<span style='font-size:small'>■</span>" +
+            "</a>" +
+            "</td>";
+          //영상
+          str +=
+            "<td>" +
+            "<a href='https://www.youtube.com/watch?v=" +
+            i.youtube +
+            "'>" +
+            "<span style='font-size:small'>■</span>" +
+            "</a>" +
+            "</td>";
+          //설명
+          str += "<td>" + i.comment + "</td></tr>";
+          ele.innerHTML = str;
+          obj.appendChild(ele);
+        });
+      }
+    </script>
+    <script src="index.js"></script>
+  </body>
+</html>

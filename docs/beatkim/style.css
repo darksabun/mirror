@@ -1,0 +1,155 @@
+@charset "utf-8";
+
+/* 難易度表用レイアウト */
+body.diff {
+  margin: 0px auto 0px auto;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  background-color: #222222;
+  width: auto;
+  min-width: 900px;
+  line-height: 1.5;
+  font-family: "Noto Sans KR", "Noto Sans JP", sans-serif;
+}
+
+body.black {
+  margin: 0px auto 0px auto;
+  padding: 0px 0px 0px 0px;
+  text-align: center;
+  background-color: #000000;
+  width: auto;
+  min-width: 900px;
+  line-height: 1.5;
+  font-family: "Noto Sans KR", "Noto Sans JP", sans-serif;
+}
+
+.title {
+  font-size: small;
+}
+
+.ir_id {
+  font-size: x-small;
+}
+
+.level {
+  font-size: large;
+}
+
+.youtube {
+  font-size: x-small;
+}
+
+/* header part */
+
+.headerframe {
+  margin: auto;
+  margin-bottom: 40px;
+  padding-top: 25px;
+}
+
+.headerframe a {
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+}
+
+/* table part */
+.tableframe {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0px 5px 0px 5px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #222222;
+  min-width: 900px;
+}
+
+.kuro {
+  background-color: #000000 !important;
+}
+
+.tableframe a {
+  color: #0000c0;
+}
+
+.tableframe a:visited {
+  color: #0000c0;
+}
+
+.tr_separate {
+  height: 20px;
+  color: #ffffff;
+  font-size: 16px;
+  text-shadow: 2px 2px 2px #444444;
+  background-color: #aaaaaa;
+}
+
+.tr_normal {
+  background-color: #eeeeee;
+}
+
+.tr_1insane {
+  background-color: #ffe1e1;
+}
+
+.tr_2insane {
+  background-color: #c2f8ea;
+}
+
+.tr_3stella {
+  background-color: #d0e7ff;
+}
+
+.tr_4satellite {
+  background-color: #eac2f6;
+}
+
+.tr_black {
+  background-color: #000000;
+}
+
+.tableframe table {
+  font-size: 12px;
+  text-align: center;
+  margin: auto;
+  border: 1px;
+  border-spacing: 1px;
+  width: 1100px;
+}
+
+.tableframe td,
+tr {
+  table-layout: fixed;
+  padding: 15px;
+  text-align: center;
+}
+
+.tableframe tr,
+a {
+  /*Firefox向け*/
+  -moz-transition-property: color, background-color;
+  -moz-transition-duration: 0.2s;
+  /*Chrome、Safari向け*/
+  -webkit-transition-property: color, background-color;
+  -webkit-transition-duration: 0.2s;
+  /*Opera向け*/
+  -o-transition-property: color, background-color;
+  -o-transition-duration: 0.2s;
+  transition-property: color, background-color;
+  transition-duration: 0.2s;
+}
+
+.tableframe tr.tr_normal:hover {
+  background-color: #70f0f0;
+}
+
+a,
+u {
+  text-decoration: none;
+}
+
+/* update log */
+.updatelog {
+  margin: auto;
+  padding: 0 100px 0 100px;
+}
