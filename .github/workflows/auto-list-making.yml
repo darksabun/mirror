@@ -20,6 +20,7 @@ jobs:
           python-version: 3.8
       - name: Auto list making
         run: |
+          export TZ='Asia/Seoul'
           cd docs
           python ../.apindex/apindex.py ./stellabms-uploader
       - name: Commit files
