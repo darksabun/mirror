@@ -1,0 +1,1210 @@
+
+*---------------------- HEADER FIELD
+
+#PLAYER 1
+#GENRE game music
+#TITLE êπåïì`ê‡2 Å`ìVégÇÃï|ÇÍÅ`[HARD]
+#ARTIST mattaku /obj:ê‘Ç¢êl
+#BPM 78
+#PLAYLEVEL 2
+#RANK 3
+#TOTAL 320
+#STAGEFILE 
+
+#WAV01 sd2 opening piano 001.wav
+#WAV02 sd2 opening piano 002.wav
+#WAV03 sd2 opening piano 003.wav
+#WAV04 sd2 opening piano 004.wav
+#WAV05 sd2 opening piano 005.wav
+#WAV06 sd2 opening piano 006.wav
+#WAV07 sd2 opening piano 007.wav
+#WAV08 sd2 opening piano 008.wav
+#WAV09 sd2 opening piano 009.wav
+#WAV0A sd2 opening piano 010.wav
+#WAV0B sd2 opening piano 011.wav
+#WAV0C sd2 opening piano 012.wav
+#WAV0D sd2 opening piano 013.wav
+#WAV0E sd2 opening piano 014.wav
+#WAV0F sd2 opening piano 015.wav
+#WAV0G sd2 opening piano 016.wav
+#WAV0H sd2 opening piano 017.wav
+#WAV0I sd2 opening piano 018.wav
+#WAV0J sd2 opening piano 019.wav
+#WAV0K sd2 opening piano 020.wav
+#WAV0L sd2 opening piano 021.wav
+#WAV0M sd2 opening piano 022.wav
+#WAV0N sd2 opening piano 023.wav
+#WAV0O sd2 opening piano 024.wav
+#WAV0P sd2 opening piano 025.wav
+#WAV0Q sd2 opening piano 026.wav
+#WAV0R sd2 opening piano 027.wav
+#WAV0S sd2 opening piano 028.wav
+#WAV0T sd2 opening piano 029.wav
+#WAV0U sd2 opening piano 030.wav
+#WAV0V sd2 opening piano 031.wav
+#WAV0W sd2 opening piano 032.wav
+#WAV0X sd2 opening piano 033.wav
+#WAV0Y sd2 opening piano 034.wav
+#WAV0Z sd2 opening piano 035.wav
+#WAV10 sd2 opening piano 036.wav
+#WAV11 sd2 opening piano 037.wav
+#WAV12 sd2 opening piano 038.wav
+#WAV13 sd2 opening piano 039.wav
+#WAV14 sd2 opening piano 040.wav
+#WAV15 sd2 opening piano 041.wav
+#WAV16 sd2 opening piano 042.wav
+#WAV17 sd2 opening piano 043.wav
+#WAV18 sd2 opening piano 044.wav
+#WAV19 sd2 opening piano 045.wav
+#WAV1A sd2 opening piano 046.wav
+#WAV1B sd2 opening piano 047.wav
+#WAV1C sd2 opening piano 048.wav
+#WAV1D sd2 opening piano 049.wav
+#WAV1E sd2 opening piano 050.wav
+#WAV1F sd2 opening piano 051.wav
+#WAV1G sd2 opening piano 052.wav
+#WAV1H sd2 opening piano 053.wav
+#WAV1I sd2 opening piano 054.wav
+#WAV1J sd2 opening piano 055.wav
+#WAV1K sd2 opening piano 056.wav
+#WAV1L sd2 opening piano 057.wav
+#WAV1M sd2 opening piano 058.wav
+#WAV1N sd2 opening piano 059.wav
+#WAV1O sd2 opening piano 060.wav
+#WAV1P sd2 opening piano 061.wav
+#WAV1Q sd2 opening piano 062.wav
+#WAV1R sd2 opening piano 063.wav
+#WAV1S sd2 opening piano 064.wav
+#WAV1T sd2 opening piano 065.wav
+#WAV1U sd2 opening piano 066.wav
+#WAV1V sd2 opening piano 067.wav
+#WAV1W sd2 opening piano 068.wav
+#WAV1X sd2 opening piano 069.wav
+#WAV1Y sd2 opening piano 070.wav
+#WAV1Z sd2 opening piano 071.wav
+#WAV20 sd2 opening piano 072.wav
+#WAV21 sd2 opening piano 073.wav
+#WAV22 sd2 opening piano 074.wav
+#WAV23 sd2 opening piano 075.wav
+#WAV24 sd2 opening piano 076.wav
+#WAV25 sd2 opening piano 077.wav
+#WAV26 sd2 opening piano 078.wav
+#WAV27 sd2 opening piano 079.wav
+#WAV28 sd2 opening piano 080.wav
+#WAV29 sd2 opening piano 081.wav
+#WAV2A sd2 opening piano 082.wav
+#WAV2B sd2 opening piano 083.wav
+#WAV2C sd2 opening piano 084.wav
+#WAV2D sd2 opening piano 085.wav
+#WAV2E sd2 opening piano 086.wav
+#WAV2F sd2 opening piano 087.wav
+#WAV2G sd2 opening piano 088.wav
+#WAV2H sd2 opening piano 089.wav
+#WAV2I sd2 opening piano 090.wav
+#WAV2J sd2 opening piano 091.wav
+#WAV2K sd2 opening piano 092.wav
+#WAV2L sd2 opening piano 093.wav
+#WAV2M sd2 opening piano 094.wav
+#WAV2N sd2 opening piano 095.wav
+#WAV2O sd2 opening piano 096.wav
+#WAV2P sd2 opening piano 097.wav
+#WAV2Q sd2 opening piano 098.wav
+#WAV2R sd2 opening piano 099.wav
+#WAV2S sd2 opening piano 100.wav
+#WAV2T sd2 opening piano 101.wav
+#WAV2U sd2 opening piano 102.wav
+#WAV2V sd2 opening piano 103.wav
+#WAV2W sd2 opening piano 104.wav
+#WAV2X sd2 opening piano 105.wav
+#WAV2Y sd2 opening piano 106.wav
+#WAV2Z sd2 opening piano 107.wav
+#WAV30 sd2 opening piano 108.wav
+#WAV31 sd2 opening piano 109.wav
+#WAV32 sd2 opening piano 110.wav
+#WAV33 sd2 opening piano 111.wav
+#WAV34 sd2 opening piano 112.wav
+#WAV35 sd2 opening piano 113.wav
+#WAV36 sd2 opening piano 114.wav
+#WAV37 sd2 opening piano 115.wav
+#WAV38 sd2 opening piano 116.wav
+#WAV39 sd2 opening piano 117.wav
+#WAV3A sd2 opening piano 118.wav
+#WAV3B sd2 opening piano 119.wav
+#WAV3C sd2 opening piano 120.wav
+#WAV3D sd2 opening piano 121.wav
+#WAV3E sd2 opening piano 122.wav
+#WAV3F sd2 opening piano 123.wav
+#WAV3G sd2 opening piano 124.wav
+#WAV3H sd2 opening piano 125.wav
+#WAV3I sd2 opening piano 126.wav
+#WAV3J sd2 opening piano 127.wav
+#WAV3K sd2 opening piano 128.wav
+#WAV3L sd2 opening piano 129.wav
+#WAV3M sd2 opening piano 130.wav
+#WAV3N sd2 opening piano 131.wav
+#WAV3O sd2 opening piano 132.wav
+#WAV3P sd2 opening piano 133.wav
+#WAV3Q sd2 opening piano 134.wav
+#WAV3R sd2 opening piano 135.wav
+#WAV3S sd2 opening piano 136.wav
+#WAV3T sd2 opening piano 137.wav
+#WAV3U sd2 opening piano 138.wav
+#WAV3V sd2 opening piano 139.wav
+#WAV3W sd2 opening piano 140.wav
+#WAV3X sd2 opening piano 141.wav
+#WAV3Y sd2 opening piano 142.wav
+#WAV3Z sd2 opening piano 143.wav
+#WAV40 sd2 opening piano 144.wav
+#WAV41 sd2 opening piano 145.wav
+#WAV42 sd2 opening piano 146.wav
+#WAV43 sd2 opening piano 147.wav
+#WAV44 sd2 opening piano 148.wav
+#WAV45 sd2 opening piano 149.wav
+#WAV46 sd2 opening piano 150.wav
+#WAV47 sd2 opening piano 151.wav
+#WAV48 sd2 opening piano 152.wav
+#WAV49 sd2 opening piano 153.wav
+#WAV4A sd2 opening piano 154.wav
+#WAV4B sd2 opening piano 155.wav
+#WAV4C sd2 opening piano 156.wav
+#WAV4D sd2 opening piano 157.wav
+#WAV4E sd2 opening piano 158.wav
+#WAV4F sd2 opening piano 159.wav
+#WAV4G sd2 opening piano 160.wav
+#WAV4H sd2 opening piano 161.wav
+#WAV4I sd2 opening piano 162.wav
+#WAV4J sd2 opening piano 163.wav
+#WAV4K sd2 opening piano 164.wav
+#WAV4L sd2 opening piano 165.wav
+#WAV4M sd2 opening piano 166.wav
+#WAV4N sd2 opening piano 167.wav
+#WAV4O sd2 opening piano 168.wav
+#WAV4P sd2 opening piano 169.wav
+#WAV4Q sd2 opening piano 170.wav
+#WAV4R sd2 opening piano 171.wav
+#WAV4S sd2 opening piano 172.wav
+#WAV4T sd2 opening piano 173.wav
+#WAV4U sd2 opening piano 174.wav
+#WAV4V sd2 opening piano 175.wav
+#WAV4W sd2 opening piano 176.wav
+#WAV4X sd2 opening piano 177.wav
+#WAV4Y sd2 opening piano 178.wav
+#WAV4Z sd2 opening piano 179.wav
+#WAV50 sd2 opening piano 180.wav
+#WAV51 sd2 opening piano 181.wav
+#WAV52 sd2 opening piano 182.wav
+#WAV53 sd2 opening piano 183.wav
+#WAV54 sd2 opening piano 184.wav
+#WAV55 sd2 opening piano 185.wav
+#WAV56 sd2 opening piano 186.wav
+#WAV57 sd2 opening piano 187.wav
+#WAV58 sd2 opening piano 188.wav
+#WAV59 sd2 opening piano 189.wav
+#WAV5A sd2 opening piano 190.wav
+#WAV5B sd2 opening piano 191.wav
+#WAV5C sd2 opening piano 192.wav
+#WAV5D sd2 opening piano 193.wav
+#WAV5E sd2 opening piano 194.wav
+#WAV5F sd2 opening piano 195.wav
+#WAV5G sd2 opening piano 196.wav
+#WAV5H sd2 opening piano 197.wav
+#WAV5I sd2 opening piano 198.wav
+#WAV5J sd2 opening piano 199.wav
+#WAV5K sd2 opening piano 200.wav
+#WAV5L sd2 opening piano 201.wav
+#WAV5M sd2 opening piano 202.wav
+#WAV5N sd2 opening piano 203.wav
+#WAV5O sd2 opening piano 204.wav
+#WAV5P sd2 opening piano 205.wav
+#WAV5Q sd2 opening piano 206.wav
+#WAV5R sd2 opening piano 207.wav
+#WAV5S sd2 opening piano 208.wav
+#WAV5T sd2 opening piano 209.wav
+#WAV5U sd2 opening piano 210.wav
+#WAV5V sd2 opening piano 211.wav
+#WAV5W sd2 opening piano 212.wav
+#WAV5X sd2 opening piano 213.wav
+#WAV5Y sd2 opening piano 214.wav
+#WAV5Z sd2 opening piano 215.wav
+#WAV60 sd2 opening piano 216.wav
+#WAV61 sd2 opening piano 217.wav
+#WAV62 sd2 opening piano 218.wav
+#WAV63 sd2 opening piano 219.wav
+#WAV64 sd2 opening piano 220.wav
+#WAV65 sd2 opening piano 221.wav
+#WAV66 sd2 opening piano 222.wav
+#WAV67 sd2 opening piano 223.wav
+#WAV68 sd2 opening piano 224.wav
+#WAV69 sd2 opening piano 225.wav
+#WAV6A sd2 opening piano 226.wav
+#WAV6B sd2 opening piano 227.wav
+#WAV6C sd2 opening piano 228.wav
+#WAV6D sd2 opening piano 229.wav
+#WAV6E sd2 opening piano 230.wav
+#WAV6F sd2 opening piano 231.wav
+#WAV6G sd2 opening piano 232.wav
+#WAV6H sd2 opening piano 233.wav
+#WAV6I sd2 opening piano 234.wav
+#WAV6J sd2 opening piano 235.wav
+#WAV6K sd2 opening piano 236.wav
+#WAV6L sd2 opening piano 237.wav
+#WAV6M sd2 opening piano 238.wav
+#WAV6N sd2 opening piano 239.wav
+#WAV6O sd2 opening piano 240.wav
+#WAV6P sd2 opening piano 241.wav
+#WAV6Q sd2 opening piano 242.wav
+#WAV6R sd2 opening piano 243.wav
+#WAV6S sd2 opening piano 244.wav
+#WAV6T sd2 opening piano 245.wav
+#WAV6U sd2 opening piano 246.wav
+#WAV6V sd2 opening piano 247.wav
+#WAV6W sd2 opening piano 248.wav
+#WAV6X sd2 opening piano 249.wav
+#WAV6Y sd2 opening piano 250.wav
+#WAV6Z sd2 opening piano 251.wav
+#WAV70 sd2 opening piano 252.wav
+#WAV71 sd2 opening piano 253.wav
+#WAV72 sd2 opening piano 254.wav
+#WAV73 sd2 opening piano 255.wav
+#WAV74 sd2 opening piano 256.wav
+#WAV75 sd2 opening piano 257.wav
+#WAV76 sd2 opening piano 258.wav
+#WAV77 sd2 opening piano 259.wav
+#WAV78 sd2 opening piano 260.wav
+#WAV79 sd2 opening piano 261.wav
+#WAV7A sd2 opening piano 262.wav
+#WAV7B sd2 opening piano 263.wav
+#WAV7C sd2 opening piano 264.wav
+#WAV7D sd2 opening piano 265.wav
+#WAV7E sd2 opening piano 266.wav
+#WAV7F sd2 opening piano 267.wav
+#WAV7G sd2 opening piano 268.wav
+#WAV7H sd2 opening piano 269.wav
+#WAV7I sd2 opening piano 270.wav
+#WAV7J sd2 opening piano 271.wav
+#WAV7K sd2 opening piano 272.wav
+#WAV7L sd2 opening piano 273.wav
+#WAV7M sd2 opening piano 274.wav
+#WAV7N sd2 opening piano 275.wav
+#WAV7O sd2 opening piano 276.wav
+#WAV7P sd2 opening piano 277.wav
+#WAV7Q sd2 opening piano 278.wav
+#WAV7R sd2 opening piano 279.wav
+#WAV7S sd2 opening piano 280.wav
+#WAV7T sd2 opening piano 281.wav
+#WAV7U sd2 opening piano 282.wav
+#WAV7V sd2 opening piano 283.wav
+#WAV7W sd2 opening piano 284.wav
+#WAV7X sd2 opening piano 285.wav
+#WAV7Y sd2 opening piano 286.wav
+#WAV7Z sd2 opening piano 287.wav
+#WAV80 sd2 opening piano 288.wav
+#WAV81 sd2 opening piano 289.wav
+#WAV82 sd2 opening piano 290.wav
+#WAV83 sd2 opening piano 291.wav
+#WAV84 sd2 opening piano 292.wav
+#WAV85 sd2 opening piano 293.wav
+#WAV86 sd2 opening piano 294.wav
+#WAV87 sd2 opening piano 295.wav
+#WAV88 sd2 opening piano 296.wav
+#WAV89 sd2 opening piano 297.wav
+#WAV8A sd2 opening piano 298.wav
+#WAV8B sd2 opening piano 299.wav
+#WAV8C sd2 opening piano 300.wav
+#WAV8D sd2 opening piano 300+.wav
+#WAV8E sd2 opening piano 301.wav
+#WAV8F sd2 opening piano 302.wav
+#WAVA0 sd2 opening strings1 01.wav
+#WAVA1 sd2 opening strings1 02.wav
+#WAVA2 sd2 opening strings1 03.wav
+#WAVA3 sd2 opening strings1 04.wav
+#WAVA4 sd2 opening strings1 05.wav
+#WAVA5 sd2 opening strings1 06.wav
+#WAVA6 sd2 opening strings1 07.wav
+#WAVA7 sd2 opening strings1 08.wav
+#WAVA8 sd2 opening strings1 09.wav
+#WAVA9 sd2 opening strings1 10.wav
+#WAVAA sd2 opening strings1 11.wav
+#WAVAB sd2 opening strings1 12.wav
+#WAVAC sd2 opening strings1 13.wav
+#WAVAD sd2 opening strings1 14.wav
+#WAVAE sd2 opening strings1 15.wav
+#WAVAF sd2 opening strings1 16.wav
+#WAVAG sd2 opening strings1 17.wav
+#WAVAH sd2 opening strings1 18.wav
+#WAVAI sd2 opening strings1 19.wav
+#WAVAJ sd2 opening strings1 20.wav
+#WAVAK sd2 opening strings1 21.wav
+#WAVAL sd2 opening strings1 22.wav
+#WAVAM sd2 opening strings1 23.wav
+#WAVAN sd2 opening strings1 24.wav
+#WAVAO sd2 opening strings1 25.wav
+#WAVAP sd2 opening strings1 26.wav
+#WAVAQ sd2 opening strings1 27.wav
+#WAVAR sd2 opening strings1 28.wav
+#WAVAS sd2 opening strings1 29.wav
+#WAVAT sd2 opening strings1 30.wav
+#WAVAU sd2 opening strings1 31.wav
+#WAVAV sd2 opening strings1 32.wav
+#WAVAW sd2 opening strings1 33.wav
+#WAVAX sd2 opening strings1 34.wav
+#WAVAY sd2 opening strings1 35.wav
+#WAVAZ sd2 opening strings1 36.wav
+#WAVB0 sd2 opening strings1 37.wav
+#WAVB1 sd2 opening strings1 38.wav
+#WAVB2 sd2 opening strings1 39.wav
+#WAVB3 sd2 opening strings1 40.wav
+#WAVB4 sd2 opening strings1 41.wav
+#WAVB5 sd2 opening strings1 42.wav
+#WAVB6 sd2 opening strings1 43.wav
+#WAVC0 sd2 opening strings2 01.wav
+#WAVC1 sd2 opening strings2 02.wav
+#WAVC2 sd2 opening strings2 03.wav
+#WAVC3 sd2 opening strings2 04.wav
+#WAVC4 sd2 opening strings2 05.wav
+#WAVC5 sd2 opening strings2 06.wav
+#WAVC6 sd2 opening strings2 07.wav
+#WAVC7 sd2 opening strings2 08.wav
+#WAVC8 sd2 opening strings2 09.wav
+#WAVC9 sd2 opening strings2 10.wav
+#WAVCA sd2 opening strings2 11.wav
+#WAVCB sd2 opening strings2 12.wav
+#WAVCC sd2 opening strings2 13.wav
+#WAVCD sd2 opening strings2 14.wav
+#WAVCE sd2 opening strings2 15.wav
+#WAVCF sd2 opening strings2 16.wav
+#WAVCG sd2 opening strings2 17.wav
+#WAVCH sd2 opening strings2 18.wav
+#WAVCI sd2 opening strings2 19.wav
+#WAVCJ sd2 opening strings2 20.wav
+#WAVCK sd2 opening strings2 21.wav
+#WAVCL sd2 opening strings2 22.wav
+#WAVCM sd2 opening strings2 23.wav
+#WAVCN sd2 opening strings2 24.wav
+#WAVCO sd2 opening strings2 25.wav
+#WAVCP sd2 opening strings2 26.wav
+#WAVCQ sd2 opening strings2 27.wav
+#WAVCR sd2 opening strings2 28.wav
+#WAVCS sd2 opening strings2 29.wav
+#WAVCT sd2 opening strings2 30.wav
+#WAVCU sd2 opening strings2 31.wav
+#WAVCV sd2 opening strings2 32.wav
+#WAVCW sd2 opening strings2 33.wav
+#WAVCX sd2 opening strings2 34.wav
+#WAVCY sd2 opening strings2 35.wav
+#WAVCZ sd2 opening strings2 36.wav
+#WAVD0 sd2 opening strings2 37.wav
+#WAVD1 sd2 opening strings2 38.wav
+#WAVD2 sd2 opening strings2 39.wav
+#WAVD3 sd2 opening strings2 40.wav
+#WAVD4 sd2 opening strings2 41.wav
+#WAVE0 sd2 opening strings3 01.wav
+#WAVE1 sd2 opening strings3 02.wav
+#WAVE2 sd2 opening strings3 03.wav
+#WAVE3 sd2 opening strings3 04.wav
+#WAVE4 sd2 opening strings3 05.wav
+#WAVE5 sd2 opening strings3 06.wav
+#WAVE6 sd2 opening strings3 07.wav
+#WAVE7 sd2 opening strings3 08.wav
+#WAVE8 sd2 opening strings3 09.wav
+#WAVE9 sd2 opening strings3 10.wav
+#WAVEA sd2 opening strings3 11.wav
+#WAVEB sd2 opening strings3 12.wav
+#WAVEC sd2 opening strings3 13.wav
+#WAVED sd2 opening strings3 14.wav
+#WAVEE sd2 opening strings3 15.wav
+#WAVEF sd2 opening strings3 16.wav
+#WAVEG sd2 opening strings3 17.wav
+#WAVEH sd2 opening strings3 18.wav
+#WAVEI sd2 opening strings3 19.wav
+#WAVEJ sd2 opening strings3 20.wav
+#WAVEK sd2 opening strings3 21.wav
+#WAVEL sd2 opening strings3 22.wav
+#WAVEM sd2 opening strings3 23.wav
+#WAVEN sd2 opening strings3 24.wav
+#WAVEO sd2 opening strings3 25.wav
+#WAVEP sd2 opening strings3 26.wav
+#WAVEQ sd2 opening strings3 27.wav
+#WAVER sd2 opening strings3 28.wav
+#WAVES sd2 opening strings3 29.wav
+#WAVET sd2 opening strings3 30.wav
+#WAVEU sd2 opening strings3 31.wav
+#WAVEV sd2 opening strings3 32.wav
+#WAVEW sd2 opening strings3 33.wav
+#WAVEX sd2 opening strings3 34.wav
+#WAVEY sd2 opening strings3 35.wav
+#WAVEZ sd2 opening strings3 36.wav
+#WAVF0 sd2 opening strings3 37.wav
+#WAVF1 sd2 opening strings3 38.wav
+#WAVF2 sd2 opening strings3 39.wav
+#WAVF3 sd2 opening strings3 40.wav
+#WAVF4 sd2 opening strings3 41.wav
+#WAVF5 sd2 opening strings3 42.wav
+#WAVF6 sd2 opening strings3 43.wav
+#WAVF7 sd2 opening strings3 44.wav
+#WAVG0 sd2 opening choir1 01.wav
+#WAVG1 sd2 opening choir1 02.wav
+#WAVG2 sd2 opening choir1 03.wav
+#WAVG3 sd2 opening choir1 04.wav
+#WAVG4 sd2 opening choir1 05.wav
+#WAVG5 sd2 opening choir1 06.wav
+#WAVG6 sd2 opening choir1 07.wav
+#WAVG7 sd2 opening choir1 08.wav
+#WAVG8 sd2 opening choir1 09.wav
+#WAVG9 sd2 opening choir1 10.wav
+#WAVGA sd2 opening choir1 11.wav
+#WAVGB sd2 opening choir1 12.wav
+#WAVGC sd2 opening choir1 13.wav
+#WAVGD sd2 opening choir1 14.wav
+#WAVGE sd2 opening choir1 15.wav
+#WAVGF sd2 opening choir1 16.wav
+#WAVGG sd2 opening choir1 17.wav
+#WAVGH sd2 opening choir1 18.wav
+#WAVGI sd2 opening choir1 19.wav
+#WAVGJ sd2 opening choir1 20.wav
+#WAVGK sd2 opening choir1 21.wav
+#WAVGL sd2 opening choir1 21+.wav
+#WAVGM sd2 opening choir1 22.wav
+#WAVGN sd2 opening choir1 23.wav
+#WAVGO sd2 opening choir1 24.wav
+#WAVH0 sd2 opening choir2 01.wav
+#WAVH1 sd2 opening choir2 02.wav
+#WAVH2 sd2 opening choir2 03.wav
+#WAVH3 sd2 opening choir2 04.wav
+#WAVH4 sd2 opening choir2 05.wav
+#WAVH5 sd2 opening choir2 06.wav
+#WAVH6 sd2 opening choir2 07.wav
+#WAVH7 sd2 opening choir2 08.wav
+#WAVH8 sd2 opening choir2 09.wav
+#WAVH9 sd2 opening choir2 10.wav
+#WAVHA sd2 opening choir2 11.wav
+#WAVHB sd2 opening choir2 12.wav
+#WAVHC sd2 opening choir2 13.wav
+#WAVHE sd2 opening choir3.wav
+#WAVHG sd2 opening choir4.wav
+#WAVI0 sd2 opening piccolo 01.wav
+#WAVI1 sd2 opening piccolo 02.wav
+#WAVI2 sd2 opening piccolo 03.wav
+#WAVI3 sd2 opening piccolo 04.wav
+#WAVI4 sd2 opening piccolo 05.wav
+#WAVI5 sd2 opening piccolo 06.wav
+#WAVI6 sd2 opening piccolo 07.wav
+#WAVI7 sd2 opening piccolo 08.wav
+#WAVI8 sd2 opening piccolo 09.wav
+#WAVI9 sd2 opening piccolo 10.wav
+#WAVIA sd2 opening piccolo 11.wav
+#WAVIB sd2 opening piccolo 12.wav
+#WAVIC sd2 opening piccolo 13.wav
+#WAVID sd2 opening piccolo 14.wav
+#WAVIE sd2 opening piccolo 15.wav
+#WAVIF sd2 opening piccolo 16.wav
+#WAVIG sd2 opening piccolo 17.wav
+#WAVIH sd2 opening piccolo 18.wav
+#WAVII sd2 opening piccolo 19.wav
+#WAVIJ sd2 opening piccolo 20.wav
+#WAVIK sd2 opening piccolo 21.wav
+#WAVIL sd2 opening piccolo 22.wav
+#WAVIM sd2 opening piccolo 23.wav
+#WAVIN sd2 opening piccolo 24.wav
+#WAVIO sd2 opening piccolo 25.wav
+#WAVIP sd2 opening piccolo 26.wav
+#WAVIQ sd2 opening piccolo 27.wav
+#WAVIR sd2 opening piccolo 28.wav
+#WAVIS sd2 opening piccolo 29.wav
+#WAVIT sd2 opening piccolo 30.wav
+#WAVIU sd2 opening piccolo 31.wav
+#WAVIV sd2 opening piccolo 32.wav
+#WAVIW sd2 opening piccolo 33.wav
+#WAVJ0 sd2 opening brass 01.wav
+#WAVJ1 sd2 opening brass 02.wav
+#WAVJ2 sd2 opening brass 03.wav
+#WAVJ3 sd2 opening brass 04.wav
+#WAVJ4 sd2 opening brass 05.wav
+#WAVJ5 sd2 opening brass 06.wav
+#WAVJ6 sd2 opening brass 07.wav
+#WAVJ7 sd2 opening brass 08.wav
+#WAVJ8 sd2 opening brass 09.wav
+#WAVJ9 sd2 opening brass 10.wav
+#WAVJA sd2 opening brass 11.wav
+#WAVJB sd2 opening brass 12.wav
+#WAVJC sd2 opening brass 13.wav
+#WAVJD sd2 opening brass 14.wav
+#WAVJE sd2 opening brass 15.wav
+#WAVJF sd2 opening brass 16.wav
+#WAVJG sd2 opening brass 17.wav
+#WAVJH sd2 opening brass 18.wav
+#WAVJI sd2 opening brass 19.wav
+#WAVJJ sd2 opening brass 20.wav
+#WAVJK sd2 opening brass 21.wav
+#WAVJL sd2 opening brass 22.wav
+#WAVJM sd2 opening brass 23.wav
+#WAVJN sd2 opening brass 24.wav
+#WAVJO sd2 opening brass 25.wav
+#WAVJP sd2 opening brass 26.wav
+#WAVJQ sd2 opening brass 27.wav
+#WAVJR sd2 opening brass 28.wav
+#WAVJS sd2 opening brass 29.wav
+#WAVJT sd2 opening brass 30.wav
+#WAVJU sd2 opening brass 31.wav
+#WAVJV sd2 opening brass 32.wav
+#WAVJW sd2 opening brass 33.wav
+#WAVJX sd2 opening brass 34.wav
+#WAVJY sd2 opening brass 35.wav
+#WAVJZ sd2 opening brass 36.wav
+#WAVL0 sd2 opening bass 01.wav
+#WAVL1 sd2 opening bass 02.wav
+#WAVL2 sd2 opening bass 03.wav
+#WAVL3 sd2 opening bass 04.wav
+#WAVL4 sd2 opening bass 05.wav
+#WAVL5 sd2 opening bass 06.wav
+#WAVL6 sd2 opening bass 07.wav
+#WAVL7 sd2 opening bass 08.wav
+#WAVL8 sd2 opening bass 09.wav
+#WAVL9 sd2 opening bass 10.wav
+#WAVLA sd2 opening bass 11.wav
+#WAVLB sd2 opening bass 12.wav
+#WAVLC sd2 opening bass 13.wav
+#WAVLD sd2 opening bass 14.wav
+#WAVLE sd2 opening bass 15.wav
+#WAVLF sd2 opening bass 16.wav
+#WAVLG sd2 opening bass 17.wav
+#WAVLH sd2 opening bass 18.wav
+#WAVLI sd2 opening bass 19.wav
+#WAVLJ sd2 opening bass 20.wav
+#WAVLK sd2 opening bass 21.wav
+#WAVLL sd2 opening bass 22.wav
+#WAVLM sd2 opening bass 23.wav
+#WAVLN sd2 opening bass 24.wav
+#WAVLO sd2 opening bass 25.wav
+#WAVLP sd2 opening bass 26.wav
+#WAVLQ sd2 opening bass 27.wav
+#WAVLR sd2 opening bass 29.wav
+#WAVLS sd2 opening bass 30.wav
+#WAVLT sd2 opening bass 31.wav
+#WAVLU sd2 opening bass 32.wav
+#WAVLV sd2 opening bass 33.wav
+#WAVLW sd2 opening bass 34.wav
+#WAVLX sd2 opening bass 35.wav
+#WAVLY sd2 opening bass 36.wav
+#WAVLZ sd2 opening bass 37.wav
+#WAVM0 sd2 opening bass 38.wav
+#WAVM1 sd2 opening bass 39.wav
+#WAVM2 sd2 opening bass 40.wav
+#WAVM3 sd2 opening bass 41.wav
+#WAVN0 sd2 opening cymbal 01.wav
+#WAVN1 sd2 opening cymbal 02.wav
+#WAVN2 sd2 opening cymbal 03.wav
+#WAVN3 sd2 opening cymbal 04.wav
+#WAVZZ sd2 opening whale.wav
+
+#BMP01 sd2 opening miss.bmp
+#BMP03 sd2 opening black.bmp
+#BMP05 sd2 opening square 020.bmp
+#BMP06 sd2 opening square 040.bmp
+#BMP07 sd2 opening square 060.bmp
+#BMP08 sd2 opening square 080.bmp
+#BMP09 sd2 opening square 100.bmp
+#BMP0B sd2 opening logo 020.bmp
+#BMP0C sd2 opening logo 040.bmp
+#BMP0D sd2 opening logo 060.bmp
+#BMP0E sd2 opening logo 080.bmp
+#BMP0F sd2 opening logo 100.bmp
+#BMP0H sd2 opening open1 01.bmp
+#BMP0I sd2 opening open1 02.bmp
+#BMP0J sd2 opening open1 03.bmp
+#BMP0K sd2 opening open1 04.bmp
+#BMP0L sd2 opening open1 05.bmp
+#BMP0M sd2 opening open1 06.bmp
+#BMP0N sd2 opening open1 07.bmp
+#BMP0O sd2 opening open1 08.bmp
+#BMP0Q sd2 opening up 01.bmp
+#BMP0R sd2 opening up 02.bmp
+#BMP0S sd2 opening up 03.bmp
+#BMP0T sd2 opening up 04.bmp
+#BMP0U sd2 opening up 05.bmp
+#BMP0V sd2 opening up 06.bmp
+#BMP0W sd2 opening up 07.bmp
+#BMP0X sd2 opening up 08.bmp
+#BMP0Y sd2 opening up 09.bmp
+#BMP0Z sd2 opening up 10.bmp
+#BMP10 sd2 opening up 11.bmp
+#BMP11 sd2 opening up 12.bmp
+#BMP12 sd2 opening up 13.bmp
+#BMP13 sd2 opening up 14.bmp
+#BMP14 sd2 opening up 15.bmp
+#BMP15 sd2 opening up 16.bmp
+#BMP16 sd2 opening up 17.bmp
+#BMP17 sd2 opening up 18.bmp
+#BMP19 sd2 opening open2 01.bmp
+#BMP1A sd2 opening open2 02.bmp
+#BMP1B sd2 opening open2 03.bmp
+#BMP1C sd2 opening open2 04.bmp
+#BMP1D sd2 opening open2 05.bmp
+#BMP1E sd2 opening open2 06.bmp
+#BMP1F sd2 opening open2 07.bmp
+#BMP1G sd2 opening open2 08.bmp
+#BMP1H sd2 opening open2 09.bmp
+#BMP1I sd2 opening open2 10.bmp
+#BMP1J sd2 opening open2 11.bmp
+#BMP1K sd2 opening open2 12.bmp
+#BMP1L sd2 opening open2 13.bmp
+#BMP1M sd2 opening open2 14.bmp
+#BMP1N sd2 opening open2 15.bmp
+#BMP1O sd2 opening open2 16.bmp
+#BMP1P sd2 opening open2 17.bmp
+#BMP1Q sd2 opening open2 max.bmp
+#BMP1S sd2 opening fly 01.bmp
+#BMP1T sd2 opening fly 02.bmp
+#BMP1U sd2 opening fly 03.bmp
+#BMP1V sd2 opening fly 04.bmp
+#BMP1W sd2 opening fly 05.bmp
+#BMP1X sd2 opening fly 06.bmp
+#BMP1Y sd2 opening fly 07.bmp
+#BMP1Z sd2 opening fly 08.bmp
+#BMP20 sd2 opening fly 09.bmp
+#BMP21 sd2 opening fly 10.bmp
+#BMP22 sd2 opening fly 11.bmp
+#BMP23 sd2 opening fly 12.bmp
+#BMP24 sd2 opening fly 13.bmp
+#BMP25 sd2 opening fly 14.bmp
+#BMP26 sd2 opening fly 15.bmp
+#BMP27 sd2 opening fly 16.bmp
+#BMP28 sd2 opening fly 17.bmp
+#BMP29 sd2 opening fly 18.bmp
+#BMP2A sd2 opening fly 19.bmp
+#BMP2B sd2 opening fly 20.bmp
+#BMP2C sd2 opening fly 21.bmp
+#BMP2D sd2 opening fly 22.bmp
+#BMP2E sd2 opening fly 23.bmp
+#BMP2F sd2 opening fly 24.bmp
+#BMP2G sd2 opening fly 25.bmp
+#BMP2H sd2 opening fly 26.bmp
+#BMP2I sd2 opening fly 27.bmp
+#BMP2J sd2 opening fly 28.bmp
+#BMP2K sd2 opening fly 29.bmp
+#BMP2L sd2 opening fly 30.bmp
+#BMP2M sd2 opening fly 31.bmp
+#BMP2N sd2 opening fly 32.bmp
+#BMP2O sd2 opening fly 33.bmp
+#BMP2P sd2 opening fly 34.bmp
+#BMP2Q sd2 opening fly 35.bmp
+#BMP2R sd2 opening fly 36.bmp
+#BMP2S sd2 opening fly 37.bmp
+#BMP2T sd2 opening fly 38.bmp
+#BMP2U sd2 opening fly 39.bmp
+#BMP2V sd2 opening fly 40.bmp
+#BMP2X sd2 opening fade 090.bmp
+#BMP2Y sd2 opening fade 080.bmp
+#BMP2Z sd2 opening fade 070.bmp
+#BMP30 sd2 opening fade 060.bmp
+#BMP31 sd2 opening fade 050.bmp
+#BMP32 sd2 opening fade 040.bmp
+#BMP33 sd2 opening fade 030.bmp
+#BMP34 sd2 opening fade 020.bmp
+#BMP35 sd2 opening fade 010.bmp
+
+
+
+
+#DIFFICULTY 5
+#BACKBMP sd2 opening.png
+
+
+
+*---------------------- MAIN DATA FIELD
+
+#00004:0300000000000000000000000000000000000000000000000000000005060708
+#00006:01
+
+#00102:2.75
+#00104:09000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000080706050300000000000000000000000000000000000000
+#00156:ZZ00000000000000000000000000000000ZZ00000000
+
+#00201:00
+#00201:00
+#00201:00
+#00201:00
+#00201:00
+#00201:00
+#00201:00
+#00201:00
+#00201:00
+#00201:00
+#00201:00
+#00201:000000000000J1J2
+#00204:0B0C0D0E0F000000000000000000000000000000000000000000000000000000
+#00211:E0
+#00212:J0020000
+#00213:C000000000000004
+#00214:A0
+#00218:01
+#00219:0003
+
+#00301:00
+#00301:00
+#00301:00
+#00301:00
+#00301:00
+#00301:00
+#00301:00
+#00301:00
+#00301:00
+#00301:00
+#00301:00
+#00301:J3000000000000J7
+#00311:0008
+#00312:E1
+#00313:00060000
+#00314:C1J6
+#00315:0500000700000000
+#00318:00J40000
+#00319:A10000J500000000
+
+#00401:00
+#00401:00
+#00401:00
+#00401:00
+#00401:00
+#00401:00
+#00401:00
+#00401:00
+#00401:00
+#00401:00
+#00401:00
+#00401:000000J9
+#00411:E2
+#00412:J8020000
+#00413:C200000000000004
+#00414:A2
+#00418:01000000000000JA
+#00419:0003
+
+#00511:JB
+#00512:E3000000000000JA
+#00513:0000000A00000000
+#00514:09090B00
+#00515:C30000JD00000007
+#00518:00070000JE000000
+#00519:A3JC0000
+
+#00601:00
+#00601:00
+#00601:00
+#00601:00
+#00601:00
+#00601:00
+#00601:00
+#00601:00
+#00601:00
+#00601:00
+#00601:00
+#00601:000000JA
+#00611:JF
+#00612:000D0000
+#00613:E4
+#00614:C40000000000000F
+#00618:0C
+#00619:A40000000E0000J9
+
+#00701:00
+#00701:00
+#00701:00
+#00701:00
+#00701:00
+#00701:00
+#00701:00
+#00701:00
+#00701:00
+#00701:00
+#00701:00
+#00701:000000JG
+#00711:J8
+#00712:E50000000H000004
+#00713:C4060000
+#00714:00070007000000JH
+#00715:A5
+#00718:0G
+
+#00811:E60000000000000M
+#00812:000L
+#00813:C4
+#00814:JI000K00000000JK
+#00815:A6JJ
+#00818:000J000J00000000
+#00819:0I
+
+#00904:0000000000000000000000000000000H000I000J000K000L
+#00912:0N
+#00913:E5
+#00915:C5
+#00916:00N0
+#00918:A7
+#00919:JL
+
+#01004:000M000N000O000000000000000000000000000000000000
+#01011:L0
+#01012:000P000000L10000
+#01013:A80Q00L2
+#01014:C600I100000T00L3
+#01015:0O00000R000000I3
+#01018:I0000S0U
+#01019:E7000000I200000V
+
+#01104:0000000Q0R0S
+#01111:000X000000001200
+#01112:L4000Y00001100L7
+#01113:A900I7L6
+#01114:0W00000Z00L50013
+#01115:C710
+#01118:I4I50000
+#01119:E70000I600000000
+
+#01204:0T0U0V0W0X0Y
+#01211:L0
+#01212:0015000000L10000
+#01213:A81600L8
+#01214:C600I100001900L2
+#01215:14000017000000I3
+#01218:I000181A
+#01219:E7000000I200001B
+
+#01304:0Z1011121314
+#01311:E81D000000000000
+#01312:AA001E00001H00LB
+#01313:L900001F0000L300
+#01314:C700000000LA0000
+#01315:1C0000I3000000I6
+#01318:I5I5I81I
+#01319:00I600001G00001J
+
+#01404:151617000000
+#01411:LC00001N00000000
+#01412:001L0000001P00L7
+#01413:AA1M00L6
+#01414:1K00IA0000L5001R
+#01415:E7001O1Q
+#01418:I9000000000000IC
+#01419:C6IB
+
+#01504:000000000000000000000000000000001900000000000000001A00000000000000001B00000000000000001C00000000000000001D00000000000000001E0000
+#01511:LD000000000000L1
+#01512:A800001V0000L600
+#01513:C61T000000L2001Z
+#01514:E91UIE00
+#01515:1S00I500001X0000
+#01518:00I600I6000000I3
+#01519:ID001W1Y
+
+#01604:0000000000001F00000000000000001G00000000000000001H00000000000000001I00000000000000001J00000000000000001K00000000000000001L000000
+#01611:00210000AC0000L7
+#01612:LE00220000250000
+#01613:C8000023LF000027
+#01614:2000IH26
+#01615:AB00IG00C90000IG
+#01618:EAI300I3EB000000
+#01619:IF24
+
+#01701:00
+#01701:0000000000EE00EG0000AJAK00000000
+#01701:000000000000000000AI0000000000AO
+#01701:0000000000CC00CE000000EJ00CJ0000
+#01701:00000000000000000000000000LJ0000
+#01701:000000000000000000CFEI0000000000
+#01701:000000000000000000EH0000EK00EMEN
+#01701:00
+#01701:00
+#01701:00
+#01701:00
+#01701:00
+#01701:00
+#01701:000000000000L200LHLILJLKLI00LKLL
+#01704:00000000001M00000000000000001N00000000000000001O00000000000000001P00000000000000001Q00000000000000000000000000000000000000000000
+#01711:CA00000000000000AE000000CD000000AF000000CG000000002T0000CK000000
+#01712:LG00000000000000CB000000EF0000002K2L00000000CH0000002U000000CL00
+#01713:EC0000000000000000000000000000000000000000000000000000000000000000000000000000002I0000002J000000000000000000000000000000000000000000000000000000AL00000000000000002V0000000000000000000000000000
+#01714:AD00000000000000000000000000000000000000000000002E0000002F000000000000000000000000000000000000000000000000002M00002N00000000000000000000000000002S00000000000000000000002W0000000000000000000000
+#01715:00000000000000002A0000002B0000000000000000000000ED000000000000002G0000002H0000000000000000000000CC00000000000000000000002O00002P0000000000000000000000000000EL00000000000000002X0000000000000000
+#01716:0000000000000000000000000000000000000000N1000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000N20000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000N30000000000000000
+#01718:II0000000000000000000000000000002C0000002D000000000000000000000000000000AG0000000000000000000000EE00000000000000000000000000000000002Q00002R0000000000000000AM00000000000000000000002Y0000000000
+#01719:280000002900000000000000000000000000000000000000000000000000AF0000000000000000000000AH0000000000000000000000000000000000000000000000000000000000CI0000000000000000000000AN00000000000000002Z0000
+
+#01801:00
+#01801:00
+#01801:00
+#01801:00
+#01801:00
+#01801:00
+#01801:EO
+#01801:00EP
+#01801:00
+#01801:00
+#01801:00
+#01801:00
+#01801:00
+#01801:LMLM
+#01804:1S1T1U1V1W1X1Y1Z2021222324252627
+#01811:G000H200APH1LN00
+#01812:000000H10000000038000000H3000000003H000000H10000
+#01813:H00036H1G13FH200
+#01814:CM0000003400003700000000003D00003G00000000003M00
+#01815:AP003200003500000000003B00003E00000000003K00003N
+#01818:303300393C003I3L
+#01819:003100000000LN0000003A00CN0000000000003J00000000
+
+#01901:00
+#01901:00
+#01901:00
+#01901:00
+#01901:00
+#01901:00
+#01901:EOEP
+#01901:00
+#01901:00
+#01901:00
+#01901:00
+#01901:00
+#01901:00
+#01901:LMLM
+#01904:28292A2B2C2D2E2F2G2H2I2J2K2L2M2N
+#01911:G00000000000LN0000H10000G10000000000H20000004A00
+#01912:CM003Q000000H2000000003Z000000H1000000004800004B
+#01913:3OH1003XH3004649
+#01914:003P00000000003V00003Y00AP0000004400004700000000
+#01915:00000000003T00003W000000CN0042000045000000H10000
+#01918:H03R3U0040430000
+#01919:AP0000003S00000000000000004100000000LN0000000000
+
+#02001:00
+#02001:00
+#02001:00
+#02001:00
+#02001:00
+#02001:00
+#02001:EQEQ
+#02001:00
+#02001:00
+#02001:00
+#02001:00
+#02001:00
+#02001:00
+#02001:L800000000LQ0000L800000000LQ0000
+#02004:2O2P2Q2R2S2T2U2V1Q000000001S1T1U
+#02011:AQ0000LO000000004K000000H7000000004T000000H30000
+#02012:00H54IH3AR4RH6LO
+#02013:G20000004G00004J00000000004P00004S00000000004Y00
+#02014:CO004E00004H00000000004N00004Q00000000004W00004Z
+#02015:4C4F004L4O004U4X
+#02018:004D00000000H60000004M00CP0000LO0000004V00000000
+#02019:H400LPLOG3H5LP00
+
+#02101:00
+#02101:00
+#02101:00
+#02101:00
+#02101:00
+#02101:00
+#02101:EQEQ
+#02101:00
+#02101:00
+#02101:00
+#02101:00
+#02101:00
+#02101:00
+#02101:L800000000LQ0000L800000000LJ00LL
+#02104:1V1W1X1Y1Z202122232425262728292A
+#02111:CQ0052000000LP000000005B000000LO0000LH0000000000
+#02112:50LOH659H7005IH3
+#02113:005100000000005700005A00G30000005G00005J00LK0000
+#02114:000000000055000058000000CP005E00005H00005K000000
+#02115:AS5356H35C5F005L
+#02118:H70000005400000000000000005D00000000H60000005M00
+#02119:G40000H50000000000LO0000AR0000H5000000000000005N
+
+#02201:00
+#02201:00
+#02201:00
+#02201:00
+#02201:00
+#02201:00CS
+#02201:00
+#02201:00
+#02201:G5G6
+#02201:H8H9
+#02201:00
+#02201:00
+#02201:00
+#02201:0000LMLN
+#02204:2B2C2D2E2F2G2H2I2J2K2L2M2N2O2P2Q
+#02211:ER00000000005U005W000000ES0000630065000000000000
+#02212:LM0000005S00005V00000000006100006400000000006A00
+#02213:CR005Q00005T00000000005Z00006200000000006800006B
+#02214:5O5R005X60006669
+#02215:005P00000000LN0000005Y00000000000000006700000000
+#02218:ATATATATATATATAT
+#02219:00AU00AU00AU00AU00AU00AU00AU00AU
+
+#02301:00
+#02301:00
+#02301:00
+#02301:00
+#02301:00
+#02301:00CS
+#02301:00
+#02301:00
+#02301:G5G6
+#02301:H8H9
+#02301:00
+#02301:00
+#02301:00
+#02301:LMLNLMLN
+#02304:2R2S2T2U2V1Q000000001S1T1U1V1W1X
+#02311:ETETETETEUEUEUEU
+#02312:CREU00EU00EU00EU00EV00EV00EV00EV
+#02313:00006E00006H0000006L006N00006Q0000006U00006X0000
+#02314:6C00006F0000006J00006M006O0000006S00006V00006Y00
+#02315:006D00006G006I006K000000006P006R006T00006W00006Z
+#02318:ATATATATATATATAT
+#02319:00AU00AU00AU00AU00AU00AU00AU00AU
+
+#02401:00
+#02401:00
+#02401:000000000000000000000000000000EX
+#02401:0000EW0000LR00000000000000000000
+#02401:000000000000EW0000000000000000LQ
+#02401:00LS000000000000
+#02401:EWEX00EXLTCU0000CUEXEWEX00EX0000
+#02401:00
+#02401:G7
+#02401:HAHB
+#02401:00
+#02401:00
+#02401:00
+#02401:LPLR00LQ0000LSLQLPLRLSLQ00LRLS00
+#02404:1Y1Z202122232425262728292A2B2C2D
+#02411:CTCTCTCTEW7FAWAW
+#02412:00CU00CU00EX00CU0000CU00CUCV00CV
+#02413:AV00AV00AV00AV00G8CV00CVEW00CU00
+#02414:000000AW0000000074000000EW0000AW0000000000AW0000AW0000000000AW0000007H00000000AX000000007M000000
+#02415:000000007200000000AW0000000000007800000000EX0000000000AX000000007G000000LT0000007K00000000007N00
+#02418:70000073000076000079007B007D000000007I00007L0000
+#02419:00007100000000000000750000007700000000007A0000007C0000007E00000000AX000000007J000000EW0000AX0000
+
+#02501:00
+#02501:00
+#02501:00LS00000000CV00
+#02501:0000000000000000EZ000000LTLUF0LJ
+#02501:000000LS00000000
+#02501:00CVAX0000000000
+#02501:00
+#02501:00
+#02501:G7G8
+#02501:HA
+#02501:00
+#02501:00
+#02501:00
+#02501:LPLR00LQ00LR00LQLPLRLSLQ0000LP00
+#02504:2E2F2G2H2I2J2K2L2M2N2O2P2Q2R2S2T
+#02511:EX00AX00CV007XEYHB0083CU00EW00CY
+#02512:000000EY0000000000EY000000007V000000EX0000007Z00000081000000CV0000000000EX0000000000CT0000008B00
+#02513:CV0000007Q00000000007T00000000CW000000007Y000000800000008200000000EW0000000000AW000000008A000000
+#02514:7O0000CW0000000000CW0000LT0000007W00000000CW0000000000CW0000EX0000000000860000000000AV0000F10000
+#02515:00007P0000007R0000000000000000EY0000AX0000000000CX0000EY0000000000AW0000000000CU0000000000B00000
+#02518:AX0000AY000000007S000000EX0000AY0000000000AY0000000000AY0000AX0000008500000087000000890000000000
+#02519:000000000000EX0000AY00007U0000000000CV0000000000AZ0000000000000084000000AX0000008800000000000000
+
+#02601:00
+#02601:B1
+#02601:F2
+#02601:G9
+#02601:00
+#02601:00000000000000D0
+#02601:00000000000000F3
+#02601:00
+#02601:00
+#02601:00
+#02601:00
+#02601:00000000000000JR
+#02604:2U2V1Q000000001S1T1U1V1W1X1Y1Z20
+#02611:CZ0000JP00000000
+#02612:000000IM000000L1
+#02613:LV00IL00IN0000B2
+#02614:00IK00GC000000GE
+#02615:IJ00GB00GD0000IO
+#02618:00GAJO0000000000
+#02619:JMJN0000JQ000000
+
+#02701:00
+#02701:00
+#02701:00
+#02701:00
+#02701:00
+#02701:00
+#02701:F4
+#02701:00
+#02701:00
+#02701:00
+#02701:00
+#02701:JS
+#02704:2122232425262728292A2B2C2D2E2F2G
+#02711:LWLX
+#02712:0000IRLY
+#02713:00JT00IS
+#02714:D1GH
+#02715:B3IQ00GI
+#02718:GFJU
+#02719:IPGG00JV
+
+#02801:00
+#02801:00
+#02801:00
+#02801:00
+#02801:00
+#02801:00D3
+#02801:F5F6
+#02801:00
+#02801:00
+#02801:00
+#02801:00
+#02801:JW0000000000JXJYJZ00000000000000
+#02804:2H2I2J2K2L2M2N2O2P2Q2R2S2T2U2V1Q
+#02811:LZM2
+#02812:00M000B50000
+#02813:D200M1IW0000
+#02814:IT000000000000IV0000000000000000
+#02815:B40000IUGN00008C
+#02818:GJ000000000000GM000000000000008E
+#02819:000000GK00000000
+
+#02919:8F
+
+#03001:00
+#03001:00
+#03001:00
+#03001:00
+#03001:00
+#03001:00
+#03001:F7
+#03001:00
+#03001:00
+#03001:00
+#03001:00
+#03001:00
+#03001:00
+#03001:M3
+#03004:000000000000002X2Y2Z303132333435
+#03051:D4
+#03052:B6
+#03053:HG
+#03055:HE
+#03058:HC
+#03059:GO
+
+#03104:03
+
+#03251:D4
+#03252:B6
+#03253:HG
+#03255:HE
+#03258:HC
+#03259:GO
+

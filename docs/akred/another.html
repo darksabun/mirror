@@ -1,0 +1,491 @@
+<!DOCTYPE html PLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html dir="ltr" lang="ja">
+  <head>
+    <title></title>
+  </head>
+  <body bgcolor="#000000" text="#ffffff" onload="initCookieValue()&getsc()">
+    <p>
+      <title></title>
+    </p>
+    <p></p>
+    <p style="text-align: center">　</p>
+    <p></p>
+    <p></p>
+    <p>　　　　</p>
+    <p></p>
+    <p style="text-align: justify">
+      <a href="./"
+        ><span style="font-size: x-large"
+          ><span style="color: rgb(255, 102, 0)">戻る</span></span
+        ></a
+      >
+    </p>
+    <p>　</p>
+    <p></p>
+    <p>
+      　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　　
+    </p>
+    <p></p>
+    <!--
+<!DOCTYPE HTML PLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html dir="ltr" lang="ja">
+    <head>
+        <title></title>
+    </head>
+    <body bgcolor="#000000" text="#FFFFFF" onload="initCookieValue()&getsc()" style="">
+        <p> </p>
+        <p>
+        <meta http-equiv="Content-Type" content="text/html; charset=Shift-JIS">
+        <title></title>
+        <meta http-equiv="Content-Script-Type" content="text/javascript">
+        <meta http-equiv="Content-Style-Type" content="text/css">
+        <meta http-equiv="Content-Type" content="text/html; charset=Shift-JIS">   <style type="text/css"> 
+.tr1 {
+  color:#cccccc;
+}
+.tr_ok {
+  background-color:#00FFFF;
+}
+.tr_ng {
+  background-color:#C0C0C0;
+}
+.tr_hd{
+  background-color:red;
+}
+.tr_ez{
+  background-color:#66FF99
+  }
+.tr_fc{
+  background-color:#FFD700
+  }
+a:link{
+	color:"richblue";
+}
+a:visited{
+	color:"limegreen";
+}
+a:hover{
+	color:"red";
+	background-color:"yellow";
+}
+a:active{
+	color:"red";
+	background-color:"yellow";
+}
+</style>   <script language="javascript" type="text/javascript"> 
+<!--
+// データの読み込み
+function getsc() {
+	var m = new Date().getMonth();
+	if (m%2==1){
+		document.body.style.filter="progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#ccccccff', EndColorStr='#ffffffff')";
+		document.body.text="black";
+	}else{
+		document.body.style.filter="progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#cc000033', EndColorStr='#ff000000')";
+		document.body.text="white";
+	}
+}
+ 
+// クッキーの読み込み
+function loadCookie(name) {
+  var bData = "";
+  var cName = name + "~"; // クッキー名
+  var cCookie = document.cookie+";";
+  var str = cCookie.indexOf(cName);
+  if(str != -1) {
+     end = cCookie.indexOf(";",str);
+     bData = unescape(cCookie.substring(str + cName.length, end));
+  }
+  return bData;
+}
+ 
+// クッキーの書き込み
+function saveCookie(name,dValue) {
+  var cName = name + "~"; // クッキー名
+  var cDays = 365; // データの保存日数
+  var setPre = new Date();
+  setPre.setTime(setPre.getTime() + (cDays*1000*24*3600));
+  var prd = setPre.toGMTString();
+  document.cookie = cName + escape(dValue) + ";expires=" + prd;
+}
+// クリアデータのの削除
+function deletedt() {
+  cName = "tmpdt~"; // 削除するクッキー名
+  dTime = new Date();
+  dTime.setYear(dTime.getYear() - 1);
+  document.cookie = cName + ";expires=" + dTime.toGMTString();
+}
+ 
+var CookieValue = new Array(2000); //* 個のデータを保存できる
+ 
+//CookieValue の初期化 と読み込み、ボタンの onclick イベント設定
+function initCookieValue() {
+  
+  for (var i=0;i < CookieValue.length;i++) CookieValue[i] = 0;
+  
+  var imps = document.getElementById("table1").getElementsByTagName("input");
+  var nVal = "" + loadCookie("tmpdt");
+ 
+//  alert("Cookies="+nVal);
+ 
+  for (var i=0;i < nVal.length;i++)
+     CookieValue[i] = nVal.charAt(i)-0;
+ 
+  for (var i=0;i < imps.length;i++) {
+     imps[i].onclick=function(e) {
+        var o;
+        if (window.event) e = window.event;
+        o = e.srcElement ? e.srcElement : e.target;
+ 
+        while (o.nodeName.toLowerCase() != "tr") o = o.parentNode;
+ 
+        var idx = parseInt(o.id.replace("#tr",""),10);
+        if (o.className == "tr_ng") 
+        {
+           o.className = "tr_ez";
+           CookieValue[idx] = 1;
+        }
+        else if (o.className == "tr_ez")
+        {
+        o.className = "tr_ok";
+        CookieValue[idx] = 2;
+        
+        }
+        
+        
+　　　　else if (o.className == "tr_ok")
+        {
+        o.className = "tr_hd";
+        CookieValue[idx] = 3;
+ 
+        
+        }
+　　　　else if (o.className == "tr_hd")
+        {
+        o.className = "tr_fc";
+        CookieValue[idx] = 4;
+        
+        }
+ 
+        
+        else {
+           o.className = "tr_ng";
+           CookieValue[idx] = 0;
+        }
+        backupCookie();
+     }
+var tr;
+switch(CookieValue[mname[i][0]]){
+case 0:
+tr="tr_ng";
+break;
+case 1:
+tr="tr_ez";
+break;
+case 2:
+tr="tr_ok";
+break;
+case 3:
+tr="tr_hd";
+break;
+case 4:
+tr="tr_fc";
+break;
+}
+document.getElementById("#tr"+mname[i][0]).className = tr;
+ 
+}
+function backupCookie() {
+  saveCookie("tmpdt",CookieValue.join(""));
+}
+}
+-->
+    <p>
+      <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+      <title></title>
+      <meta http-equiv="Content-Script-Type" content="text/javascript" />
+      <meta http-equiv="Content-Style-Type" content="text/css" />
+      <style type="text/css">
+        .tr1 {
+          color: #cccccc;
+        }
+        .tr_ok {
+          background-color: #00ffff;
+        }
+        .tr_ng {
+          background-color: #c0c0c0;
+        }
+        .tr_hd {
+          background-color: red;
+        }
+        .tr_ez {
+          background-color: #66ff99;
+        }
+        .tr_fc {
+          background-color: #ffd700;
+        }
+        a:link {
+          color: "richblue";
+        }
+        a:visited {
+          color: "limegreen";
+        }
+        a:hover {
+          color: "red";
+          background-color: "yellow";
+        }
+        a:active {
+          color: "red";
+          background-color: "yellow";
+        }
+      </style>
+      <script language="javascript" type="text/javascript">
+        <!--
+        // データの読み込み
+        function getsc() {
+          var m = new Date().getMonth();
+          if (m % 2 == 1) {
+            document.body.style.filter =
+              "progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#ccccccff', EndColorStr='#ffffffff')";
+            document.body.text = "black";
+          } else {
+            document.body.style.filter =
+              "progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#cc000033', EndColorStr='#ff000000')";
+            document.body.text = "white";
+          }
+        }
+
+        // クッキーの読み込み
+        function loadCookie(name) {
+          var bData = "";
+          var cName = name + "~"; // クッキー名
+          var cCookie = document.cookie + ";";
+          var str = cCookie.indexOf(cName);
+          if (str != -1) {
+            end = cCookie.indexOf(";", str);
+            bData = unescape(cCookie.substring(str + cName.length, end));
+          }
+          return bData;
+        }
+
+        // クッキーの書き込み
+        function saveCookie(name, dValue) {
+          var cName = name + "~"; // クッキー名
+          var cDays = 365; // データの保存日数
+          var setPre = new Date();
+          setPre.setTime(setPre.getTime() + cDays * 1000 * 24 * 3600);
+          var prd = setPre.toGMTString();
+          document.cookie = cName + escape(dValue) + ";expires=" + prd;
+        }
+        // クリアデータのの削除
+        function deletedt() {
+          cName = "tmpdt~"; // 削除するクッキー名
+          dTime = new Date();
+          dTime.setYear(dTime.getYear() - 1);
+          document.cookie = cName + ";expires=" + dTime.toGMTString();
+        }
+
+        var CookieValue = new Array(2000); //* 個のデータを保存できる
+
+        //CookieValue の初期化 と読み込み、ボタンの onclick イベント設定
+        function initCookieValue() {
+          for (var i = 0; i < CookieValue.length; i++) CookieValue[i] = 0;
+
+          var imps = document
+            .getElementById("table1")
+            .getElementsByTagName("input");
+          var nVal = "" + loadCookie("tmpdt");
+
+          //  alert("Cookies="+nVal);
+
+          for (var i = 0; i < nVal.length; i++)
+            CookieValue[i] = nVal.charAt(i) - 0;
+
+          for (var i = 0; i < imps.length; i++) {
+            imps[i].onclick = function (e) {
+              var o;
+              if (window.event) e = window.event;
+              o = e.srcElement ? e.srcElement : e.target;
+
+              while (o.nodeName.toLowerCase() != "tr") o = o.parentNode;
+
+              var idx = parseInt(o.id.replace("#tr", ""), 10);
+              if (o.className == "tr_ng") {
+                o.className = "tr_ez";
+                CookieValue[idx] = 1;
+              } else if (o.className == "tr_ez") {
+                o.className = "tr_ok";
+                CookieValue[idx] = 2;
+              } else if (o.className == "tr_ok") {
+                o.className = "tr_hd";
+                CookieValue[idx] = 3;
+              } else if (o.className == "tr_hd") {
+                o.className = "tr_fc";
+                CookieValue[idx] = 4;
+              } else {
+                o.className = "tr_ng";
+                CookieValue[idx] = 0;
+              }
+              backupCookie();
+            };
+            var tr;
+            switch (CookieValue[mname[i][0]]) {
+              case 0:
+                tr = "tr_ng";
+                break;
+              case 1:
+                tr = "tr_ez";
+                break;
+              case 2:
+                tr = "tr_ok";
+                break;
+              case 3:
+                tr = "tr_hd";
+                break;
+              case 4:
+                tr = "tr_fc";
+                break;
+            }
+            document.getElementById("#tr" + mname[i][0]).className = tr;
+          }
+          function backupCookie() {
+            saveCookie("tmpdt", CookieValue.join(""));
+          }
+        }
+        -->
+      </script>
+    </p>
+
+    <table align="center" cellspacing="3" id="table1">
+      <tbody>
+        <tr bgcolor="#070007" height="20" style="color: white">
+          <td align="center">◎</td>
+          <td></td>
+          <td align="center">LR</td>
+          <td align="center">music title</td>
+          <td align="center">original artist</td>
+          <td align="center">score site</td>
+          <td width="260px" align="center">comment</td>
+          <script language="javascript" type="text/javascript">
+            <!--//
+            ///////////////////曲のデータ(52番まで使ってるよ！)///////////////////
+
+            var mname = [
+              [
+                125,
+                "Lv3",
+                "ピアノ協奏曲第一番”宿命”[HARD]",
+                "127658",
+                "<a href='https://darksabun.club/mirror/akred/bmsfile/piano01-HARD.bms'>右クリック保存</a>",
+                "<a href='http://colosseo.nekokan.dyndns.info/c02_shuffle/detail.php?n=55'>Malforta</a>",
+                "",
+              ],
+
+              [
+                158,
+                "Lv4",
+                "nativeFaith [HARD]",
+                "132532",
+                "<a href='http://flowermaster.web.fc2.com/kikaku/sabunsakusei.html'>第六回差分企画</a>",
+                "<a href='http://0meganet2.xxxxxxxx.jp/'>Ωμεγα</a>",
+                "",
+              ],
+
+              [
+                266,
+                "Lv7",
+                "No.3 [HARD]",
+                "155065",
+                "<a href='https://darksabun.club/mirror/akred/bmsfile/no3-HARD.bms'>右クリック保存</a>",
+                "<a href='http://0meganet2.xxxxxxxx.jp/bms.html'>Ωμεγα respect for ZUN</a>",
+                "",
+              ],
+
+              [
+                126,
+                "Lv12",
+                "ピアノ協奏曲第一番”宿命”[HARDEST]",
+                "127666",
+                "<a href='https://darksabun.club/mirror/akred/bmsfile/piano01-HARDEST.bms'>右クリック保存</a>",
+                "<a href='http://colosseo.nekokan.dyndns.info/c02_shuffle/detail.php?n=55'>Malforta</a>",
+                "",
+              ],
+
+              [
+                185,
+                "Lv18",
+                "竹取はっぴ～☆リミックス！ [HARDEST]",
+                "136563",
+                "<a href='https://darksabun.club/mirror/akred/bmsfile/T-happyREMIX.bms'>右クリック保存</a>",
+                "<a href='http://homepage3.nifty.com/halm-berte/exc/'>sun3 (Remixed by EXCALIpUR)</a>",
+                "",
+              ],
+            ];
+
+            for (var i = 0; i < mname.length; i++) {
+              if (
+                mname[i][0] == 125 ||
+                mname[i][0] == 341 ||
+                mname[i][0] == 200 ||
+                mname[i][0] == 157 ||
+                mname[i][0] == 242 ||
+                mname[i][0] == 342 ||
+                mname[i][0] == 86 ||
+                mname[i][0] == 220 ||
+                mname[i][0] == 344 ||
+                mname[i][0] == 18 ||
+                mname[i][0] == 256 ||
+                mname[i][0] == 240 ||
+                mname[i][0] == 28 ||
+                mname[i][0] == 349 ||
+                mname[i][0] == 309 ||
+                mname[i][0] == 237 ||
+                mname[i][0] == 243 ||
+                mname[i][0] == 87 ||
+                mname[i][0] == 43 ||
+                mname[i][0] == 340 ||
+                mname[i][0] == 310 ||
+                mname[i][0] == 53 ||
+                mname[i][0] == 174 ||
+                (mname[i][0] == 229) |
+                  (mname[i][0] == 313) |
+                  (mname[i][0] == 327)
+              )
+                document.write(
+                  "<tr height='10' style='background-color:orange'><td colspan='9'>"
+                );
+
+              document.write(
+                "<tr class='tr_ng' id='#tr" +
+                  mname[i][0] +
+                  "' style='color:black;font-size:12px' height='14'>" +
+                  "<td width='45' align='center'>" +
+                  mname[i][1] +
+                  "<td><input type=button value='   '>" +
+                  "<td width='16'><a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsid=" +
+                  mname[i][3] +
+                  "'><center>IR</center></a>" +
+                  "<td>" +
+                  mname[i][2] +
+                  "<td>" +
+                  mname[i][5] +
+                  "<td>" +
+                  mname[i][4] +
+                  "<td>" +
+                  mname[i][6] +
+                  ""
+              );
+            }
+
+            //-->
+          </script>
+        </tr>
+      </tbody>
+    </table>
+
+    <p></p>
+    <p><span style="color: #ffffff"> </span></p>
+    <p></p>
+    <p></p>
+  </body>
+</html>
