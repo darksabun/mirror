@@ -106,7 +106,7 @@ function makeBMSTable(info, mark) {
       if (i.name_diff) {
         diffStr = "<a href='" + i.url_diff + "'>" + i.name_diff + "</a>";
       } else {
-        diffStr = "<a href='" + i.url_diff + "'>右クリック保存</a>";
+        diffStr = "<a href='" + i.url_diff + "'>保存</a>";
       }
     } else {
       if (i.name_diff) {
