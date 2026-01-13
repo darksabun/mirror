@@ -1,7 +1,7 @@
 {
   "name": "BAECON難易度表",
   "symbol": "■",
-  "data_url": "https://darksabun.club/mirror/akred/baecon/baecon-data28.json",
+  "data_url": "./baecon-data28.json",
   "level_order": [
     0,
     1,
