@@ -14,15 +14,34 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
+      - name: Checkout apindex
+        uses: actions/checkout@v4
+        with:
+          repository: smclt30p/apindex
+          path: apindex_tool
       - name: Set up Python 3.8
         uses: actions/setup-python@v4
         with:
           python-version: 3.8
       - name: Auto list making
         run: |
+
+          TEMPLATE_PATH=$(find apindex_tool -name "file.template.html" -print -quit)
+          
+          APINDEX_TOOL_DIR=$(pwd)/apindex_tool
+
+          sed -i "s|@CMAKE_INSTALL_PREFIX@|$APINDEX_TOOL_DIR|g" apindex_tool/apindex.py
+          sed -i "s|@CPACK_PACKAGE_VERSION_MAJOR@|2|g" apindex_tool/apindex.py "$TEMPLATE_PATH"
+          sed -i "s|@CPACK_PACKAGE_VERSION_MINOR@|2|g" apindex_tool/apindex.py "$TEMPLATE_PATH"
+
+          FOOTER_PATH=$(dirname "$TEMPLATE_PATH")/footer.template.html
+          sed -i "s|https://thinkpads.org/projects/apindex|https://libthinkpad.github.io/projects/apindex|g" "$FOOTER_PATH"
+          
+          find apindex_tool -type f -name "ar.png" -exec truncate -s 0 {} \;
+          
           export TZ='Asia/Seoul'
           cd docs
-          python ../.apindex/apindex.py ./stellabms-uploader
+          python ../apindex_tool/apindex.py ./stellabms-uploader
       - name: Commit files
         run: |
           git config --local user.email "${{ secrets.COMMIT_EMAIL }}"
