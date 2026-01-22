@@ -37,7 +37,47 @@ jobs:
           FOOTER_PATH=$(dirname "$TEMPLATE_PATH")/footer.template.html
           sed -i "s|https://thinkpads.org/projects/apindex|https://libthinkpad.github.io/projects/apindex|g" "$FOOTER_PATH"
           
+          # Replace archive icons with 0-byte files to reduce output size
           find apindex_tool -type f -name "ar.png" -exec truncate -s 0 {} \;
+
+          # Overwrite index.template.html with custom content
+          INDEX_TEMPLATE_PATH=$(dirname "$TEMPLATE_PATH")/index.template.html
+          cat <<'EOF' > "$INDEX_TEMPLATE_PATH"
+          <!doctype html>
+          <html>
+          <head>
+              <title>Index of /mirror</title>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <meta name="robots" content="noindex, nofollow">
+              <style>
+                  * {
+                  font-family: sans-serif;
+                  }
+              </style>
+          </head>
+              <body>
+                  <h1>Index of /mirror#DIR</h1>
+                  <hr>
+                      <table>
+                          <col style="width: 800px;">
+                          <col style="width: 200px;">
+                          <col style="width: 80px;">
+                          <tr>
+                              <th style="text-align: left;">Filename</th>
+                              <th style="text-align: left;">Last modified</th>
+                              <th style="text-align: left;">Size</th>
+                          </tr>
+                          #GEN_DIRS
+                          #GEN_FILES
+                      </table>
+                  <hr>
+                  <span>
+                      #FOOTER
+                  </span>
+              </body>
+          </html>
+          EOF
           
           export TZ='Asia/Seoul'
           cd docs
