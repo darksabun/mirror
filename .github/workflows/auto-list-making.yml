@@ -27,7 +27,7 @@ jobs:
         run: |
 
           TEMPLATE_PATH=$(find apindex_tool -name "file.template.html" -print -quit)
-          
+
           APINDEX_TOOL_DIR=$(pwd)/apindex_tool
 
           sed -i "s|@CMAKE_INSTALL_PREFIX@|$APINDEX_TOOL_DIR|g" apindex_tool/apindex.py
@@ -36,7 +36,7 @@ jobs:
 
           FOOTER_PATH=$(dirname "$TEMPLATE_PATH")/footer.template.html
           sed -i "s|https://thinkpads.org/projects/apindex|https://libthinkpad.github.io/projects/apindex|g" "$FOOTER_PATH"
-          
+
           # Replace archive icons with 0-byte files to reduce output size
           find apindex_tool -type f -name "ar.png" -exec truncate -s 0 {} \;
 
@@ -47,9 +47,9 @@ jobs:
           <html>
           <head>
               <title>Index of /mirror</title>
-          <meta charset="UTF-8">
-          <meta name="viewport" content="width=device-width, initial-scale=1">
-          <meta name="robots" content="noindex, nofollow">
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1">
+              <meta name="robots" content="noindex, nofollow">
               <style>
                   * {
                   font-family: sans-serif;
@@ -78,7 +78,7 @@ jobs:
               </body>
           </html>
           EOF
-          
+
           export TZ='Asia/Seoul'
           cd docs
           python ../apindex_tool/apindex.py ./stellabms-uploader
