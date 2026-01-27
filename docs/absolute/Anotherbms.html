@@ -1,0 +1,2621 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>激難Another譜面差分</title>
+    <base target="_blank" />
+    <style>
+      body {
+        background-color: #333300;
+        color: #000000;
+        text-align: justify;
+        text-justify: inter-ideograph;
+        margin: 0;
+        padding: 30px;
+      }
+
+      a:link {
+        color: blue;
+        text-decoration: underline;
+      }
+      a:visited {
+        color: purple;
+        text-decoration: underline;
+      }
+
+      .title-container {
+        text-align: center;
+        margin-bottom: 20px;
+      }
+
+      .title-text {
+        font-size: 16pt;
+        font-family: "ＭＳ 明朝", serif;
+        color: #ff9900;
+      }
+
+      .title-text-en {
+        font-size: 16pt;
+        font-family: "Century", serif;
+        color: #ff9900;
+      }
+
+      .legend-table {
+        border-collapse: collapse;
+        margin-left: 18pt;
+        border: none;
+      }
+
+      .legend-table td {
+        vertical-align: top;
+        padding: 0 4.95pt;
+      }
+
+      .legend-symbol {
+        font-family: "Century", sans-serif;
+        color: #339966;
+      }
+
+      .legend-text {
+        font-family: "ＭＳ 明朝", serif;
+        color: #339966;
+      }
+
+      .description {
+        color: white;
+        margin: 20px 0;
+      }
+
+      .main-table-container {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+      }
+
+      .main-table {
+        width: 992px;
+        background-color: #a6a6a6;
+        border-collapse: collapse;
+        border: none;
+        margin: 0 auto;
+      }
+
+      .main-table td {
+        border: 1px solid white; /* Approximation of .5pt */
+        padding: 0 5.4pt;
+        text-align: center;
+        vertical-align: middle;
+        font-size: 10.5pt;
+      }
+
+      .main-table tr {
+        height: 18pt;
+      }
+
+      .col-difficulty {
+        width: 60px;
+      }
+
+      .col-criteria {
+        width: 80px;
+        vertical-align: top;
+      }
+
+      .col-diff-name {
+        width: 48.3pt;
+      }
+
+      .col-nazoir {
+        width: 30pt;
+      }
+
+      .col-lr2ir {
+        width: 26.05pt;
+      }
+
+      .col-title {
+        width: 148.8pt;
+        text-align: left !important;
+      }
+
+      .col-artist {
+        width: 121.8pt;
+        text-align: left !important;
+      }
+
+      .col-comment {
+        width: 213pt;
+        text-align: left !important;
+      }
+
+      .col-update {
+        width: 30pt;
+      }
+
+      .text-yellow {
+        color: yellow;
+      }
+
+      .text-lime {
+        color: lime;
+      }
+
+      .text-red {
+        color: red;
+      }
+
+      .text-blue {
+        color: blue;
+      }
+
+      .hidden-link {
+        text-align: right;
+        color: #333300;
+      }
+
+      .hidden-link a {
+        color: #333300;
+        text-decoration: none;
+      }
+
+      .back-link {
+        text-align: right;
+        font-size: 24pt;
+        color: yellow;
+      }
+
+      .back-link a {
+        text-decoration: underline;
+        font-family: "ＭＳ 明朝", serif;
+      }
+
+      /* Helper for specific row heights if needed, 
+           though simple padding/content usually dictates it in HTML5 
+           unless strict pixel perfection is needed. 
+           Keeping it simple for now. */
+    </style>
+  </head>
+  <body>
+    <div class="title-container">
+      <span class="title-text">激難</span
+      ><span class="title-text-en">Another</span
+      ><span class="title-text">譜面差分</span>
+    </div>
+
+    <table class="legend-table" style="margin: auto">
+      <tr>
+        <td>
+          <span class="legend-symbol">☆1～8</span>
+        </td>
+        <td>
+          <span class="legend-text">本家IIDXの難易度設定</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="legend-symbol">☆9</span>
+        </td>
+        <td>
+          <span class="legend-text">本家IIDX9段</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="legend-symbol">☆9</span>
+        </td>
+        <td>
+          <span class="legend-text">本家IIDX10段</span>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <span class="legend-symbol">☆11～</span>
+        </td>
+        <td>
+          <span class="legend-text">本家IIDX10段を超えるもの</span>
+        </td>
+      </tr>
+    </table>
+
+    <div class="description" style="text-align: center">
+      05年8月あたりからは本家IIDXの難易度設定に準拠しています。<br />
+      <br />
+      方針としては全体難で、極端なソフラン無し、不可能な連続縦連打も無いので楽しめるかと思われます。<br />
+      原曲を入手してからフォルダの中に突っ込んでください。<br />
+      BMSプレイヤーソフトは<a href="http://www.lr2.sakura.ne.jp/"
+        >LunaticRave2</a
+      >推奨<br />
+      2010年現在最もポピュラーで、時間軸判定な上にInternet
+      Rankingが楽しめます。<br />
+      感想とかクリア報告とかしてもらえると嬉しいかもしれません。<br />
+      ちなみにBMSではblack trainと名乗っています。<br />
+      TOTAL値はTotalNotes/5 + 250 です。例外もありますが。<br />
+      一応nazoIR表示しています。<br />
+      右クリック→対象をファイルに保存でDLできます。<br />
+      <br />
+      曲名をクリックして差分をダウンロードしてください。<br />
+    </div>
+
+    <div class="main-table-container">
+      <table class="main-table">
+        <tr>
+          <td class="col-difficulty">
+            難易度<br />
+            ☆
+          </td>
+          <td class="col-criteria" style="vertical-align: top">
+            <a href="http://losak.web.fc2.com/index.htm">難易度表基準</a>
+          </td>
+          <td class="col-diff-name">差分名</td>
+          <td class="col-nazoir">nazoIR</td>
+          <td class="col-lr2ir">LR2IR</td>
+          <td class="col-title">曲名(TITLE) Download</td>
+          <td class="col-artist">作曲者(ARTIST)</td>
+          <td class="col-comment">コメント(COMMENT)</td>
+          <td class="col-update">Update</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/air7torano.bme" title="Air[とらのあな]">10</a><br />
+            <a href="bms/air7toraana.bme" title="Air[虎のANOTHER]">10</a><br />
+            <a href="bms/air7afother.bme" title="Air[AFOTHER]">11</a><br />
+            <a href="bms/airAA.bme">12</a><br />
+            <a href="bms/air7maniaq.bme" title="Air -MANIAQ-">13</a><br />
+            <a href="bms/air7extreme.bme">14</a><br />
+            <a href="bms/air7god.bme">16</a><br />
+          </td>
+          <td class="col-criteria">
+            _<br />
+            _<br />
+            <span class="text-yellow">
+              8<br />
+              3<br />
+              6<br />
+              12<br />
+              20<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            とら<br />
+            虎<br />
+            <span class="text-yellow">
+              AFO<br />
+              ANO+<br />
+              MQ<br />
+              EXT<br />
+              GOD<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=206294"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=209096"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=227434"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=293110"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=265109"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=300474"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=300475"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1325"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=3238"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1411"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=455"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1234"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=742"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=545"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title"><a href="bms4/air.rar">Air</a><br /></td>
+          <td class="col-artist">
+            <a href="http://kobe.cool.ne.jp/linker/">SHIKI</a><br />
+          </td>
+          <td class="col-comment">
+            終盤の発狂がォ㍗ル。あまりに酷かったので微調整譜面をアップ(04/5/10)<br />
+            MANIAQを追加(05/04/01)<br />
+            ANOTHER+を追加(06/03/03)<br />
+            EXTREME,GODを追加(06/04/01)
+          </td>
+          <td class="col-update">
+            04.05.10<br />
+            05.04.01<br />
+            06.03.03<br />
+            06.04.01<br />
+          </td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/sepia7toraana.bme" title="SEPIA[虎のANOTHER]">10</a
+            ><br />
+            <a href="bms/sepia7afother.bme" title="SEPIA[AFOTHER]">11</a><br />
+            <a href="bms/sepia7bt3maniaq.bme">13</a><br />
+          </td>
+          <td class="col-criteria">
+            <a href="http://ameria3141.web.fc2.com/nanidohyou_index.html">▼2</a
+            ><br />
+            <span class="text-yellow">
+              6<br />
+              8<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            虎<br />
+            <span class="text-yellow">
+              AFO<br />
+              MQ<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=206135"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=227436"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=281785"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1400"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=777"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1738"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title"><a href="bms4/sepia.rar">SEPIA</a><br /></td>
+          <td class="col-artist">
+            <a href="http://kobe.cool.ne.jp/linker/">SHIKI</a><br />
+          </td>
+          <td class="col-comment">
+            中盤からォ㍗ル。afotherは縦連打+階段+16分スクラッチのラス殺し(ぉ<br />
+            MANIAQを追加(05/08/26)
+          </td>
+          <td class="col-update">
+            04.03.24<br />
+            05.08.26<br />
+          </td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/gengaozo_anaqua.bme" title="Gengaozo[more穴クエ]">11</a
+            ><br />
+            <a href="bms/gengaozobt1afo.bme" title="Gengaozo_AFO">12</a><br />
+            <a href="bms/gengaozobt2god.bme" title="Gengaozo_GOD">15</a><br />
+            <a href="bms/gengaozobt3_24afo.bme" title="Gengaozo_24AFO">17</a
+            ><br />
+            <a href="bms/gengaozobt4_24maniaq.bme" title="Gengaozo_24MANIAQ"
+              >18</a
+            ><br />
+            <a href="bms/gengaozobt5_24ext.bme" title="Gengaozo_24EXT">19</a
+            ><br />
+            <a href="bms/gengaozobt6_24hell.bme" title="Gengaozo_24HELL">20</a
+            ><br />
+            <a href="bms/gengaozobt7_24god.bme" title="Gengaozo_24GOD">21</a
+            ><br />
+          </td>
+          <td class="col-criteria">
+            _<br />
+            <span class="text-yellow">
+              4<br />
+              12<br />
+            </span>
+            <span class="text-lime">
+              ★★3?<br />
+              ★★4?<br />
+              ★★5?<br />
+              ★★6?<br />
+              ★★7?<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            more穴<br />
+            <span class="text-yellow">
+              AFO<br />
+              GOD<br />
+            </span>
+            <span class="text-lime">
+              24AFO<br />
+              24MQ<br />
+              24EXT<br />
+              24HELL<br />
+              24GOD<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=199621"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=255598"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=255599"
+              >IR</a
+            ><br />
+            IR<br />
+            IR<br />
+            IR<br />
+            IR<br />
+            IR<br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1041"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=117"
+              >IR</a
+            >
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=131855"
+              >FIX</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=320"
+              >IR</a
+            >
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=131877"
+              >FIX</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=120398"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=120399"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=120400"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=120401"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=120402"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/gengaozo.zip">G e n g a o z o</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://malie.noor.jp/">455(-45)</a>
+          </td>
+          <td class="col-comment">
+            quasar(A)みたいな譜面が連続で続く。目指せフルコン!<br />
+            AFO、GODを追加(05/2/1)<br />
+            EXを改造しました。体力勝負です。<br />
+            <span class="text-lime">
+              (2012/01/03)<br />
+              24を追加<br />
+              24分DELAY化しました。<br />
+              実質BPM229.5相当かもしれません。<br />
+            </span>
+            (2013.06.23)<br />
+            修正譜面を同梱しました。<br />
+          </td>
+          <td class="col-update">
+            04.03.24<br />
+            05.02.01<br />
+            <span class="text-lime"> 12.01.03<br /> </span>
+            13.06.23<br />
+          </td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a
+              href="bms/natukusa_a_bga_anya.bme"
+              title="夏草の線路 -J-Trance remix-[ANYATHER]"
+              >8</a
+            ><br />
+            <a
+              href="bms/natukusa_a_bga_tora.bme"
+              title="夏草の線路 -J-Trance remix-[虎のANOTHER]"
+              >9</a
+            ><br />
+            <a
+              href="bms/natukusa_a_bga_daafo.bme"
+              title="夏草の線路 -J-Trance remix-[AFOTHER]"
+              >10</a
+            ><br />
+          </td>
+          <td class="col-criteria">
+            _<br />
+            _<br />
+            _<br />
+          </td>
+          <td class="col-diff-name">
+            ANYA<br />
+            虎<br />
+            AFO<br />
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=206134"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=206133"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=209097"
+              title="nazoIR"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=7669"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1652"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1322"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/natukusa.rar">夏草の線路　-J-Trance remix-</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://www.remarkablesense.org/~hal/waveceptor/">HaL</a>
+          </td>
+          <td class="col-comment">
+            Kusofumen Towerのを修正しました。ラストは16分SC
+          </td>
+          <td class="col-update">04.04.10</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a
+              href="bms/llr_7_bga_a_tora.bms"
+              title="Last! Least! Regrets!!(虎のANOTHER)"
+              >9</a
+            ><br />
+            <a
+              href="bms/llr_7_bga_a_doafo.bms"
+              title="Last! Least! Regrets!!(AFOTHER)"
+              >11</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=311064"
+              title="Last! Least! Regrets!!(MANIAQ)"
+              >14</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=311065"
+              title="Last! Least! Regrets!!(GOD)"
+              >15</a
+            ><br />
+          </td>
+          <td class="col-criteria">
+            _<br />
+            <span class="text-yellow">
+              5<br />
+              11<br />
+              14<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            虎<br />
+            <span class="text-yellow">
+              AFO<br />
+              MQ<br />
+              GOD<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=198481"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=198480"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=311064"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=311065"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1395"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=881"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1070"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1072"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/llr.rar">Last!Least!Regrets!!</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://cool-create.cc/">beatMARIO</a>
+          </td>
+          <td class="col-comment">
+            虎のANOTHERは良譜面らしい…<br />
+            MANIAQ,GOD追加(06/08/06)<br />
+          </td>
+          <td class="col-update">
+            04.06.08<br />
+            06.08.06<br />
+          </td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/J219anya.bme" title="J219(ANYATHER)">9</a><br />
+            <a
+              href="bms/7toraJ219long.bme"
+              title="J219 4 long style(虎のANOTHER)"
+              >10</a
+            ><br />
+            <a href="bms/J219_afo.bme" title="J219(AFOTHER)">11</a><br />
+          </td>
+          <td class="col-criteria">
+            _<br />
+            _<br />
+            <span class="text-yellow"> 1<br /> </span>
+          </td>
+          <td class="col-diff-name">
+            ANYA<br />
+            虎<br />
+            <span class="text-yellow"> AFO<br /> </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=219623"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=219626"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=219624"
+              title="nazoIR"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1257"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=2324"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=543"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/j219.rar">J219</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://www2u.biglobe.ne.jp/~cranky/">cranky</a>
+          </td>
+          <td class="col-comment">例によってラス殺し</td>
+          <td class="col-update">04.07.26</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/X(tora).bme" title="X (虎のANOTHER)">11</a><br />
+            <a href="bms/X(toras).bme" title="X (虎のANOTHER short)">11</a
+            ><br />
+            <a href="bms/X(afos).bme" title="X (AFOTHER short)">12</a><br />
+            <a href="bms/X(afo).bme" title="X (AFOTHER)">12</a><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow"> 1<br /> </span>
+            _<br />
+            <span class="text-yellow"> 4<br /> </span>
+            _<br />
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow"> 虎<br /> </span>
+            虎s<br />
+            <span class="text-yellow"> AFO<br /> </span>
+            AFOs<br />
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=219559"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=224156"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=247202"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=229832"
+              title="nazoIR"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=240"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=7971"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=39"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=2893"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/x.rar">X</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://sasakure.bms.ms/">sasakure.UK</a>
+          </td>
+          <td class="col-comment">
+            一部左右対称譜面最後殺。A[a]やNo.13[a]を超える<br />
+            short ver追加(04.08.21)<br />
+            AFOTHER shortを追加(04/09/15)<br />
+            AFOTHERを追加(04/12/26)<br />
+          </td>
+          <td class="col-update">
+            04.07.27<br />
+            04.08.21<br />
+            04.09.15<br />
+            04.12.26<br />
+          </td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/kamifoonkno.bms" title="(^^) OVERDOZER MIX">4</a><br />
+            <a href="bms/kamifoonknodp.bms" title="(^^) OVERDOZER MIX (DP)">5</a
+            ><br />
+            <a href="bms/kamifoonkno_a.bms" title="(^^) OVERDOZER MIX (ANOTHER)"
+              >7</a
+            ><br />
+            <a href="bms/kami200k.bms" title="(^^) 20000000000 MIX">10</a><br />
+          </td>
+          <td class="col-criteria">
+            _<br />
+            _<br />
+            _<br />
+            _<br />
+          </td>
+          <td class="col-diff-name">
+            over<br />
+            over dp<br />
+            over a<br />
+            200億<br />
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=224150"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=224151"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=224152"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=224155"
+              title="nazoIR"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=600"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=16067"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=3712"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=19395"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/kami.rar">(^^)</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://www.yamajet.com/">Yamajet</a>
+          </td>
+          <td class="col-comment">OVERDOZERと200億。割と良譜面。</td>
+          <td class="col-update">04.08.21</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty" rowspan="2">
+            <a href="bms/sen7_tora.bme" title="sensitive(虎のANOTHER)">11</a
+            ><br />
+            <a href="bms/sen7_afo.bme" title="sensitive(AFOTHER)">12</a><br />
+          </td>
+          <td class="col-criteria" rowspan="2">
+            <span class="text-yellow">
+              2<br />
+              5<br />
+            </span>
+          </td>
+          <td class="col-diff-name" rowspan="2">
+            <span class="text-yellow">
+              虎<br />
+              AFO<br />
+            </span>
+          </td>
+          <td class="col-nazoir" rowspan="2">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=241600"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=241601"
+              title="nazoIR"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir" rowspan="2">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1147"
+              >IR</a
+            >
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=131851"
+              >FIX</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1671"
+              >IR</a
+            >
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=131859"
+              >FIX</a
+            ><br />
+          </td>
+          <td class="col-title" rowspan="2">
+            <a href="bms4/sensitive.zip">sensitive</a>
+          </td>
+          <td class="col-artist">
+            <a
+              href="http://www.sazanka.sakura.ne.jp/~koedaya/"
+              title="閉鎖してるけど…"
+              >white crystal(ε&amp;Q)</a
+            >
+          </td>
+          <td class="col-comment" rowspan="2">
+            某氏の差分を真似して作ってみました。手抜きです…<br />
+            AFOTHERは過去最強。<br />
+            (2013.06.23)<br />
+            修正譜面を同梱しました。<br />
+            <a href="http://sazanka.sakura.ne.jp/~2tdm/"
+              >こるさるっぞ地獄(ツチダマさんのサイト)</a
+            ><br />
+            <span class="text-red">で代理UPされているっぽい</span>
+          </td>
+          <td class="col-update" rowspan="2">04.11.21 13.06.23</td>
+        </tr>
+        <tr>
+          <td class="col-artist">
+            <a href="http://sazanka.sakura.ne.jp/~2tdm/"
+              ><span class="text-red">こるさるっぞ地獄</span></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/be_tora.bme" title="I believe (虎のANOTHER)">9</a
+            ><br />
+            <a href="bms/be_afo.bme" title="I believe (AFOTHER)">9</a><br />
+          </td>
+          <td class="col-criteria">
+            _<br />
+            _<br />
+          </td>
+          <td class="col-diff-name">
+            虎<br />
+            AFO<br />
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=247147"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=247201"
+              title="nazoIR"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=12169"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=12079"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/i_believe.rar">I believe</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://www.remarkablesense.org/~hal/waveceptor/">HaL</a>
+          </td>
+          <td class="col-comment">
+            中盤難しいですがクリアはさほど難しくありません。<br />
+            DP譜面も作ってみました。
+          </td>
+          <td class="col-update">04.12.25</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a
+              href="bms/sweetdiscovery(bt1tora7).bme"
+              title="★SweeT DiscoverY★ (虎のANOTHER)"
+              >12</a
+            ><br />
+            <a
+              href="bms/sweetdiscovery(bt2afother7).bme"
+              title="★SweeT DiscoverY★ (AFOTHER)"
+              >13</a
+            ><br />
+            <a
+              href="bms/sweetdiscovery(bt3maniaq7).bme"
+              title="★SweeT DiscoverY★ (MANIAQ)"
+              >14</a
+            ><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow">
+              4<br />
+              6<br />
+              13<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow">
+              虎<br />
+              AFO<br />
+              MQ<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=248509"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=248510"
+              title="nazoIR"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=248511"
+              title="nazoIR"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=172"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=176"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1772"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/sweet.rar">★SweeT DiscoverY★</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://sasakure.bms.ms/">chocolate max(ささくれ夕雁)</a>
+          </td>
+          <td class="col-comment">
+            全体難を目指しました。<br />
+            ☆14はもうアレ譜面かと。
+          </td>
+          <td class="col-update">04.12.30</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a
+              href="bms/red_rm_happy_bt1tora.bme"
+              title="happy century 虎のANOTHER"
+              >11</a
+            ><br />
+            <a href="bms/red_rm_happy_bt2afo.bme" title="happy century AFOTHER"
+              >12</a
+            ><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow">
+              1<br />
+              5<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow">
+              虎<br />
+              AFO<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=255600"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=255601"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=329"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=168"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/rm_happy.rar">happy century</a><br />
+          </td>
+          <td class="col-artist">
+            <a href="http://mok2lnbms.6.ql.bz/">recognize m.</a><br />
+            <a href="http://www.redsight.net/">BGA:RED</a><br />
+          </td>
+          <td class="col-comment">同時押しがちょいキツイかも？</td>
+          <td class="col-update">05.02.01</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a
+              href="bms/_nm21_21_bt1tora.bme"
+              title="あめふりこねこ (虎のANOTHER)"
+              >10</a
+            ><br />
+            <a href="bms/_nm21_21_bt2afo.bme" title="あめふりこねこ (AFOTHER)"
+              >11</a
+            ><br />
+          </td>
+          <td class="col-criteria">
+            _<br />
+            <span class="text-yellow"> 3<br /> </span>
+          </td>
+          <td class="col-diff-name">
+            虎<br />
+            <span class="text-yellow"> AFO<br /> </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=257212"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=257213"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1360"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1624"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/nm21_nm04.rar">あめふりこねこ</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://nekomimi.name/">ねこみみ魔法使い</a>
+          </td>
+          <td class="col-comment">
+            なんと珍しく隣接nothingです！<br />
+            2連24分がいっぱい
+          </td>
+          <td class="col-update">05.02.14</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a
+              href="bms/L_RSG3_LB_7bt1tora.bme"
+              title="Romancing Sa･Ga3 ラストバトル RockArrange (虎のANOTHER)"
+              >10</a
+            ><br />
+            <a
+              href="bms/L_RSG3_LB_7bt2afo.bme"
+              title="Romancing Sa･Ga3 ラストバトル RockArrange (AFOTHER)"
+              >13</a
+            ><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow">
+              2<br />
+              7<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow">
+              虎<br />
+              AFO<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=262088"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=262413"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=964"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1526"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/l_rsg3_lb.rar"
+              >Romancing Sa･Ga3 ラストバトル RockArrange</a
+            >
+          </td>
+          <td class="col-artist">
+            <a href="http://lucifer.pussycat.jp/">金ラメタキシード</a>
+          </td>
+          <td class="col-comment">AA(A)を目指したけど微妙。</td>
+          <td class="col-update">05.03.20</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty" rowspan="2">
+            <a href="bms/la_noche_bt1afo.bme" title="la noche (AFOTHER)">12</a
+            ><br />
+            <a href="bms/la_noche_bt2maniaq.bme" title="la noche (MANIAQ)">14</a
+            ><br />
+          </td>
+          <td class="col-criteria" rowspan="2">
+            <span class="text-yellow">
+              6<br />
+              17<br />
+            </span>
+          </td>
+          <td class="col-diff-name" rowspan="2">
+            <span class="text-yellow">
+              AFO<br />
+              MQ<br />
+            </span>
+          </td>
+          <td class="col-nazoir" rowspan="2">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=262406"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=262412"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir" rowspan="2">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1212"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1080"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title" rowspan="2">
+            <a href="bms4/la_noche.rar">la noche</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://www.zms.or.jp/~novark/prestissimo/"
+              >NAGI(prestissimo)</a
+            >
+          </td>
+          <td class="col-comment" rowspan="2">
+            不規則でトリッキーな譜面を堪能あれ。<br />
+            <a href="http://hyperextension.web.infoseek.co.jp/"
+              >HYPER-EX-TENSION</a
+            >
+            <span class="text-red">で代理UPされてます。</span>
+          </td>
+          <td class="col-update" rowspan="2">05.03.20</td>
+        </tr>
+        <tr>
+          <td class="col-artist">
+            <a href="http://hyperextension.web.infoseek.co.jp/"
+              ><span class="text-red">HYPER-EX-TENSION</span></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/j2u@@bt1n7.bme" title="J2U(crazy remix 7keys)">7</a
+            ><br />
+            <a href="bms/j2u@@bt2a.bme" title="J2U(crazy remix 7ANOTHER)">8</a
+            ><br />
+            <a href="bms/j2u@@bt3tora.bme" title="J2U(crazy remix 7虎のANOTHER)"
+              >10</a
+            ><br />
+            <a href="bms/j2u@@bt4afo.bme" title="J2U(crazy remix 7AFOTHER)"
+              >11</a
+            ><br />
+          </td>
+          <td class="col-criteria">
+            _<br />
+            _<br />
+            _<br />
+            <span class="text-yellow"> 3<br /> </span>
+          </td>
+          <td class="col-diff-name">
+            7key<br />
+            ANO<br />
+            虎<br />
+            <span class="text-yellow"> AFO<br /> </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=262402"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=262403"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=262404"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=262405"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=6811"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=825"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=2590"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=357"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/j2u.rar">J2U(crazy remix)</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://www.geocities.jp/shiros_music_place/">しろ</a>
+          </td>
+          <td class="col-comment">中級者から上級者までなんでもござれ。</td>
+          <td class="col-update">05.03.20</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/felys7bt1tora.bme">11</a><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow"> 1<br /> </span>
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow"> 虎<br /> </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=268335"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=264"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/felys.rar">FELYS</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://www107.sakura.ne.jp/~onoken/">onoken</a>
+          </td>
+          <td class="col-comment">餡蜜必須？</td>
+          <td class="col-update">05.05.09</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/x-aria_7bt1tora.bme">11</a><br />
+            <a href="bms/x-aria_7bt2afo.bme">12</a><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow">
+              3<br />
+              8<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow">
+              虎<br />
+              AFO<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=273121"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=273122"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=443"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1656"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/x-aria.rar">x-Aria</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://liz.nothing.sh/ridis/">ridis</a>
+          </td>
+          <td class="col-comment">穴堀っぽいのを目指したけど無理だった…</td>
+          <td class="col-update">
+            05.06.19<br />
+            05.07.04<br />
+          </td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/before%5Bbt1tora%5D.bme">10</a><br />
+            <a href="bms/before%5Bbt2afo%5D.bme">13</a><br />
+          </td>
+          <td class="col-criteria">
+            <a href="http://ameria3141.web.fc2.com/nanidohyou_index.html">▼1</a
+            ><br />
+            <span class="text-yellow"> 6<br /> </span>
+          </td>
+          <td class="col-diff-name">
+            虎<br />
+            <span class="text-yellow"> AFO<br /> </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=276878"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=276879"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=2609"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=459"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/before.rar">before...</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://sound.jp/brilliantharmony/">やっす～</a>
+          </td>
+          <td class="col-comment">穴クエみたいな滝が降ってきます！？</td>
+          <td class="col-update">05.07.22</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/yaku_7bt1tora.bme">11</a><br />
+            <a href="bms/yaku_7bt2afo.bme">13</a><br />
+            <a href="bms/yaku_7bt3maniaq.bme">16</a><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow">
+              1<br />
+              8<br />
+              18<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow">
+              虎<br />
+              AFO<br />
+              MQ<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=281110"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=281115"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=281116"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=22"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1744"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=524"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/btm_yaku.rar">約束 -HappyHyperStarmiX-</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://cool-create.cc/">beatMARIO</a>
+          </td>
+          <td class="col-comment">
+            待望の(？)MANIAQの鬼譜面です。<br />
+            今回は休憩ゾーンを作ったので疲れにくいはず。<br />
+            最後の方がヤバイ。
+          </td>
+          <td class="col-update">05.08.19</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/littlehearts(bt1tora).bme">12</a><br />
+            <a href="bms/littlehearts(bt2afo).bme">13</a><br />
+            <a href="bms/littlehearts(bt3mania).bme">14</a><br />
+            <a href="bms/littlehearts(bt4god).bme">17</a><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow">
+              4<br />
+              9<br />
+              12<br />
+              23 <a href="http://achusi.main.jp/overjoy/">★★3</a><br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow">
+              虎<br />
+              AFO<br />
+              MQ<br />
+              GOD<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=281538"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=281539"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=281540"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=281541"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=465"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1748"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=77"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/nm23_nm05.rar">★LittlE HearTs★</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://nekomimi.name/">ねこみみ魔法使い</a>
+          </td>
+          <td class="col-comment">
+            One More Lovelyの練習用。<br />
+            ☆17はもはやネタ<br />
+          </td>
+          <td class="col-update">05.08.23</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/____a7bt1tora.bme">12</a><br />
+            <a href="bms/____a7bt2afo.bme">13</a><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow">
+              6<br />
+              8<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow">
+              虎<br />
+              AFO<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=284523"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=284525"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1721"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=447"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/orangentle_ld.rar">l'amour d'amour</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://members.jcom.home.ne.jp/klamnop/">orangentle</a>
+          </td>
+          <td class="col-comment">二重階段がいっぱい降ってきます。</td>
+          <td class="col-update">05.09.13</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/06-rr7abt1tora.bme">10</a><br />
+            <a href="bms/06-rr7abt2afo.bme">12</a><br />
+            <a href="bms/06-rr7abt3mania.bme">13</a><br />
+          </td>
+          <td class="col-criteria">
+            <a href="http://ameria3141.web.fc2.com/nanidohyou_index.html">▼1</a
+            ><br />
+            <span class="text-yellow">
+              5<br />
+              8<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            虎<br />
+            <span class="text-yellow">
+              AFO<br />
+              MQ<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=284526"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=284527"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=284528"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=4059"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=38"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=859"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/wint_redrize.rar">Red-rize&quot;B172 mix&quot;</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://wint.bms.ms/">wint</a>
+          </td>
+          <td class="col-comment">皿がウザイ。</td>
+          <td class="col-update">05.09.13</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/__tsky_7_12bt1tora.bme">12</a><br />
+            <a href="bms/__tsky_7_12bt2afo.bme">13</a><br />
+            <a href="bms/__tsky_7_12bt3mania.bme">16</a><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow">
+              1<br />
+              6<br />
+              19<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow">
+              虎<br />
+              AFO<br />
+              MQ<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=284589"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=284590"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=284592"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=37"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1688"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1086"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/twinklesky.rar">☆ twinklesky ☆</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://dl.dropboxusercontent.com/s/yboez1yj4lrw350/fz.html"
+              >fether</a
+            >
+          </td>
+          <td class="col-comment">
+            微妙に手抜き。<br />
+            回復が長いので発狂で減っても意外と大丈夫。
+          </td>
+          <td class="col-update">05.09.13</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty" rowspan="2">
+            <a href="bms/bs_7bt1tora.bme">11</a><br />
+            <a href="bms/bs_7bt1toras.bme">11</a><br />
+            <a href="bms/bs_7bt2afo.bme">12</a><br />
+            <a href="bms/bs_7bt2afos.bme">12</a><br />
+            <a href="bms/bs_7bt3mania.bme">13</a><br />
+            <a href="bms/bs_7bt3manias.bme">13</a><br />
+          </td>
+          <td class="col-criteria" rowspan="2">
+            <span class="text-yellow"> 1<br /> </span>
+            _<br />
+            <span class="text-yellow"> 3<br /> </span>
+            _<br />
+            <span class="text-yellow"> 8<br /> </span>
+            _<br />
+          </td>
+          <td class="col-diff-name" rowspan="2">
+            <span class="text-yellow"> 虎<br /> </span>
+            虎s<br />
+            <span class="text-yellow"> AFO<br /> </span>
+            AFOs<br />
+            <span class="text-yellow"> MQ<br /> </span>
+            MQs<br />
+          </td>
+          <td class="col-nazoir" rowspan="2">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=285310"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=285312"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=285315"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=285316"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=285317"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=285318"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir" rowspan="2">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=79"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=6301"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=452"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=5240"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1835"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=2886"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title" rowspan="2">
+            <a href="bms4/tsunamayochan_birdsprite.rar"
+              >Bird Sprite -D.K.R. mix-</a
+            >
+          </td>
+          <td class="col-artist">ツナマヨちゃん(syatten)</td>
+          <td class="col-comment" rowspan="2">
+            正規が一番ハズレな気がする<br />
+            <a href="http://dee.manbow.org/event/page/bof2005/"
+              >BMS OF FIGHTERS 2005</a
+            >
+            <span class="text-red">から原曲は落とせます。</span>
+          </td>
+          <td class="col-update" rowspan="2">05.09.19</td>
+        </tr>
+        <tr>
+          <td class="col-artist">
+            <a href="http://dee.manbow.org/event/page/bof2005/"
+              ><span class="text-red">BMS OF FIGHTERS 2005</span></a
+            >
+          </td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/7bt1afo_511.bms">12</a><br />
+            <a href="bms/7bt2mania_511.bms">13</a><br />
+            <a href="bms/7bt3god_511.bms">16</a><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow">
+              6<br />
+              8<br />
+              15<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow">
+              AFO<br />
+              MQ<br />
+              GOD<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=291307"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=291308"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=291309"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1232"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1733"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1316"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/511.rar">5.1.1(ReMix)</a>
+          </td>
+          <td class="col-artist">
+            <a
+              href="https://web.archive.org/web/20070107082819/http://yoshinoya.dnsalias.com:8888/knm/2005_511.lzh"
+              >猫蟹丸</a
+            >
+          </td>
+          <td class="col-comment">
+            BLOCKS(A)みたいなのが時々降って来ます。<br />
+            二重譜面を意識してみた。
+          </td>
+          <td class="col-update">05.11.21</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/_74bt1_16saki.bms">12</a><br />
+            <a href="bms/_74bt2fubuki.bms">13</a><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow">
+              3<br />
+              5<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow">
+              十六分<br />
+              桜吹雪<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=297778"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=297779"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=445"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1201"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/yozakura.rar"><span class="text-blue">夜桜</span></a>
+          </td>
+          <td class="col-artist">
+            <a href="http://nekomimi.name/"
+              >彩音 / 小宮真央(ねこみみ魔法使い)</a
+            >
+          </td>
+          <td class="col-comment">
+            サイト2周年記念！<br />
+            皆おまたせ！NOTES2000の譜面がついに登場だ！<br />
+            しかも皿がほとんど降ってこないぜ！<br />
+            左右対称譜面まで登場だ！<br />
+            低速鍵盤系多重譜面の練習に持って来いだぜ！<br />
+          </td>
+          <td class="col-update">06.03.03</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/party4u_7bt1_tora.bme">11</a><br />
+            <a href="bms/party4u_7bt2_afo.bme">12</a><br />
+            <a href="bms/party4u_7bt3_mq.bme">13</a><br />
+            <a href="bms/party4u_7bt4_ext.bme">14</a><br />
+          </td>
+          <td class="col-criteria">
+            _<br />
+            <span class="text-yellow">
+              4<br />
+              9<br />
+              13<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            虎<br />
+            <span class="text-yellow">
+              AFO<br />
+              MQ<br />
+              EXT<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=312358"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=312359"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=312361"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=312363"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=2839"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=169"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1746"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1787"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/party4u.rar">Party 4U</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://www2u.biglobe.ne.jp/~cranky/">cranky</a>
+          </td>
+          <td class="col-comment">
+            ドラムロール地帯が決め手になります。<br />
+            原曲は現在入手不可かも・・・。
+          </td>
+          <td class="col-update">06.08.28</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/rm_btsky_o_bt1afo.bme">12</a><br />
+            <a href="bms/rm_btsky_o_bt2mq.bme">13</a><br />
+            <a href="bms/rm_btsky_o_bt3god.bme">14</a><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow">
+              5<br />
+              9<br />
+              13<br />
+            </span>
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow">
+              AFO<br />
+              MQ<br />
+              GOD<br />
+            </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=312990"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=312991"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=312992"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=158"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1750"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1780"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/rm_btsky.rar">A BEAUTIFUL SKY</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://m-mikiya.hp.infoseek.co.jp/">recognize m.</a>
+          </td>
+          <td class="col-comment">
+            helixさんの差分を高難易度化。<br />
+            低速乱打譜面。<br />
+            皿があまり無いので対称固定の人にオススメ。
+          </td>
+          <td class="col-update">06.09.08</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/cyc-65535_cynthia_7bt2maniaq.bme">14</a><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow">12</span><br />
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow"> MQ<br /> </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=315209"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=748"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/65535_cynthia.rar">Cynthia</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://65535.bms.ms/">maxXx65535</a>
+          </td>
+          <td class="col-comment">
+            高速交互譜面です。<br />
+            最近流行の中盤の超発狂で減ってラスト回復な譜面になっています。
+          </td>
+          <td class="col-update">06.10.22</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/7_n_ka08_bt1randaMAX.bms">11</a><br />
+            <a href="bms/7_n_ka08_bt2tora.bms">12</a><br />
+            <a href="bms/7_n_ka08_bt3afo.bms">13</a><br />
+            <a href="bms/7_n_ka08_bt4mania.bms">14</a><br />
+            <a href="bms/7_n_ka08_bt5ext.bms">15</a><br />
+            <a href="bms/7_n_ka08_bt6hell.bms">18</a><br />
+            <a href="bms/7_n_ka08_bt7god.bms">19</a><br />
+            <a href="bms/7_n_ka08_bt8master.bms">20</a><br />
+          </td>
+          <td class="col-criteria">
+            <a href="http://ameria3141.web.fc2.com/nanidohyou_index.html">▼1</a
+            ><br />
+            _<br />
+            _<br />
+            <span class="text-yellow">12</span><br />
+            <span class="text-yellow">16</span><br />
+            <a href="http://achusi.main.jp/overjoy/">★★4</a><br />
+            <a href="http://achusi.main.jp/overjoy/">★★5</a><br />
+            <a href="http://achusi.main.jp/overjoy/">★★6</a><br />
+          </td>
+          <td class="col-diff-name">
+            MAX<br />
+            虎<br />
+            AFO<br />
+            <span class="text-yellow">
+              MQ<br />
+              EXT<br />
+            </span>
+            HELL<br />
+            GOD<br />
+            MAS<br />
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=336336"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=336338"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=336339"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=336340"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=336342"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=336343"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=336344"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=336345"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=10018"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1002"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=5372"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1778"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=1678"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=15629"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=11169"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=10939"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/hidamari_A.rar">日溜りの街－あ！－</a>
+          </td>
+          <td class="col-artist">
+            <a
+              href="http://web.archive.org/web/20041211212724/http://knm.sakura.ne.jp/pms/key/key11.html"
+              >猫蟹丸</a
+            >
+          </td>
+          <td class="col-comment">
+            １年ぶりにこんにちは！<br />
+            高速乱打譜面です。<br />
+            BPM206!!<br />
+            難易度インフレしまくってますが仕様です。
+          </td>
+          <td class="col-update">07.12.12</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/aciLbt1afo.bme">13</a><br />
+            <a href="bms/aciLbt2ext.bme">14</a><br />
+            <a href="bms/aciLbt3god.bme">15</a><br />
+          </td>
+          <td class="col-criteria">
+            _<br />
+            _<br />
+            <span class="text-yellow">16</span><br />
+          </td>
+          <td class="col-diff-name">
+            AFO<br />
+            EXT<br />
+            <span class="text-yellow"> GOD<br /> </span>
+          </td>
+          <td class="col-nazoir">
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=339618"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=339619"
+              >IR</a
+            ><br />
+            <a
+              href="http://bms.nothing.sh/bmsid?action=getbmsranking&amp;bmsid=339620"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=5660"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=8349"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=354"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/aciL.rar">A c i - L</a>
+          </td>
+          <td class="col-artist">
+            <a href="http://malie.noor.jp/"> 裏吉川(-45) </a>
+          </td>
+          <td class="col-comment">
+            4周年記念？のA c I - Lです。<br />
+            デニムが随所にあります。<br />
+          </td>
+          <td class="col-update">08.03.07</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/_05_flonne_bt1_afo.bme">12</a><br />
+            <a href="bms/_05_flonne_bt2_mania.bme">14</a><br />
+            <a href="bms/_05_flonne_bt3_ext.bme">16</a><br />
+            <a href="bms/_05_flonne_bt4_god.bme">18</a><br />
+          </td>
+          <td class="col-criteria">
+            <span class="text-yellow"
+              >4
+              <a href="http://ameria3141.web.fc2.com/nanidohyou_index.html"
+                >▼4</a
+              ><br />
+              <span class="text-yellow">13 </span
+              ><a href="http://ameria3141.web.fc2.com/nanidohyou_index.html"
+                >▼12</a
+              ><br /> </span
+            ><a href="http://ameria3141.web.fc2.com/nanidohyou_index.html"
+              >▼21</a
+            ><br />
+            <span class="text-yellow">24 </span
+            ><a href="http://achusi.main.jp/overjoy/">★★4</a><br />
+          </td>
+          <td class="col-diff-name">
+            <span class="text-yellow">
+              AFO<br />
+              MQ<br />
+            </span>
+            EXT<br />
+            <span class="text-yellow"> GOD<br /> </span>
+          </td>
+          <td class="col-nazoir">
+            IR<br />
+            IR<br />
+            IR<br />
+            IR<br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96146"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96149"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96145"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=96180"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/LoveJustice.rar"> Love &amp; Justice </a>
+          </td>
+          <td class="col-artist">
+            <a
+              href="http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=227&amp;event=65">
+              フロン / ラズベリル
+            </a>
+          </td>
+          <td class="col-comment">
+            7周年記念差分です。<br />
+            BPM200の高速乱打です。<br />
+          </td>
+          <td class="col-update">11.04.01</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/meikai(bt0BOOST).bme">12</a><br />
+            <a href="bms/meikai(bt0BOOST_FINISH).bme">12</a><br />
+            <a href="bms/meikai(bt1MANIAQ).bme">14</a><br />
+            <a href="bms/meikai(bt2GOD).bme">17</a><br />
+          </td>
+          <td class="col-criteria">
+            冥発狂<br />
+            ?<br />
+            13?<br />
+            <a href="http://achusi.main.jp/overjoy/">★★2</a><br />
+          </td>
+          <td class="col-diff-name">
+            BST<br />
+            BSTFIN<br />
+            MANIA<br />
+            GOD<br />
+          </td>
+          <td class="col-nazoir">
+            IR<br />
+            IR<br />
+            IR<br />
+            IR<br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=105829"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=105825"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=105827"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=105828"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/meikai.rar"> 冥界帰航 </a>
+          </td>
+          <td class="col-artist">
+            <a href="http://mikomikosun3.blog135.fc2.com/"> ZUN(Arr.sun3) </a>
+          </td>
+          <td class="col-comment">
+            彼岸帰航というBMSに入れてください。<br />
+            冥色いっぱい！<br />
+            加速します加速します。⇒⇒<br />
+            MORE BOOSTは、加速地帯練習用です。<br />
+          </td>
+          <td class="col-update">11.07.17</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/crazybits_bt1god.bms">20</a><br />
+          </td>
+          <td class="col-criteria">★★6?<br /></td>
+          <td class="col-diff-name">GOD<br /></td>
+          <td class="col-nazoir">IR<br /></td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=153021"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/crazybits.zip"> Blue-White Crazybits </a>
+          </td>
+          <td class="col-artist">
+            <a href="http://www.yamajet.com/music/behappy2/"> 234 </a>
+          </td>
+          <td class="col-comment">隙間を埋めてみました。<br /></td>
+          <td class="col-update">13.03.20</td>
+        </tr>
+        <tr>
+          <td class="col-difficulty">
+            <a href="bms/7_n_snowgarl_exa_bt1maniaq.bms">14</a><br />
+            <a href="bms/7_n_snowgarl_exa_bt2ext.bms">15</a><br />
+            <a href="bms/7_n_snowgarl_exa_bt3god.bms">17</a><br />
+          </td>
+          <td class="col-criteria">
+            10?<br />
+            17?<br />
+            23?<br />
+          </td>
+          <td class="col-diff-name">
+            MQ<br />
+            EXT<br />
+            GOD<br />
+          </td>
+          <td class="col-nazoir">
+            IR<br />
+            IR<br />
+            IR<br />
+          </td>
+          <td class="col-lr2ir">
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=160484"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=160485"
+              >IR</a
+            ><br />
+            <a
+              href="http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&amp;bmsid=160486"
+              >IR</a
+            ><br />
+          </td>
+          <td class="col-title">
+            <a href="bms4/snowgarl.zip"> 雪の少女-MorningDash!Mix- </a>
+          </td>
+          <td class="col-artist">
+            <a
+              href="http://web.archive.org/web/20120510090937/http://knm.sakura.ne.jp/index2.html"
+              >猫蟹丸</a
+            >
+          </td>
+          <td class="col-comment">
+            BPM188の高速乱打です。<br />
+            GODは吹雪のような譜面です。<br />
+          </td>
+          <td class="col-update">13.06.22</td>
+        </tr>
+      </table>
+    </div>
+
+    <div class="hidden-link">
+      <a href="bms4/M.rar">.</a>
+    </div>
+
+    <div class="back-link">
+      <a href="index.html" target="_self">戻る</a>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,2103 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>beatmaniaIIDX TOTAL値</title>
+    <style>
+      body {
+        background-color: white;
+        color: black;
+        font-family: sans-serif;
+      }
+      table {
+        border: 1px solid gray;
+        margin-bottom: 1em;
+      }
+      th,
+      td {
+        border: 1px solid gray;
+        padding: 4px;
+      }
+      .center {
+        text-align: center;
+      }
+      .right {
+        text-align: right;
+      }
+      .bg-ccffcc {
+        background-color: #ccffcc;
+      }
+      .bg-ff0000 {
+        background-color: #ff0000;
+      }
+      .bg-ffccff {
+        background-color: #ffccff;
+      }
+      .bg-ffffcc {
+        background-color: #ffffcc;
+      }
+      .bg-ccffff {
+        background-color: #ccffff;
+      }
+      .bg-000000 {
+        background-color: #000000;
+      }
+      .bg-ffcccc {
+        background-color: #ffcccc;
+      }
+      .bg-ffcfce {
+        background-color: #ffcfce;
+      }
+      .bg-ceffce {
+        background-color: #ceffce;
+      }
+      .bg-ccccff {
+        background-color: #ccccff;
+      }
+      .bg-ffffce {
+        background-color: #ffffce;
+      }
+      .bg-ffffce {
+        background-color: #ffffce;
+      }
+      .text-white {
+        color: #ffffff;
+      }
+      .text-large {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      img {
+        max-width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>beatmaniaIIDX TOTAL値</h1>
+    ここに書いてあることは、解析をしたわけではないので、憶測が混じっています（笑）
+    <p>
+      TOTAL値とは全GREAT時のゲージ増加量です。<br />
+      TOTAL NOTES*1GREATのゲージ上昇率となります。
+    </p>
+
+    <p></p>
+
+    <h2>
+      1 IIDXのTOTAL値の計算式<br />
+      TOTAL値 = 7.605*NOTES/(0.01*NOTES+6.5)
+    </h2>
+    このNOTESに、その曲のTOTAL NOTESを入れて計算すれば、TOTAL値が出ます。
+    <p>
+      例：TOTAL NOTESが2000の場合<br />
+      7.605*2000/(0.01*2000+6.5) = 15210 / 26.5<br />
+      =約574
+    </p>
+
+    <p>となります。</p>
+
+    <p>
+      また、補正がかかっているようで、基本的にはTOTAL値が260以下になることはないです。<br />
+      実際には誤差がありますが、260近辺でしょう。
+    </p>
+
+    <p><br /><br /></p>
+
+    <h2>2 TOTAL値の法則</h2>
+    法則として、NOTES数基準ではなく、<br />
+    TOTAL値、1GREATの二つから計算がされています。<br />
+    1GREATの上昇率が0.01下がると、TOTAL値が6.5上がります。<br />
+    TOTAL値が260、1GREATの上昇率が0.77から始まります。
+    <table>
+      <tr>
+        <th>TOTAL値</th>
+        <th>1GREATの上昇率</th>
+        <th>オブジェ数</th>
+      </tr>
+      <tr>
+        <th>260.0</th>
+        <th>0.77</th>
+        <th>338</th>
+      </tr>
+      <tr>
+        <th>266.5</th>
+        <th>0.76</th>
+        <th>351</th>
+      </tr>
+      <tr>
+        <th>273.0</th>
+        <th>0.75</th>
+        <th>364</th>
+      </tr>
+      <tr>
+        <th>279.5</th>
+        <th>0.74</th>
+        <th>378</th>
+      </tr>
+      <tr>
+        <th>286.0</th>
+        <th>0.73</th>
+        <th>392</th>
+      </tr>
+    </table>
+    <br /><br /><br />
+    <h2>3 誤差について</h2>
+    IIDXは、実際にはシステム的に0.02ずつしかGREAT上昇率を変わっていないようでした。
+    <p></p>
+    <table>
+      <tr>
+        <th>TOTAL値</th>
+        <th>1GREATの上昇率</th>
+        <th>オブジェ数</th>
+      </tr>
+      <tr>
+        <th>266.5</th>
+        <th>0.76</th>
+        <th>338～363</th>
+      </tr>
+      <tr>
+        <th>279.5</th>
+        <th>0.74</th>
+        <th>364～392</th>
+      </tr>
+    </table>
+    <p>
+      このような感じになるわけです。<br />
+      オブジェが338の曲も、363の曲も1GREATの上昇率0.76として計算されます。<br />
+      最小と最大オブジェ数を計算をしてみると、
+    </p>
+
+    <p>
+      338*0.76=255.36<br />
+      363*0.76=275.88
+    </p>
+
+    <p>
+      364*0.74=269.36<br />
+      392*0.74=290.08
+    </p>
+
+    <p>
+      このように誤差が結構あるので、オブジェ数によって、ゲージの甘さが多少変わります。<br />
+      この誤差はオブジェ数が増えてくるほど大きくなっていきます。
+    </p>
+
+    <p></p>
+    <table>
+      <tr>
+        <th>TOTAL値</th>
+        <th>1GREATの上昇率</th>
+        <th>オブジェ数</th>
+      </tr>
+      <tr>
+        <th>565.5</th>
+        <th>0.30</th>
+        <th>1803～1971</th>
+      </tr>
+      <tr>
+        <th>578.5</th>
+        <th>0.28</th>
+        <th>1972～2166</th>
+      </tr>
+    </table>
+    <p>計算すると</p>
+    <p>
+      1803*0.30=540.9<br />
+      1971*0.30=591.3
+    </p>
+
+    <p>
+      1972*0.28=552.16<br />
+      2166*0.28=606.48
+    </p>
+
+    <p>このようにかなりの誤差が出ます。</p>
+
+    <p>これを使って計算すると</p>
+    <p>
+      AA(ANOTHER) NOTES 1834<br />
+      1834*0.30=550.2
+    </p>
+
+    <p>
+      冥(ANOTHER) NOTES 2000<br />
+      2000*0.28=560
+    </p>
+
+    <p>こうなります。</p>
+
+    <p>
+      <br />
+      <br />
+      CS
+      EMPRESSでオートプレイでゲージ100%になった瞬間のコンボ数から割り出したTOTAL値をサンプルに載せておきます。<br />
+      ここには載せませんが、DOUBLE +
+      BATTLEの場合でも、同じNOTES数なら、SPの時とTOTAL値が同じでした。
+    </p>
+    <p>
+      SP = SINGLE PLAY<br />
+      DB = DOUBLE + BATTLE<br />
+      A = ANOTHER<br />
+      黒A = BLACK ANOTHER
+    </p>
+    <table>
+      <tr>
+        <td class="bg-ccffcc">曲名</td>
+        <td class="bg-ccffcc">譜面</td>
+        <td class="bg-ccffcc">NOTES</td>
+        <td class="bg-ccffcc">TOTAL</td>
+        <td class="bg-ccffcc">1GREAT%</td>
+      </tr>
+
+      <tr>
+        <td>quasar</td>
+        <td class="bg-ff0000"><span class="text-white">SP A</span></td>
+        <td class="right bg-ffccff">1161</td>
+        <td class="right bg-ffffcc">487.62</td>
+        <td class="right bg-ccffff">0.42</td>
+      </tr>
+
+      <tr>
+        <td>moon_child</td>
+        <td class="bg-ff0000"><span class="text-white">SP A</span></td>
+        <td class="right bg-ffccff">1300</td>
+        <td class="right bg-ffffcc">520.00</td>
+        <td class="right bg-ccffff">0.40</td>
+      </tr>
+
+      <tr>
+        <td>V</td>
+        <td class="bg-ff0000"><span class="text-white">SP A</span></td>
+        <td class="right bg-ffccff">1519</td>
+        <td class="right bg-ffffcc">546.84</td>
+        <td class="right bg-ccffff">0.36</td>
+      </tr>
+
+      <tr>
+        <td>No.13</td>
+        <td class="bg-ff0000"><span class="text-white">SP A</span></td>
+        <td class="right bg-ffccff">1607</td>
+        <td class="right bg-ffffcc">546.38</td>
+        <td class="right bg-ccffff">0.34</td>
+      </tr>
+
+      <tr>
+        <td>AA</td>
+        <td class="bg-ff0000"><span class="text-white">SP A</span></td>
+        <td class="right bg-ffccff">1834</td>
+        <td class="right bg-ffffcc">550.20</td>
+        <td class="right bg-ccffff">0.30</td>
+      </tr>
+
+      <tr>
+        <td>冥</td>
+        <td class="bg-ff0000"><span class="text-white">SP A</span></td>
+        <td class="right bg-ffccff">2000</td>
+        <td class="right bg-ffffcc">560.00</td>
+        <td class="right bg-ccffff">0.28</td>
+      </tr>
+
+      <tr>
+        <td>卑弥呼</td>
+        <td class="bg-ff0000"><span class="text-white">SP A</span></td>
+        <td class="right bg-ffccff">2119</td>
+        <td class="right bg-ffffcc">593.32</td>
+        <td class="right bg-ccffff">0.28</td>
+      </tr>
+
+      <tr>
+        <td>卑弥呼</td>
+        <td class="bg-000000"><span class="text-white">SP 黒A</span></td>
+        <td class="right bg-ffccff">2333</td>
+        <td class="right bg-ffffcc">606.58</td>
+        <td class="right bg-ccffff">0.26</td>
+      </tr>
+
+      <tr>
+        <td>MENDES</td>
+        <td class="bg-000000"><span class="text-white">SP 黒A</span></td>
+        <td class="right bg-ffccff">2626</td>
+        <td class="right bg-ffffcc">630.24</td>
+        <td class="right bg-ccffff">0.24</td>
+      </tr>
+
+      <tr>
+        <td>FIRE FIRE</td>
+        <td class="bg-ff0000"><span class="text-white">DB A</span></td>
+        <td class="right bg-ffccff">2810</td>
+        <td class="right bg-ffffcc">618.20</td>
+        <td class="right bg-ccffff">0.22</td>
+      </tr>
+
+      <tr>
+        <td>V</td>
+        <td class="bg-ff0000"><span class="text-white">DB A</span></td>
+        <td class="right bg-ffccff">3038</td>
+        <td class="right bg-ffffcc">607.60</td>
+        <td class="right bg-ccffff">0.20</td>
+      </tr>
+
+      <tr>
+        <td>LASER CRUSTER</td>
+        <td class="bg-ff0000"><span class="text-white">DB A</span></td>
+        <td class="right bg-ffccff">3288</td>
+        <td class="right bg-ffffcc">657.60</td>
+        <td class="right bg-ccffff">0.20</td>
+      </tr>
+
+      <tr>
+        <td>MENDES</td>
+        <td class="bg-ff0000"><span class="text-white">DB A</span></td>
+        <td class="right bg-ffccff">3662</td>
+        <td class="right bg-ffffcc">659.16</td>
+        <td class="right bg-ccffff">0.18</td>
+      </tr>
+
+      <tr>
+        <td>卑弥呼</td>
+        <td class="bg-ff0000"><span class="text-white">DB A</span></td>
+        <td class="right bg-ffccff">4238</td>
+        <td class="right bg-ffffcc">678.08</td>
+        <td class="right bg-ccffff">0.16</td>
+      </tr>
+
+      <tr>
+        <td>卑弥呼</td>
+        <td class="bg-000000"><span class="text-white">DB 黒A</span></td>
+        <td class="right bg-ffccff">4666</td>
+        <td class="right bg-ffffcc">653.24</td>
+        <td class="right bg-ccffff">0.14</td>
+      </tr>
+
+      <tr>
+        <td>MENDES</td>
+        <td class="bg-000000"><span class="text-white">DB 黒A</span></td>
+        <td class="right bg-ffccff">5252</td>
+        <td class="right bg-ffffcc">630.24</td>
+        <td class="right bg-ccffff">0.12</td>
+      </tr>
+    </table>
+    <p>
+      <br />
+    </p>
+    <p>
+      下のグラフは縦軸がTOTAL値、横軸がオブジェ数を表したものです。<br />
+      オブジェ数が増えるごとに、TOTAL値があまり増えなくなっていくのがわかります。<br />
+      <img src="img/total_graph.jpg" /><br />
+      <br />
+      <br />
+      <b><span class="text-large">4 表</span></b
+      ><br />
+      <br />
+      表を置いておきます。参考に。
+    </p>
+
+    <p>
+      <b><span class="text-large">TOTAL値1刻みの表</span></b>
+    </p>
+    <table>
+      <tbody>
+        <tr>
+          <td class="bg-ccffcc center">TOTAL値</td>
+          <td class="bg-ccffcc center">NOTES</td>
+          <td class="bg-ccffcc center">TOTAL値</td>
+          <td class="bg-ccffcc center">NOTES</td>
+          <td class="bg-ccffcc center">TOTAL値</td>
+          <td class="bg-ccffcc center">NOTES</td>
+          <td class="bg-ccffcc center">TOTAL値</td>
+          <td class="bg-ccffcc center">NOTES</td>
+          <td class="bg-ccffcc center">TOTAL値</td>
+          <td class="bg-ccffcc center">NOTES</td>
+          <td class="bg-ccffcc center">TOTAL値</td>
+          <td class="bg-ccffcc center">NOTES</td>
+          <td class="bg-ccffcc center">TOTAL値</td>
+          <td class="bg-ccffcc center">NOTES</td>
+          <td class="bg-ccffcc center">TOTAL値</td>
+          <td class="bg-ccffcc center">NOTES</td>
+          <td class="bg-ccffcc center">TOTAL値</td>
+          <td class="bg-ccffcc center">NOTES</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">260</td>
+          <td class="center bg-ffcccc">338</td>
+          <td class="bg-ffffcc center">300</td>
+          <td class="center">423</td>
+          <td class="bg-ffffcc center">340</td>
+          <td class="center">526</td>
+          <td class="bg-ffffcc center">380</td>
+          <td class="center">649</td>
+          <td class="bg-ffffcc center">420</td>
+          <td class="center bg-ffcccc">802</td>
+          <td class="bg-ffffcc center">460</td>
+          <td class="center">995</td>
+          <td class="bg-ffffcc center">500</td>
+          <td class="center">1248</td>
+          <td class="bg-ffffcc center">540</td>
+          <td class="center">1592</td>
+          <td class="center bg-ffffcc">580</td>
+          <td class="center">2089</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">261</td>
+          <td class="center">340</td>
+          <td class="bg-ffffcc center">301</td>
+          <td class="center">426</td>
+          <td class="bg-ffffcc center">341</td>
+          <td class="center">528</td>
+          <td class="bg-ffffcc center">381</td>
+          <td class="center">653</td>
+          <td class="bg-ffffcc center">421</td>
+          <td class="center">806</td>
+          <td class="bg-ffffcc center">461</td>
+          <td class="bg-ffcccc center">1001</td>
+          <td class="bg-ffffcc center">501</td>
+          <td class="center">1255</td>
+          <td class="bg-ffffcc center">541</td>
+          <td class="bg-ffcfce center">1602</td>
+          <td class="center bg-ffffcc">581</td>
+          <td class="bg-ffcfce center">2104</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">262</td>
+          <td class="center">342</td>
+          <td class="bg-ffffcc center">302</td>
+          <td class="center">428</td>
+          <td class="bg-ffffcc center">342</td>
+          <td class="center">531</td>
+          <td class="bg-ffffcc center">382</td>
+          <td class="center">656</td>
+          <td class="bg-ffffcc center">422</td>
+          <td class="center">810</td>
+          <td class="bg-ffffcc center">462</td>
+          <td class="center">1006</td>
+          <td class="bg-ffffcc center">502</td>
+          <td class="center">1262</td>
+          <td class="bg-ffffcc center">542</td>
+          <td class="center">1612</td>
+          <td class="center bg-ffffcc">582</td>
+          <td class="center">2119</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">263</td>
+          <td class="center">344</td>
+          <td class="bg-ffffcc center">303</td>
+          <td class="center">430</td>
+          <td class="bg-ffffcc center">343</td>
+          <td class="center">534</td>
+          <td class="bg-ffffcc center">383</td>
+          <td class="center">659</td>
+          <td class="bg-ffffcc center">423</td>
+          <td class="center">815</td>
+          <td class="bg-ffffcc center">463</td>
+          <td class="center">1012</td>
+          <td class="bg-ffffcc center">503</td>
+          <td class="center">1270</td>
+          <td class="bg-ffffcc center">543</td>
+          <td class="center">1623</td>
+          <td class="center bg-ffffcc">583</td>
+          <td class="center">2135</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">264</td>
+          <td class="center">346</td>
+          <td class="bg-ffffcc center">304</td>
+          <td class="center">433</td>
+          <td class="bg-ffffcc center">344</td>
+          <td class="center">537</td>
+          <td class="bg-ffffcc center">384</td>
+          <td class="center">663</td>
+          <td class="bg-ffffcc center">424</td>
+          <td class="center">819</td>
+          <td class="bg-ffffcc center">464</td>
+          <td class="center">1017</td>
+          <td class="bg-ffffcc center">504</td>
+          <td class="center">1277</td>
+          <td class="bg-ffffcc center">544</td>
+          <td class="center">1633</td>
+          <td class="center bg-ffffcc">584</td>
+          <td class="center">2151</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">265</td>
+          <td class="center">348</td>
+          <td class="bg-ffffcc center">305</td>
+          <td class="center">435</td>
+          <td class="bg-ffffcc center">345</td>
+          <td class="center">540</td>
+          <td class="bg-ffffcc center">385</td>
+          <td class="center">666</td>
+          <td class="bg-ffffcc center">425</td>
+          <td class="center">823</td>
+          <td class="bg-ffffcc center">465</td>
+          <td class="center">1023</td>
+          <td class="bg-ffffcc center">505</td>
+          <td class="center">1285</td>
+          <td class="bg-ffffcc center">545</td>
+          <td class="center">1644</td>
+          <td class="center bg-ffffcc">585</td>
+          <td class="center">2167</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">266</td>
+          <td class="center">350</td>
+          <td class="bg-ffffcc center">306</td>
+          <td class="center">438</td>
+          <td class="bg-ffffcc center">346</td>
+          <td class="center">543</td>
+          <td class="bg-ffffcc center">386</td>
+          <td class="center">670</td>
+          <td class="bg-ffffcc center">426</td>
+          <td class="center">828</td>
+          <td class="bg-ffffcc center">466</td>
+          <td class="center">1029</td>
+          <td class="bg-ffffcc center">506</td>
+          <td class="center">1292</td>
+          <td class="bg-ffffcc center">546</td>
+          <td class="center">1655</td>
+          <td class="center bg-ffffcc">586</td>
+          <td class="center">2183</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">267</td>
+          <td class="center">352</td>
+          <td class="bg-ffffcc center">307</td>
+          <td class="center">440</td>
+          <td class="bg-ffffcc center">347</td>
+          <td class="center">545</td>
+          <td class="bg-ffffcc center">387</td>
+          <td class="center">673</td>
+          <td class="bg-ffffcc center">427</td>
+          <td class="center">832</td>
+          <td class="bg-ffffcc center">467</td>
+          <td class="center">1034</td>
+          <td class="bg-ffffcc center">507</td>
+          <td class="bg-ffcfce center">1300</td>
+          <td class="bg-ffffcc center">547</td>
+          <td class="center">1665</td>
+          <td class="center bg-ffffcc">587</td>
+          <td class="center">2199</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">268</td>
+          <td class="center">354</td>
+          <td class="bg-ffffcc center">308</td>
+          <td class="center">442</td>
+          <td class="bg-ffffcc center">348</td>
+          <td class="center">548</td>
+          <td class="bg-ffffcc center">388</td>
+          <td class="center">677</td>
+          <td class="bg-ffffcc center">428</td>
+          <td class="center">837</td>
+          <td class="bg-ffffcc center">468</td>
+          <td class="center">1040</td>
+          <td class="bg-ffffcc center">508</td>
+          <td class="center">1308</td>
+          <td class="bg-ffffcc center">548</td>
+          <td class="center">1676</td>
+          <td class="center bg-ffffcc">588</td>
+          <td class="bg-ffcfce center">2216</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">269</td>
+          <td class="center">356</td>
+          <td class="bg-ffffcc center">309</td>
+          <td class="center">445</td>
+          <td class="bg-ffffcc center">349</td>
+          <td class="center">551</td>
+          <td class="bg-ffffcc center">389</td>
+          <td class="center">681</td>
+          <td class="bg-ffffcc center">429</td>
+          <td class="center">841</td>
+          <td class="bg-ffffcc center">469</td>
+          <td class="center">1046</td>
+          <td class="bg-ffffcc center">509</td>
+          <td class="center">1316</td>
+          <td class="bg-ffffcc center">549</td>
+          <td class="center">1687</td>
+          <td class="center bg-ffffcc">589</td>
+          <td class="center">2232</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">270</td>
+          <td class="center">358</td>
+          <td class="bg-ffffcc center">310</td>
+          <td class="center">447</td>
+          <td class="bg-ffffcc center">350</td>
+          <td class="center">554</td>
+          <td class="bg-ffffcc center">390</td>
+          <td class="center">684</td>
+          <td class="bg-ffffcc center">430</td>
+          <td class="center">846</td>
+          <td class="bg-ffffcc center">470</td>
+          <td class="center">1052</td>
+          <td class="bg-ffffcc center">510</td>
+          <td class="center">1323</td>
+          <td class="bg-ffffcc center">550</td>
+          <td class="center">1698</td>
+          <td class="center bg-ffffcc">590</td>
+          <td class="center">2249</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">271</td>
+          <td class="center">360</td>
+          <td class="bg-ffffcc center">311</td>
+          <td class="center">450</td>
+          <td class="bg-ffffcc center">351</td>
+          <td class="center">557</td>
+          <td class="bg-ffffcc center">391</td>
+          <td class="center">688</td>
+          <td class="bg-ffffcc center">431</td>
+          <td class="center">850</td>
+          <td class="bg-ffffcc center">471</td>
+          <td class="center">1058</td>
+          <td class="bg-ffffcc center">511</td>
+          <td class="center">1331</td>
+          <td class="bg-ffffcc center">551</td>
+          <td class="bg-ffcfce center">1710</td>
+          <td class="center bg-ffffcc">591</td>
+          <td class="center">2266</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">272</td>
+          <td class="center">362</td>
+          <td class="bg-ffffcc center">312</td>
+          <td class="center">452</td>
+          <td class="bg-ffffcc center">352</td>
+          <td class="center">560</td>
+          <td class="bg-ffffcc center">392</td>
+          <td class="center">691</td>
+          <td class="bg-ffffcc center">432</td>
+          <td class="center">855</td>
+          <td class="bg-ffffcc center">472</td>
+          <td class="center">1063</td>
+          <td class="bg-ffffcc center">512</td>
+          <td class="center">1339</td>
+          <td class="bg-ffffcc center">552</td>
+          <td class="center">1721</td>
+          <td class="center bg-ffffcc">592</td>
+          <td class="center">2284</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">273</td>
+          <td class="center">364</td>
+          <td class="bg-ffffcc center">313</td>
+          <td class="center">455</td>
+          <td class="bg-ffffcc center">353</td>
+          <td class="center">563</td>
+          <td class="bg-ffffcc center">393</td>
+          <td class="center">695</td>
+          <td class="bg-ffffcc center">433</td>
+          <td class="center">859</td>
+          <td class="bg-ffffcc center">473</td>
+          <td class="center">1069</td>
+          <td class="bg-ffffcc center">513</td>
+          <td class="center">1347</td>
+          <td class="bg-ffffcc center">553</td>
+          <td class="center">1732</td>
+          <td class="center bg-ffffcc">593</td>
+          <td class="bg-ffcfce center">2301</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">274</td>
+          <td class="center">366</td>
+          <td class="bg-ffffcc center">314</td>
+          <td class="center">457</td>
+          <td class="bg-ffffcc center">354</td>
+          <td class="center">566</td>
+          <td class="bg-ffffcc center">394</td>
+          <td class="center">699</td>
+          <td class="bg-ffffcc center">434</td>
+          <td class="center">864</td>
+          <td class="bg-ffffcc center">474</td>
+          <td class="center">1075</td>
+          <td class="bg-ffffcc center">514</td>
+          <td class="center">1355</td>
+          <td class="bg-ffffcc center">554</td>
+          <td class="center">1744</td>
+          <td class="center bg-ffffcc">594</td>
+          <td class="center">2319</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">275</td>
+          <td class="center">368</td>
+          <td class="bg-ffffcc center">315</td>
+          <td class="center">460</td>
+          <td class="bg-ffffcc center">355</td>
+          <td class="center">569</td>
+          <td class="bg-ffffcc center">395</td>
+          <td class="center bg-ffcccc">702</td>
+          <td class="bg-ffffcc center">435</td>
+          <td class="center">869</td>
+          <td class="bg-ffffcc center">475</td>
+          <td class="center">1081</td>
+          <td class="bg-ffffcc center">515</td>
+          <td class="center">1364</td>
+          <td class="bg-ffffcc center">555</td>
+          <td class="center">1755</td>
+          <td class="center bg-ffffcc">595</td>
+          <td class="center">2337</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">276</td>
+          <td class="center">370</td>
+          <td class="bg-ffffcc center">316</td>
+          <td class="center">462</td>
+          <td class="bg-ffffcc center">356</td>
+          <td class="center">572</td>
+          <td class="bg-ffffcc center">396</td>
+          <td class="center">706</td>
+          <td class="bg-ffffcc center">436</td>
+          <td class="center">873</td>
+          <td class="bg-ffffcc center">476</td>
+          <td class="center">1088</td>
+          <td class="bg-ffffcc center">516</td>
+          <td class="center">1372</td>
+          <td class="bg-ffffcc center">556</td>
+          <td class="center">1767</td>
+          <td class="center bg-ffffcc">596</td>
+          <td class="center">2355</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">277</td>
+          <td class="center">372</td>
+          <td class="bg-ffffcc center">317</td>
+          <td class="center">465</td>
+          <td class="bg-ffffcc center">357</td>
+          <td class="center">575</td>
+          <td class="bg-ffffcc center">397</td>
+          <td class="center">710</td>
+          <td class="bg-ffffcc center">437</td>
+          <td class="center">878</td>
+          <td class="bg-ffffcc center">477</td>
+          <td class="center">1094</td>
+          <td class="bg-ffffcc center">517</td>
+          <td class="center">1380</td>
+          <td class="bg-ffffcc center">557</td>
+          <td class="center">1779</td>
+          <td class="center bg-ffffcc">597</td>
+          <td class="center">2373</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">278</td>
+          <td class="center">375</td>
+          <td class="bg-ffffcc center">318</td>
+          <td class="center">467</td>
+          <td class="bg-ffffcc center">358</td>
+          <td class="center">578</td>
+          <td class="bg-ffffcc center">398</td>
+          <td class="center">714</td>
+          <td class="bg-ffffcc center">438</td>
+          <td class="center">883</td>
+          <td class="bg-ffffcc center">478</td>
+          <td class="bg-ffcfce center">1100</td>
+          <td class="bg-ffffcc center">518</td>
+          <td class="center">1388</td>
+          <td class="bg-ffffcc center">558</td>
+          <td class="center">1791</td>
+          <td class="center bg-ffffcc">598</td>
+          <td class="center">2392</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">279</td>
+          <td class="center">377</td>
+          <td class="bg-ffffcc center">319</td>
+          <td class="center">470</td>
+          <td class="bg-ffffcc center">359</td>
+          <td class="center">581</td>
+          <td class="bg-ffffcc center">399</td>
+          <td class="center">717</td>
+          <td class="bg-ffffcc center">439</td>
+          <td class="center">888</td>
+          <td class="bg-ffffcc center">479</td>
+          <td class="center">1106</td>
+          <td class="bg-ffffcc center">519</td>
+          <td class="center">1397</td>
+          <td class="bg-ffffcc center">559</td>
+          <td class="bg-ffcfce center">1803</td>
+          <td class="center bg-ffffcc">599</td>
+          <td class="bg-ffcfce center">2411</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">280</td>
+          <td class="center">379</td>
+          <td class="bg-ffffcc center">320</td>
+          <td class="center">472</td>
+          <td class="bg-ffffcc center">360</td>
+          <td class="center">584</td>
+          <td class="bg-ffffcc center">400</td>
+          <td class="center">721</td>
+          <td class="bg-ffffcc center">440</td>
+          <td class="center">892</td>
+          <td class="bg-ffffcc center">480</td>
+          <td class="center">1112</td>
+          <td class="bg-ffffcc center">520</td>
+          <td class="bg-ffcfce center">1405</td>
+          <td class="bg-ffffcc center">560</td>
+          <td class="center">1815</td>
+          <td class="center bg-ffffcc">600</td>
+          <td class="center">2430</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">281</td>
+          <td class="center">381</td>
+          <td class="bg-ffffcc center">321</td>
+          <td class="center">475</td>
+          <td class="bg-ffffcc center">361</td>
+          <td class="center">587</td>
+          <td class="bg-ffffcc center">401</td>
+          <td class="center">725</td>
+          <td class="bg-ffffcc center">441</td>
+          <td class="center">897</td>
+          <td class="bg-ffffcc center">481</td>
+          <td class="center">1119</td>
+          <td class="bg-ffffcc center">521</td>
+          <td class="center">1414</td>
+          <td class="bg-ffffcc center">561</td>
+          <td class="center">1828</td>
+          <td class="center bg-ffffcc">601</td>
+          <td class="center">2449</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">282</td>
+          <td class="center">383</td>
+          <td class="bg-ffffcc center">322</td>
+          <td class="center">477</td>
+          <td class="bg-ffffcc center">362</td>
+          <td class="center">590</td>
+          <td class="bg-ffffcc center">402</td>
+          <td class="center">729</td>
+          <td class="bg-ffffcc center">442</td>
+          <td class="center bg-ffcccc">902</td>
+          <td class="bg-ffffcc center">482</td>
+          <td class="center">1125</td>
+          <td class="bg-ffffcc center">522</td>
+          <td class="center">1423</td>
+          <td class="bg-ffffcc center">562</td>
+          <td class="center">1840</td>
+          <td class="center bg-ffffcc">602</td>
+          <td class="center">2469</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">283</td>
+          <td class="center">385</td>
+          <td class="bg-ffffcc center">323</td>
+          <td class="center">480</td>
+          <td class="bg-ffffcc center">363</td>
+          <td class="center">594</td>
+          <td class="bg-ffffcc center">403</td>
+          <td class="center">733</td>
+          <td class="bg-ffffcc center">443</td>
+          <td class="center">907</td>
+          <td class="bg-ffffcc center">483</td>
+          <td class="center">1131</td>
+          <td class="bg-ffffcc center">523</td>
+          <td class="center">1431</td>
+          <td class="bg-ffffcc center">563</td>
+          <td class="center">1853</td>
+          <td class="center bg-ffffcc">603</td>
+          <td class="center">2489</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">284</td>
+          <td class="center">387</td>
+          <td class="bg-ffffcc center">324</td>
+          <td class="center">482</td>
+          <td class="bg-ffffcc center">364</td>
+          <td class="center">597</td>
+          <td class="bg-ffffcc center">404</td>
+          <td class="center">737</td>
+          <td class="bg-ffffcc center">444</td>
+          <td class="center">912</td>
+          <td class="bg-ffffcc center">484</td>
+          <td class="center">1138</td>
+          <td class="bg-ffffcc center">524</td>
+          <td class="center">1440</td>
+          <td class="bg-ffffcc center">564</td>
+          <td class="center">1866</td>
+          <td class="center bg-ffffcc">604</td>
+          <td class="bg-ffcccc center">2509</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">285</td>
+          <td class="center">390</td>
+          <td class="bg-ffffcc center">325</td>
+          <td class="center">485</td>
+          <td class="bg-ffffcc center">365</td>
+          <td class="center bg-ffcccc">600</td>
+          <td class="bg-ffffcc center">405</td>
+          <td class="center">741</td>
+          <td class="bg-ffffcc center">445</td>
+          <td class="center">917</td>
+          <td class="bg-ffffcc center">485</td>
+          <td class="center">1144</td>
+          <td class="bg-ffffcc center">525</td>
+          <td class="center">1449</td>
+          <td class="bg-ffffcc center">565</td>
+          <td class="center">1879</td>
+          <td class="center bg-ffffcc">605</td>
+          <td class="center">2529</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">286</td>
+          <td class="center">392</td>
+          <td class="bg-ffffcc center">326</td>
+          <td class="center">488</td>
+          <td class="bg-ffffcc center">366</td>
+          <td class="center">603</td>
+          <td class="bg-ffffcc center">406</td>
+          <td class="center">744</td>
+          <td class="bg-ffffcc center">446</td>
+          <td class="center">922</td>
+          <td class="bg-ffffcc center">486</td>
+          <td class="center">1151</td>
+          <td class="bg-ffffcc center">526</td>
+          <td class="center">1458</td>
+          <td class="bg-ffffcc center">566</td>
+          <td class="center">1892</td>
+          <td class="center bg-ffffcc">606</td>
+          <td class="center">2550</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">287</td>
+          <td class="center">394</td>
+          <td class="bg-ffffcc center">327</td>
+          <td class="center">490</td>
+          <td class="bg-ffffcc center">367</td>
+          <td class="center">606</td>
+          <td class="bg-ffffcc center">407</td>
+          <td class="center">748</td>
+          <td class="bg-ffffcc center">447</td>
+          <td class="center">927</td>
+          <td class="bg-ffffcc center">487</td>
+          <td class="center">1157</td>
+          <td class="bg-ffffcc center">527</td>
+          <td class="center">1467</td>
+          <td class="bg-ffffcc center">567</td>
+          <td class="bg-ffcfce center">1905</td>
+          <td class="center bg-ffffcc">607</td>
+          <td class="center">2570</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">288</td>
+          <td class="center">396</td>
+          <td class="bg-ffffcc center">328</td>
+          <td class="center">493</td>
+          <td class="bg-ffffcc center">368</td>
+          <td class="center">609</td>
+          <td class="bg-ffffcc center">408</td>
+          <td class="center">752</td>
+          <td class="bg-ffffcc center">448</td>
+          <td class="center">932</td>
+          <td class="bg-ffffcc center">488</td>
+          <td class="center">1164</td>
+          <td class="bg-ffffcc center">528</td>
+          <td class="center">1476</td>
+          <td class="bg-ffffcc center">568</td>
+          <td class="center">1918</td>
+          <td class="center bg-ffffcc">608</td>
+          <td class="center">2591</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">289</td>
+          <td class="center">398</td>
+          <td class="bg-ffffcc center">329</td>
+          <td class="center">496</td>
+          <td class="bg-ffffcc center">369</td>
+          <td class="center">613</td>
+          <td class="bg-ffffcc center">409</td>
+          <td class="center">756</td>
+          <td class="bg-ffffcc center">449</td>
+          <td class="center">937</td>
+          <td class="bg-ffffcc center">489</td>
+          <td class="center">1171</td>
+          <td class="bg-ffffcc center">529</td>
+          <td class="center">1485</td>
+          <td class="bg-ffffcc center">569</td>
+          <td class="center">1931</td>
+          <td class="center bg-ffffcc">609</td>
+          <td class="bg-ffcfce center">2613</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">290</td>
+          <td class="center bg-ffcccc">401</td>
+          <td class="bg-ffffcc center">330</td>
+          <td class="center">498</td>
+          <td class="bg-ffffcc center">370</td>
+          <td class="center">616</td>
+          <td class="bg-ffffcc center">410</td>
+          <td class="center">760</td>
+          <td class="bg-ffffcc center">450</td>
+          <td class="center">942</td>
+          <td class="bg-ffffcc center">490</td>
+          <td class="center">1177</td>
+          <td class="bg-ffffcc center">530</td>
+          <td class="center">1495</td>
+          <td class="bg-ffffcc center">570</td>
+          <td class="center">1945</td>
+          <td class="center bg-ffffcc">610</td>
+          <td class="center">2635</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">291</td>
+          <td class="center">403</td>
+          <td class="bg-ffffcc center">331</td>
+          <td class="bg-ffcccc center">501</td>
+          <td class="bg-ffffcc center">371</td>
+          <td class="center">619</td>
+          <td class="bg-ffffcc center">411</td>
+          <td class="center">764</td>
+          <td class="bg-ffffcc center">451</td>
+          <td class="center">947</td>
+          <td class="bg-ffffcc center">491</td>
+          <td class="center">1184</td>
+          <td class="bg-ffffcc center">531</td>
+          <td class="bg-ffcccc center">1504</td>
+          <td class="bg-ffffcc center">571</td>
+          <td class="center">1959</td>
+          <td class="center bg-ffffcc">611</td>
+          <td class="center">2657</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">292</td>
+          <td class="center">405</td>
+          <td class="bg-ffffcc center">332</td>
+          <td class="center">504</td>
+          <td class="bg-ffffcc center">372</td>
+          <td class="center">622</td>
+          <td class="bg-ffffcc center">412</td>
+          <td class="center">768</td>
+          <td class="bg-ffffcc center">452</td>
+          <td class="center">952</td>
+          <td class="bg-ffffcc center">492</td>
+          <td class="center">1191</td>
+          <td class="bg-ffffcc center">532</td>
+          <td class="center">1513</td>
+          <td class="bg-ffffcc center">572</td>
+          <td class="center">1972</td>
+          <td class="center bg-ffffcc">612</td>
+          <td class="center">2679</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">293</td>
+          <td class="center">407</td>
+          <td class="bg-ffffcc center">333</td>
+          <td class="center">506</td>
+          <td class="bg-ffffcc center">373</td>
+          <td class="center">626</td>
+          <td class="bg-ffffcc center">413</td>
+          <td class="center">773</td>
+          <td class="bg-ffffcc center">453</td>
+          <td class="center">958</td>
+          <td class="bg-ffffcc center">493</td>
+          <td class="center">1198</td>
+          <td class="bg-ffffcc center">533</td>
+          <td class="center">1523</td>
+          <td class="bg-ffffcc center">573</td>
+          <td class="center">1986</td>
+          <td class="center bg-ffffcc">613</td>
+          <td class="bg-ffcfce center">2701</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">294</td>
+          <td class="center">410</td>
+          <td class="bg-ffffcc center">334</td>
+          <td class="center">509</td>
+          <td class="bg-ffffcc center">374</td>
+          <td class="center">629</td>
+          <td class="bg-ffffcc center">414</td>
+          <td class="center">777</td>
+          <td class="bg-ffffcc center">454</td>
+          <td class="center">963</td>
+          <td class="bg-ffffcc center">494</td>
+          <td class="bg-ffcfce center">1205</td>
+          <td class="bg-ffffcc center">534</td>
+          <td class="center">1532</td>
+          <td class="bg-ffffcc center">574</td>
+          <td class="bg-ffcccc center">2001</td>
+          <td class="center bg-ffffcc">614</td>
+          <td class="center">2724</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">295</td>
+          <td class="center">412</td>
+          <td class="bg-ffffcc center">335</td>
+          <td class="center">512</td>
+          <td class="bg-ffffcc center">375</td>
+          <td class="center">632</td>
+          <td class="bg-ffffcc center">415</td>
+          <td class="center">781</td>
+          <td class="bg-ffffcc center">455</td>
+          <td class="center">968</td>
+          <td class="bg-ffffcc center">495</td>
+          <td class="center">1212</td>
+          <td class="bg-ffffcc center">535</td>
+          <td class="center">1542</td>
+          <td class="bg-ffffcc center">575</td>
+          <td class="center">2015</td>
+          <td class="center bg-ffffcc">615</td>
+          <td class="center">2747</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">296</td>
+          <td class="center">414</td>
+          <td class="bg-ffffcc center">336</td>
+          <td class="center">514</td>
+          <td class="bg-ffffcc center">376</td>
+          <td class="center">636</td>
+          <td class="bg-ffffcc center">416</td>
+          <td class="center">785</td>
+          <td class="bg-ffffcc center">456</td>
+          <td class="center">973</td>
+          <td class="bg-ffffcc center">496</td>
+          <td class="center">1219</td>
+          <td class="bg-ffffcc center">536</td>
+          <td class="center">1552</td>
+          <td class="bg-ffffcc center">576</td>
+          <td class="center">2029</td>
+          <td class="center bg-ffffcc">616</td>
+          <td class="center">2771</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">297</td>
+          <td class="center">417</td>
+          <td class="bg-ffffcc center">337</td>
+          <td class="center">517</td>
+          <td class="bg-ffffcc center">377</td>
+          <td class="center">639</td>
+          <td class="bg-ffffcc center">417</td>
+          <td class="center">789</td>
+          <td class="bg-ffffcc center">457</td>
+          <td class="center">979</td>
+          <td class="bg-ffffcc center">497</td>
+          <td class="center">1226</td>
+          <td class="bg-ffffcc center">537</td>
+          <td class="center">1562</td>
+          <td class="bg-ffffcc center">577</td>
+          <td class="center">2044</td>
+          <td class="center bg-ffffcc">617</td>
+          <td class="center">2795</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">298</td>
+          <td class="center">419</td>
+          <td class="bg-ffffcc center">338</td>
+          <td class="center">520</td>
+          <td class="bg-ffffcc center">378</td>
+          <td class="center">642</td>
+          <td class="bg-ffffcc center">418</td>
+          <td class="center">793</td>
+          <td class="bg-ffffcc center">458</td>
+          <td class="center">984</td>
+          <td class="bg-ffffcc center">498</td>
+          <td class="center">1233</td>
+          <td class="bg-ffffcc center">538</td>
+          <td class="center">1572</td>
+          <td class="bg-ffffcc center">578</td>
+          <td class="center">2059</td>
+          <td class="center bg-ffffcc">618</td>
+          <td class="bg-ffcfce center">2819</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffcc">299</td>
+          <td class="center">421</td>
+          <td class="bg-ffffcc center">339</td>
+          <td class="center">523</td>
+          <td class="bg-ffffcc center">379</td>
+          <td class="center">646</td>
+          <td class="bg-ffffcc center">419</td>
+          <td class="center">798</td>
+          <td class="bg-ffffcc center">459</td>
+          <td class="center">990</td>
+          <td class="bg-ffffcc center">499</td>
+          <td class="center">1240</td>
+          <td class="bg-ffffcc center">539</td>
+          <td class="center">1582</td>
+          <td class="bg-ffffcc center">579</td>
+          <td class="center">2074</td>
+          <td class="center bg-ffffcc">619</td>
+          <td class="center">2843</td>
+        </tr>
+      </tbody>
+    </table>
+    <p><br /></p>
+    <table>
+      <tbody>
+        <tr>
+          <td class="bg-ccffcc center">TOTAL値</td>
+          <td class="bg-ccffcc center">NOTES</td>
+          <td class="bg-ccffcc center">TOTAL値</td>
+          <td class="bg-ccffcc center">NOTES</td>
+          <td class="bg-ccffcc center">TOTAL値</td>
+          <td class="bg-ccffcc center">NOTES</td>
+          <td class="bg-ccffcc center">TOTAL値</td>
+          <td class="bg-ccffcc center">NOTES</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">620</td>
+          <td class="center">2868</td>
+          <td class="bg-ffffce center">660</td>
+          <td class="center">4269</td>
+          <td class="bg-ffffce center">700</td>
+          <td class="bg-ffcfce center">7521</td>
+          <td class="bg-ffffce center">740</td>
+          <td class="center">23463</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">621</td>
+          <td class="center">2894</td>
+          <td class="bg-ffffce center">661</td>
+          <td class="center">4318</td>
+          <td class="bg-ffffce center">701</td>
+          <td class="center">7658</td>
+          <td class="bg-ffffce center">741</td>
+          <td class="center">24700</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">622</td>
+          <td class="bg-ffcfce center">2919</td>
+          <td class="bg-ffffce center">662</td>
+          <td class="center">4369</td>
+          <td class="bg-ffffce center">702</td>
+          <td class="center">7800</td>
+          <td class="bg-ffffce center">742</td>
+          <td class="center">26070</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">623</td>
+          <td class="center">2945</td>
+          <td class="bg-ffffce center">663</td>
+          <td class="center">4420</td>
+          <td class="bg-ffffce center">703</td>
+          <td class="center">7947</td>
+          <td class="bg-ffffce center">743</td>
+          <td class="center">27597</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">624</td>
+          <td class="center">2971</td>
+          <td class="bg-ffffce center">664</td>
+          <td class="center">4473</td>
+          <td class="bg-ffffce center">704</td>
+          <td class="bg-ffcfce center">8099</td>
+          <td class="bg-ffffce center">744</td>
+          <td class="center">29309</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">625</td>
+          <td class="center">2998</td>
+          <td class="bg-ffffce center">665</td>
+          <td class="bg-ffcfce center">4526</td>
+          <td class="bg-ffffce center">705</td>
+          <td class="center">8257</td>
+          <td class="bg-ffffce center">745</td>
+          <td class="bg-ffcfce center">31242</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">626</td>
+          <td class="bg-ffcfce center">3025</td>
+          <td class="bg-ffffce center">666</td>
+          <td class="center">4581</td>
+          <td class="bg-ffffce center">706</td>
+          <td class="center">8420</td>
+          <td class="bg-ffffce center">746</td>
+          <td class="center">33441</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">627</td>
+          <td class="center">3053</td>
+          <td class="bg-ffffce center">667</td>
+          <td class="center">4637</td>
+          <td class="bg-ffffce center">707</td>
+          <td class="center">8590</td>
+          <td class="bg-ffffce center">747</td>
+          <td class="center">35967</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">628</td>
+          <td class="center">3081</td>
+          <td class="bg-ffffce center">668</td>
+          <td class="center">4694</td>
+          <td class="bg-ffffce center">708</td>
+          <td class="center">8766</td>
+          <td class="bg-ffffce center">748</td>
+          <td class="center">38896</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">629</td>
+          <td class="center">3109</td>
+          <td class="bg-ffffce center">669</td>
+          <td class="center">4752</td>
+          <td class="bg-ffffce center">709</td>
+          <td class="center">8949</td>
+          <td class="bg-ffffce center">749</td>
+          <td class="bg-ffcfce center">42335</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">630</td>
+          <td class="center">3138</td>
+          <td class="bg-ffffce center">670</td>
+          <td class="center">4812</td>
+          <td class="bg-ffffce center">710</td>
+          <td class="bg-ffcfce center">9139</td>
+          <td class="bg-ffffce center">750</td>
+          <td class="center">46429</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">631</td>
+          <td class="center">3167</td>
+          <td class="bg-ffffce center">671</td>
+          <td class="center">4873</td>
+          <td class="bg-ffffce center">711</td>
+          <td class="center">9336</td>
+          <td class="bg-ffffce center">751</td>
+          <td class="bg-ffcfce center">51384</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">632</td>
+          <td class="center">3197</td>
+          <td class="bg-ffffce center">672</td>
+          <td class="center">4936</td>
+          <td class="bg-ffffce center">712</td>
+          <td class="bg-ffcfce center">9542</td>
+          <td class="bg-ffffce center">752</td>
+          <td class="center">57506</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">633</td>
+          <td class="center">3227</td>
+          <td class="bg-ffffce center">673</td>
+          <td class="center">4999</td>
+          <td class="bg-ffffce center">713</td>
+          <td class="center">9757</td>
+          <td class="bg-ffffce center">753</td>
+          <td class="center">65260</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">634</td>
+          <td class="center">3258</td>
+          <td class="bg-ffffce center">674</td>
+          <td class="bg-ffcfce center">5065</td>
+          <td class="bg-ffffce center">714</td>
+          <td class="center">9981</td>
+          <td class="bg-ffffce center">754</td>
+          <td class="center">75400</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">635</td>
+          <td class="center">3289</td>
+          <td class="bg-ffffce center">675</td>
+          <td class="center">5132</td>
+          <td class="bg-ffffce center">715</td>
+          <td class="bg-ffcfce center">10214</td>
+          <td class="bg-ffffce center">755</td>
+          <td class="center">89227</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">636</td>
+          <td class="center">3320</td>
+          <td class="bg-ffffce center">676</td>
+          <td class="center">5200</td>
+          <td class="bg-ffffce center">716</td>
+          <td class="center">10458</td>
+          <td class="bg-ffffce center">756</td>
+          <td class="center bg-ffcccc">109200</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">637</td>
+          <td class="center">3353</td>
+          <td class="bg-ffffce center">677</td>
+          <td class="center">5270</td>
+          <td class="bg-ffffce center">717</td>
+          <td class="center">10714</td>
+          <td class="bg-ffffce center">757</td>
+          <td class="center">140586</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">638</td>
+          <td class="center">3385</td>
+          <td class="bg-ffffce center">678</td>
+          <td class="center">5342</td>
+          <td class="bg-ffffce center">718</td>
+          <td class="center">10981</td>
+          <td class="bg-ffffce center">758</td>
+          <td class="center">197080</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">639</td>
+          <td class="center">3419</td>
+          <td class="bg-ffffce center">679</td>
+          <td class="center">5415</td>
+          <td class="bg-ffffce center">719</td>
+          <td class="center">11261</td>
+          <td class="bg-ffffce center">759</td>
+          <td class="center">328900</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">640</td>
+          <td class="center">3452</td>
+          <td class="bg-ffffce center">680</td>
+          <td class="center">5491</td>
+          <td class="bg-ffffce center">720</td>
+          <td class="center">11556</td>
+          <td class="bg-ffffce center">760</td>
+          <td class="center">988000</td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">641</td>
+          <td class="center">3487</td>
+          <td class="bg-ffffce center">681</td>
+          <td class="bg-ffcfce center">5568</td>
+          <td class="bg-ffffce center">721</td>
+          <td class="center">11865</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">642</td>
+          <td class="bg-ffcfce center">3522</td>
+          <td class="bg-ffffce center">682</td>
+          <td class="center">5647</td>
+          <td class="bg-ffffce center">722</td>
+          <td class="center">12190</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">643</td>
+          <td class="center">3557</td>
+          <td class="bg-ffffce center">683</td>
+          <td class="center">5728</td>
+          <td class="bg-ffffce center">723</td>
+          <td class="center">12532</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">644</td>
+          <td class="center">3593</td>
+          <td class="bg-ffffce center">684</td>
+          <td class="center">5812</td>
+          <td class="bg-ffffce center">724</td>
+          <td class="center">12893</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">645</td>
+          <td class="center">3630</td>
+          <td class="bg-ffffce center">685</td>
+          <td class="center">5897</td>
+          <td class="bg-ffffce center">725</td>
+          <td class="center">13275</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">646</td>
+          <td class="center">3667</td>
+          <td class="bg-ffffce center">686</td>
+          <td class="center">5985</td>
+          <td class="bg-ffffce center">726</td>
+          <td class="center">13678</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">647</td>
+          <td class="center">3705</td>
+          <td class="bg-ffffce center">687</td>
+          <td class="bg-ffcfce center">6076</td>
+          <td class="bg-ffffce center">727</td>
+          <td class="center">14106</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">648</td>
+          <td class="center">3744</td>
+          <td class="bg-ffffce center">688</td>
+          <td class="center">6168</td>
+          <td class="bg-ffffce center">728</td>
+          <td class="center">14560</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">649</td>
+          <td class="center">3783</td>
+          <td class="bg-ffffce center">689</td>
+          <td class="center">6264</td>
+          <td class="bg-ffffce center">729</td>
+          <td class="center bg-ffcccc">15043</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">650</td>
+          <td class="center">3824</td>
+          <td class="bg-ffffce center">690</td>
+          <td class="center">6362</td>
+          <td class="bg-ffffce center">730</td>
+          <td class="center">15557</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">651</td>
+          <td class="center">3864</td>
+          <td class="bg-ffffce center">691</td>
+          <td class="center">6463</td>
+          <td class="bg-ffffce center">731</td>
+          <td class="center">16107</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">652</td>
+          <td class="center">3906</td>
+          <td class="bg-ffffce center">692</td>
+          <td class="bg-ffcfce center">6566</td>
+          <td class="bg-ffffce center">732</td>
+          <td class="center">16695</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">653</td>
+          <td class="center">3948</td>
+          <td class="bg-ffffce center">693</td>
+          <td class="center">6673</td>
+          <td class="bg-ffffce center">733</td>
+          <td class="center">17325</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">654</td>
+          <td class="center">3992</td>
+          <td class="bg-ffffce center">694</td>
+          <td class="center">6783</td>
+          <td class="bg-ffffce center">734</td>
+          <td class="center">18004</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">655</td>
+          <td class="bg-ffcfce center">4036</td>
+          <td class="bg-ffffce center">695</td>
+          <td class="center">6897</td>
+          <td class="bg-ffffce center">735</td>
+          <td class="center">18735</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">656</td>
+          <td class="center">4080</td>
+          <td class="bg-ffffce center">696</td>
+          <td class="bg-ffcfce center">7014</td>
+          <td class="bg-ffffce center">736</td>
+          <td class="center">19527</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">657</td>
+          <td class="center">4126</td>
+          <td class="bg-ffffce center">697</td>
+          <td class="center">7135</td>
+          <td class="bg-ffffce center">737</td>
+          <td class="bg-ffcfce center">20385</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">658</td>
+          <td class="center">4173</td>
+          <td class="bg-ffffce center">698</td>
+          <td class="center">7259</td>
+          <td class="bg-ffffce center">738</td>
+          <td class="center">21320</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="center bg-ffffce">659</td>
+          <td class="center">4220</td>
+          <td class="bg-ffffce center">699</td>
+          <td class="center">7388</td>
+          <td class="bg-ffffce center">739</td>
+          <td class="center">22342</td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+      </tbody>
+    </table>
+    <p>
+      <br />
+      <b
+        ><font size="+2"
+          ><br />
+          1GREATの上昇率0.01刻みの表</font
+        ></b
+      >
+    </p>
+    <table>
+      <tbody>
+        <tr>
+          <td class="bg-ceffce center">TOTAL値</td>
+          <td class="bg-ceffce center">1GREATの上昇率</td>
+          <td class="bg-ceffce center">オブジェ数</td>
+          <td class="bg-ceffce center">TOTAL値</td>
+          <td class="bg-ceffce center">1GREATの上昇率</td>
+          <td class="bg-ceffce center">オブジェ数</td>
+          <td class="bg-ceffce center">TOTAL値</td>
+          <td class="bg-ceffce center">1GREATの上昇率</td>
+          <td class="bg-ceffce center">オブジェ数</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">260.0</td>
+          <td class="bg-ffcccc center">0.77</td>
+          <td class="bg-ccccff center">338</td>
+          <td class="center bg-ffffce">455</td>
+          <td class="center bg-ffcccc">0.47</td>
+          <td class="bg-ccccff center">968</td>
+          <td class="bg-ffffce center">650</td>
+          <td class="center bg-ffcccc">0.17</td>
+          <td class="bg-ccccff center">3824</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">266.5</td>
+          <td class="bg-ffcccc center">0.76</td>
+          <td class="bg-ccccff center">351</td>
+          <td class="center bg-ffffce">461.5</td>
+          <td class="center bg-ffcccc">0.46</td>
+          <td class="bg-ccccff center">1003</td>
+          <td class="center bg-ffffce">656.5</td>
+          <td class="center bg-ffcccc">0.16</td>
+          <td class="bg-ccccff center">4103</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">273.0</td>
+          <td class="bg-ffcccc center">0.75</td>
+          <td class="bg-ccccff center">364</td>
+          <td class="center bg-ffffce">468</td>
+          <td class="center bg-ffcccc">0.45</td>
+          <td class="bg-ccccff center">1040</td>
+          <td class="center bg-ffffce">663</td>
+          <td class="center bg-ffcccc">0.15</td>
+          <td class="bg-ccccff center">4420</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">279.5</td>
+          <td class="bg-ffcccc center">0.74</td>
+          <td class="bg-ccccff center">378</td>
+          <td class="center bg-ffffce">474.5</td>
+          <td class="center bg-ffcccc">0.44</td>
+          <td class="bg-ccccff center">1078</td>
+          <td class="center bg-ffffce">669.5</td>
+          <td class="center bg-ffcccc">0.14</td>
+          <td class="bg-ccccff center">4782</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">286.0</td>
+          <td class="bg-ffcccc center">0.73</td>
+          <td class="bg-ccccff center">392</td>
+          <td class="center bg-ffffce">481</td>
+          <td class="center bg-ffcccc">0.43</td>
+          <td class="bg-ccccff center">1119</td>
+          <td class="center bg-ffffce">676</td>
+          <td class="center bg-ffcccc">0.13</td>
+          <td class="bg-ccccff center">5200</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">292.5</td>
+          <td class="bg-ffcccc center">0.72</td>
+          <td class="bg-ccccff center">406</td>
+          <td class="center bg-ffffce">487.5</td>
+          <td class="center bg-ffcccc">0.42</td>
+          <td class="bg-ccccff center">1161</td>
+          <td class="center bg-ffffce">682.5</td>
+          <td class="center bg-ffcccc">0.12</td>
+          <td class="bg-ccccff center">5688</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">299.0</td>
+          <td class="bg-ffcccc center">0.71</td>
+          <td class="bg-ccccff center">421</td>
+          <td class="center bg-ffffce">494</td>
+          <td class="center bg-ffcccc">0.41</td>
+          <td class="bg-ccccff center">1205</td>
+          <td class="center bg-ffffce">689</td>
+          <td class="center bg-ffcccc">0.11</td>
+          <td class="bg-ccccff center">6264</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">305.5</td>
+          <td class="bg-ffcccc center">0.70</td>
+          <td class="bg-ccccff center">436</td>
+          <td class="center bg-ffffce">500.5</td>
+          <td class="center bg-ffcccc">0.4</td>
+          <td class="bg-ccccff center">1251</td>
+          <td class="center bg-ffffce">695.5</td>
+          <td class="center bg-ffcccc">0.1</td>
+          <td class="bg-ccccff center">6955</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">312.0</td>
+          <td class="bg-ffcccc center">0.69</td>
+          <td class="bg-ccccff center">452</td>
+          <td class="center bg-ffffce">507</td>
+          <td class="center bg-ffcccc">0.39</td>
+          <td class="bg-ccccff center">1300</td>
+          <td class="center bg-ffffce">702</td>
+          <td class="center bg-ffcccc">0.09</td>
+          <td class="bg-ccccff center">7800</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">318.5</td>
+          <td class="bg-ffcccc center">0.68</td>
+          <td class="bg-ccccff center">468</td>
+          <td class="center bg-ffffce">513.5</td>
+          <td class="center bg-ffcccc">0.38</td>
+          <td class="bg-ccccff center">1351</td>
+          <td class="center bg-ffffce">708.5</td>
+          <td class="center bg-ffcccc">0.08</td>
+          <td class="bg-ccccff center">8856</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">325.0</td>
+          <td class="bg-ffcccc center">0.67</td>
+          <td class="bg-ccccff center">485</td>
+          <td class="center bg-ffffce">520</td>
+          <td class="center bg-ffcccc">0.37</td>
+          <td class="bg-ccccff center">1405</td>
+          <td class="center bg-ffffce">715</td>
+          <td class="center bg-ffcccc">0.07</td>
+          <td class="bg-ccccff center">10214</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">331.5</td>
+          <td class="bg-ffcccc center">0.66</td>
+          <td class="bg-ccccff center">502</td>
+          <td class="center bg-ffffce">526.5</td>
+          <td class="center bg-ffcccc">0.36</td>
+          <td class="bg-ccccff center">1463</td>
+          <td class="center bg-ffffce">721.5</td>
+          <td class="center bg-ffcccc">0.06</td>
+          <td class="bg-ccccff center">12025</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">338.0</td>
+          <td class="bg-ffcccc center">0.65</td>
+          <td class="bg-ccccff center">520</td>
+          <td class="center bg-ffffce">533</td>
+          <td class="center bg-ffcccc">0.35</td>
+          <td class="bg-ccccff center">1523</td>
+          <td class="center bg-ffffce">728</td>
+          <td class="center bg-ffcccc">0.05</td>
+          <td class="bg-ccccff center">14560</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">344.5</td>
+          <td class="bg-ffcccc center">0.64</td>
+          <td class="bg-ccccff center">538</td>
+          <td class="center bg-ffffce">539.5</td>
+          <td class="center bg-ffcccc">0.34</td>
+          <td class="bg-ccccff center">1587</td>
+          <td class="center bg-ffffce">734.5</td>
+          <td class="center bg-ffcccc">0.04</td>
+          <td class="bg-ccccff center">18363</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">351.0</td>
+          <td class="bg-ffcccc center">0.63</td>
+          <td class="bg-ccccff center">557</td>
+          <td class="center bg-ffffce">546</td>
+          <td class="center bg-ffcccc">0.33</td>
+          <td class="bg-ccccff center">1655</td>
+          <td class="center bg-ffffce">741</td>
+          <td class="center bg-ffcccc">0.03</td>
+          <td class="bg-ccccff center">24700</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">357.5</td>
+          <td class="bg-ffcccc center">0.62</td>
+          <td class="bg-ccccff center">577</td>
+          <td class="center bg-ffffce">552.5</td>
+          <td class="center bg-ffcccc">0.32</td>
+          <td class="bg-ccccff center">1727</td>
+          <td class="center bg-ffffce">747.5</td>
+          <td class="center bg-ffcccc">0.02</td>
+          <td class="bg-ccccff center">37375</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">364.0</td>
+          <td class="bg-ffcccc center">0.61</td>
+          <td class="bg-ccccff center">597</td>
+          <td class="center bg-ffffce">559</td>
+          <td class="center bg-ffcccc">0.31</td>
+          <td class="bg-ccccff center">1803</td>
+          <td class="center bg-ffffce">754</td>
+          <td class="center bg-ffcccc">0.01</td>
+          <td class="bg-ccccff center">75400</td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">370.5</td>
+          <td class="bg-ffcccc center">0.60</td>
+          <td class="bg-ccccff center">618</td>
+          <td class="center bg-ffffce">565.5</td>
+          <td class="center bg-ffcccc">0.3</td>
+          <td class="bg-ccccff center">1885</td>
+          <td class="center"></td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">377.0</td>
+          <td class="bg-ffcccc center">0.59</td>
+          <td class="bg-ccccff center">639</td>
+          <td class="center bg-ffffce">572</td>
+          <td class="center bg-ffcccc">0.29</td>
+          <td class="bg-ccccff center">1972</td>
+          <td class="center"></td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">383.5</td>
+          <td class="bg-ffcccc center">0.58</td>
+          <td class="bg-ccccff center">661</td>
+          <td class="center bg-ffffce">578.5</td>
+          <td class="center bg-ffcccc">0.28</td>
+          <td class="bg-ccccff center">2066</td>
+          <td class="center"></td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">390.0</td>
+          <td class="bg-ffcccc center">0.57</td>
+          <td class="bg-ccccff center">684</td>
+          <td class="center bg-ffffce">585</td>
+          <td class="center bg-ffcccc">0.27</td>
+          <td class="bg-ccccff center">2167</td>
+          <td class="center"></td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">396.5</td>
+          <td class="bg-ffcccc center">0.56</td>
+          <td class="bg-ccccff center">708</td>
+          <td class="center bg-ffffce">591.5</td>
+          <td class="center bg-ffcccc">0.26</td>
+          <td class="bg-ccccff center">2275</td>
+          <td class="center"></td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">403.0</td>
+          <td class="bg-ffcccc center">0.55</td>
+          <td class="bg-ccccff center">733</td>
+          <td class="center bg-ffffce">598</td>
+          <td class="center bg-ffcccc">0.25</td>
+          <td class="bg-ccccff center">2392</td>
+          <td class="center"></td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">409.5</td>
+          <td class="bg-ffcccc center">0.54</td>
+          <td class="bg-ccccff center">758</td>
+          <td class="center bg-ffffce">604.5</td>
+          <td class="center bg-ffcccc">0.24</td>
+          <td class="bg-ccccff center">2519</td>
+          <td class="center"></td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">416.0</td>
+          <td class="bg-ffcccc center">0.53</td>
+          <td class="bg-ccccff center">785</td>
+          <td class="center bg-ffffce">611</td>
+          <td class="center bg-ffcccc">0.23</td>
+          <td class="bg-ccccff center">2657</td>
+          <td class="center"></td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">422.5</td>
+          <td class="bg-ffcccc center">0.52</td>
+          <td class="bg-ccccff center">813</td>
+          <td class="center bg-ffffce">617.5</td>
+          <td class="center bg-ffcccc">0.22</td>
+          <td class="bg-ccccff center">2807</td>
+          <td class="center"></td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">429.0</td>
+          <td class="bg-ffcccc center">0.51</td>
+          <td class="bg-ccccff center">841</td>
+          <td class="center bg-ffffce">624</td>
+          <td class="center bg-ffcccc">0.21</td>
+          <td class="bg-ccccff center">2971</td>
+          <td class="center"></td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">435.5</td>
+          <td class="bg-ffcccc center">0.50</td>
+          <td class="bg-ccccff center">871</td>
+          <td class="center bg-ffffce">630.5</td>
+          <td class="center bg-ffcccc">0.2</td>
+          <td class="bg-ccccff center">3153</td>
+          <td class="center"></td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">442.0</td>
+          <td class="bg-ffcccc center">0.49</td>
+          <td class="bg-ccccff center">902</td>
+          <td class="center bg-ffffce">637</td>
+          <td class="center bg-ffcccc">0.19</td>
+          <td class="bg-ccccff center">3353</td>
+          <td class="center"></td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+
+        <tr>
+          <td class="bg-ffffce center">448.5</td>
+          <td class="bg-ffcccc center">0.48</td>
+          <td class="bg-ccccff center">934</td>
+          <td class="center bg-ffffce">643.5</td>
+          <td class="center bg-ffcccc">0.18</td>
+          <td class="bg-ccccff center">3575</td>
+          <td class="center"></td>
+          <td class="center"></td>
+          <td class="center"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

@@ -1,0 +1,1104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>黒猫難易度</title>
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <style type="text/css">
+      .tr1 {
+        color: black;
+      }
+      .tr_ok {
+        background-color: #ffff90;
+      }
+      .tr_ng {
+        background-color: lightgrey;
+      }
+      a:link {
+        color: "richblue";
+      }
+      a:visited {
+        color: "limegreen";
+      }
+      a:hover {
+        color: "red";
+        background-color: "yellow";
+      }
+      a:active {
+        color: "red";
+        background-color: "yellow";
+      }
+    </style>
+
+    <script language="javascript" type="text/javascript">
+      <!--
+      // データの読み込み
+      function getsc() {
+        var m = new Date().getMonth();
+        if (m % 2 == 1) {
+          document.body.style.filter =
+            "progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#ccccccff', EndColorStr='#ffffffff')";
+          document.body.text = "black";
+        } else {
+          document.body.style.filter =
+            "progid:DXImageTransform.Microsoft.Gradient(GradientType=1,StartColorStr='#cc000033', EndColorStr='#ff000000')";
+          document.body.text = "white";
+        }
+      }
+
+      // クッキーの読み込み
+      function loadCookie(name) {
+        var bData = "";
+        var cName = name + "="; // クッキー名
+        var cCookie = document.cookie + ";";
+        var str = cCookie.indexOf(cName);
+        if (str != -1) {
+          end = cCookie.indexOf(";", str);
+          bData = unescape(cCookie.substring(str + cName.length, end));
+        }
+        return bData;
+      }
+
+      // クッキーの書き込み
+      function saveCookie(name, dValue) {
+        var cName = name + "="; // クッキー名
+        var cDays = 365; // データの保存日数
+        var setPre = new Date();
+        setPre.setTime(setPre.getTime() + cDays * 1000 * 24 * 3600);
+        var prd = setPre.toGMTString();
+        document.cookie = cName + escape(dValue) + ";expires=" + prd;
+      }
+      // クリアデータのの削除
+      function deletedt() {
+        cName = "tmpdt="; // 削除するクッキー名
+        dTime = new Date();
+        dTime.setYear(dTime.getYear() - 1);
+        document.cookie = cName + ";expires=" + dTime.toGMTString();
+      }
+
+      var CookieValue = new Array(302); //* 個のデータを保存できる
+
+      //CookieValue の初期化 と読み込み、ボタンの onclick イベント設定
+      function initCookieValue() {
+        for (var i = 0; i < CookieValue.length; i++) CookieValue[i] = 0;
+
+        var imps = document
+          .getElementById("table1")
+          .getElementsByTagName("input");
+        var nVal = "" + loadCookie("tmpdt");
+
+        //  alert("Cookies="+nVal);
+
+        for (var i = 0; i < nVal.length; i++)
+          CookieValue[i] = nVal.charAt(i) != "0" ? 1 : 0;
+
+        for (var i = 0; i < imps.length; i++) {
+          imps[i].onclick = function (e) {
+            var o;
+            if (window.event) e = window.event;
+            o = e.srcElement ? e.srcElement : e.target;
+
+            while (o.nodeName.toLowerCase() != "tr") o = o.parentNode;
+
+            var idx = parseInt(o.id.replace("#tr", ""), 10);
+            if (o.className == "tr_ng") {
+              o.className = "tr_ok";
+              CookieValue[idx] = 1;
+            } else {
+              o.className = "tr_ng";
+              CookieValue[idx] = 0;
+            }
+            backupCookie();
+          };
+          document.getElementById("#tr" + mname[i][0]).className = CookieValue[
+            mname[i][0]
+          ]
+            ? "tr_ok"
+            : "tr_ng";
+        }
+      }
+      function backupCookie() {
+        saveCookie("tmpdt", CookieValue.join(""));
+      }
+
+      -->
+    </script>
+  </head>
+  <body onload="initCookieValue() & getsc()">
+    譜面数85 lastupdate 2013.06.24
+    <!-- St-HP-H -->
+
+    <!-- En-HP-H -->
+
+    <div align="center"><h2>RECORDS LIST</h2></div>
+    <table align="center" border="1" bgcolor="#ffffff">
+      <tbody>
+        <tr>
+          <td><a href="#1">黒1</a></td>
+          <td><a href="#2">黒2</a></td>
+          <td><a href="#3">黒3</a></td>
+          <td><a href="#4">黒4</a></td>
+          <td><a href="#5">黒5</a></td>
+          <td><a href="#6">黒6</a></td>
+          <td><a href="#7">黒7</a></td>
+          <td><a href="#8">黒8</a></td>
+          <td><a href="#9">黒9</a></td>
+          <td><a href="#10">黒10</a></td>
+          <td><a href="#11">黒11</a></td>
+          <td><a href="#12">黒12</a></td>
+          <td><a href="#13">黒13</a></td>
+          <td><a href="#14">黒14</a></td>
+          <td><a href="#15">黒15</a></td>
+          <td><a href="#16">黒16</a></td>
+          <td><a href="#17">黒17</a></td>
+          <td><a href="#18">黒18</a></td>
+          <td><a href="#19">黒19</a></td>
+          <td><a href="#20">黒20</a></td>
+          <td><a href="#21">黒21</a></td>
+          <td><a href="#22">黒22</a></td>
+          <td><a href="#23">黒23</a></td>
+          <td><a href="#24">黒24</a></td>
+          <td><a href="#25">黒25</a></td>
+          <td><a href="#26">黒26</a></td>
+          <td><a href="#27">黒27</a></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table align="center" cellspacing="3" id="table1">
+      <tr bgcolor="black" height="20" style="color: white">
+        <td>黒</td>
+        <td></td>
+        <td>IR</td>
+        <td>music title</td>
+        <td>original artist</td>
+        <td>差分</td>
+        <td width="260px">comment</td>
+        <script language="javascript" type="text/javascript">
+          <!--//
+          ///////////////////曲のデータ///////////////////
+
+          var mname = [
+            [
+              54,
+              "黒1",
+              "<A name='1'>before... [7key/虎の穴]</A>",
+              "2609",
+              "<a href='http://sound.jp/brilliantharmony/'>やっす～</a>",
+              "<a href='bms4/before.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              51,
+              "黒1",
+              "Bird Sprite -D.K.R. mix- (虎のanother)",
+              "79",
+              "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=73&amp;event=22'>ツナマヨちゃん(syatten) </a>",
+              "<a href='bms4/tsunamayochan_birdsprite.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              38,
+              "黒1",
+              "FELYS (虎のANOTHER)",
+              "264",
+              "<a href='http://www107.sakura.ne.jp/~onoken/'>onoken</a>",
+              "<a href='bms4/felys.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              40,
+              "黒1",
+              "happy century 虎のANOTHER",
+              "329",
+              "<a href='http://mok2lnbms.6.ql.bz/'>recognize m.</a><br><a href='http://www.redsight.net/'>bga-RED</a>",
+              "<a href='bms4/rm_happy.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              39,
+              "黒1",
+              "J219(AFOTHER)",
+              "543",
+              "<a href='http://www2u.biglobe.ne.jp/~cranky/'>cranky</a>",
+              "<a href='bms4/j219.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              56,
+              "黒1",
+              "Red-rize&quot;B172 mix&quot; // 7keys 虎のAnother",
+              "4059",
+              "<a href='http://wint.bms.ms/'>wint</a>",
+              "<a href='bms4/wint_redrize.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              1,
+              "黒1",
+              "X (虎のANOTHER)",
+              "240",
+              "<a href='http://sasakure.bms.ms/'>sasakure.UK</a>",
+              "<a href='bms4/x.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              48,
+              "黒1",
+              "☆ twinklesky ☆ _12 虎のANOTHER",
+              "37",
+              "<a href='http://dl.dropboxusercontent.com/s/yboez1yj4lrw350/fz.html'>fether</a>",
+              "<a href='bms4/twinklesky.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              42,
+              "黒1",
+              "約束 -HappyHyperStarmiX- (虎の穴)",
+              "22",
+              "<a href='http://cool-create.cc/'>beatMARIO</a>",
+              "<a href='bms4/btm_yaku.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              18,
+              "黒1",
+              "日溜りの街－あ！－(乱打MAX)",
+              "10018",
+              "<a href='http://web.archive.org/web/20041211212724/http://knm.sakura.ne.jp/pms/key/key11.html'>猫蟹丸</a>",
+              "<a href='bms4/hidamari_A.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              69,
+              "黒2",
+              "<A name='2'>Romancing Sa･Ga3 ラストバトル RockArrange (虎のANOTHER)</A>",
+              "964",
+              "<a href='http://lucifer.pussycat.jp/'>金ラメタキシード</a>",
+              "<a href='bms4/l_rsg3_lb.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              59,
+              "黒2",
+              "sensitive (虎のANOTHER)",
+              "131851",
+              "<a href='http://sazanka.sakura.ne.jp/~2tdm/'>white crystal</a>",
+              "<a href='bms4/sensitive.zip'>DL</a>",
+              "",
+            ],
+
+            [
+              62,
+              "黒2",
+              "SEPIA -虎のANOTHER-",
+              "1400",
+              "<a href='http://kobe.cool.ne.jp/linker/'>SHIKI</a>",
+              "<a href='bms4/sepia.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              2,
+              "黒3",
+              "<A name='3'>Air ANOTHER+</A>",
+              "455",
+              "<a href='http://kobe.cool.ne.jp/linker/'>SHIKI</a>",
+              "<a href='bms4/air.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              52,
+              "黒3",
+              "Bird Sprite -D.K.R. mix- (afother)",
+              "452",
+              "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=73&amp;event=22'>ツナマヨちゃん(syatten) </a>",
+              "<a href='bms4/tsunamayochan_birdsprite.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              73,
+              "黒3",
+              "x-Aria -虎之another-",
+              "443",
+              "<a href='http://liz.nothing.sh/ridis/'>ridis</a>",
+              "<a href='bms4/x-aria.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              68,
+              "黒3",
+              "あめふりこねこ (AFOTHER)",
+              "1624",
+              "<a href='http://nekomimi.name/'>ねこみみ魔法使い</a>",
+              "<a href='bms4/nm21_nm04.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              77,
+              "黒3",
+              "夜桜 -十六分咲き-",
+              "445",
+              "<a href='http://nekomimi.name/'>彩音 / 小宮真央(ねこみみ魔法使い)</a>",
+              "<a href='bms4/yozakura.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              23,
+              "黒4",
+              "<A name='4'>G e n g a o z o _ A F O</A>",
+              "131855",
+              "<a href='http://malie.noor.jp/'>455(-45)</a>",
+              "<a href='bms4/gengaozo.zip'>DL</a>",
+              "",
+            ],
+
+            [
+              7,
+              "黒4",
+              "Love & Justice [AFOTHER]",
+              "96146",
+              "<a href='http://www3.pf-x.net/~boxism-8500/'>フロン / ラズベリル(BACO)</a>",
+              "<a href='bms4/LoveJustice.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              79,
+              "黒4",
+              "Party 4U (AFOTHER)",
+              "169",
+              "<a href='http://www2u.biglobe.ne.jp/~cranky/'>cranky</a>",
+              "<a href='bms4/party4u.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              37,
+              "黒4",
+              "X (AFOTHER)",
+              "39",
+              "<a href='http://sasakure.bms.ms/'>sasakure.UK</a>",
+              "<a href='bms4/x.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              11,
+              "黒4",
+              "★LittlE HearTs★(虎の穴)",
+              "465",
+              "<a href='http://nekomimi.name/'>ねこみみ魔法使い</a>",
+              "<a href='bms4/nm23_nm05.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              65,
+              "黒4",
+              "★SweeT DiscoverY★ (虎のANOTHER)",
+              "172",
+              "<a href='http://sasakure.bms.ms/'>sasakure.UK</a>",
+              "<a href='bms4/sweet.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              82,
+              "黒5",
+              "<A name='5'>A BEAUTIFUL SKY -OB style- AFOTHER</A>",
+              "158",
+              "<a href='http://m-mikiya.hp.infoseek.co.jp/'>recognize m.</a><br>",
+              "<a href='bms4/rm_btsky.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              41,
+              "黒5",
+              "happy century AFOTHER",
+              "168",
+              "<a href='http://mok2lnbms.6.ql.bz/'>recognize m.</a><br><a href='http://www.redsight.net/'>bga-RED</a>",
+              "<a href='bms4/rm_happy.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              45,
+              "黒5",
+              "Last! Least! Regrets!! (AFOTHER)",
+              "881",
+              "<a href='http://cool-create.cc/'>beatMARIO</a>",
+              "<a href='bms4/llr.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              57,
+              "黒5",
+              "Red-rize&quot;B172 mix&quot; // 7keys Afother",
+              "38",
+              "<a href='http://wint.bms.ms/'>wint</a>",
+              "<a href='bms4/wint_redrize.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              60,
+              "黒5",
+              "sensitive (AFOTHER)",
+              "131859",
+              "<a href='http://sazanka.sakura.ne.jp/~2tdm/'>white crystal</a>",
+              "<a href='bms4/sensitive.zip'>DL</a>",
+              "",
+            ],
+
+            [
+              78,
+              "黒5",
+              "夜桜 -桜吹雪-",
+              "1201",
+              "<a href='http://nekomimi.name/'>彩音 / 小宮真央(ねこみみ魔法使い)</a>",
+              "<a href='bms4/yozakura.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              34,
+              "黒6",
+              "<A name='6'>5.1.1(ReMix)[Afother]</A>",
+              "1232",
+              "<a href='https://web.archive.org/web/20070107082819/http://yoshinoya.dnsalias.com:8888/knm/2005_511.lzh'>猫蟹丸</a>",
+              "<a href='bms4/511.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              3,
+              "黒6",
+              "Air -MANIAQ-",
+              "1234",
+              "<a href='http://kobe.cool.ne.jp/linker/'>SHIKI</a>",
+              "<a href='bms4/air.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              55,
+              "黒6",
+              "before... [7key/AFOTHER]",
+              "459",
+              "<a href='http://sound.jp/brilliantharmony/'>やっす～</a>",
+              "<a href='bms4/before.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              75,
+              "黒6",
+              "l'amour d'amour --- 虎のANOTHER",
+              "1721",
+              "<a href='http://members.jcom.home.ne.jp/klamnop/'>orangentle</a>",
+              "<a href='bms4/orangentle_ld.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              71,
+              "黒6",
+              "la noche (AFOTHER)",
+              "1212",
+              "<a href='http://www.zms.or.jp/~novark/prestissimo/'>NAGI(prestissimo)</a>",
+              "<a href='bms4/la_noche.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              63,
+              "黒6",
+              "SEPIA -AFOTHER-",
+              "777",
+              "<a href='http://kobe.cool.ne.jp/linker/'>SHIKI</a>",
+              "<a href='bms4/sepia.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              49,
+              "黒6",
+              "☆ twinklesky ☆ _13 AFOTHER",
+              "1688",
+              "<a href='http://dl.dropboxusercontent.com/s/yboez1yj4lrw350/fz.html'>fether</a>",
+              "<a href='bms4/twinklesky.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              66,
+              "黒6",
+              "★SweeT DiscoverY★ (AFOTHER)",
+              "176",
+              "<a href='http://sasakure.bms.ms/'>sasakure.UK</a>",
+              "<a href='bms4/sweet.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              70,
+              "黒7",
+              "<A name='7'>Romancing Sa･Ga3 ラストバトル RockArrange (AFOTHER)</A>",
+              "1526",
+              "<a href='http://lucifer.pussycat.jp/'>金ラメタキシード</a>",
+              "<a href='bms4/l_rsg3_lb.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              35,
+              "黒8",
+              "<A name='8'>5.1.1(ReMix)[ManiaQ]</A>",
+              "1733",
+              "<a href='https://web.archive.org/web/20070107082819/http://yoshinoya.dnsalias.com:8888/knm/2005_511.lzh'>猫蟹丸</a>",
+              "<a href='bms4/511.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              4,
+              "黒8",
+              "Air -AFOTHER-",
+              "1411",
+              "<a href='http://kobe.cool.ne.jp/linker/'>SHIKI</a>",
+              "<a href='bms4/air.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              53,
+              "黒8",
+              "Bird Sprite -D.K.R. mix- (maniaq)",
+              "1835",
+              "<a href='http://manbow.nothing.sh/event/event.cgi?action=More_def&amp;num=73&amp;event=22'>ツナマヨちゃん(syatten) </a>",
+              "<a href='bms4/tsunamayochan_birdsprite.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              76,
+              "黒8",
+              "l'amour d'amour --- AFOTHER",
+              "447",
+              "<a href='http://members.jcom.home.ne.jp/klamnop/'>orangentle</a>",
+              "<a href='bms4/orangentle_ld.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              58,
+              "黒8",
+              "Red-rize&quot;B172 mix&quot; // 7keys ManiaQ",
+              "859",
+              "<a href='http://wint.bms.ms/'>wint</a>",
+              "<a href='bms4/wint_redrize.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              64,
+              "黒8",
+              "SEPIA -MANIAQ-",
+              "1738",
+              "<a href='http://kobe.cool.ne.jp/linker/'>SHIKI</a>",
+              "<a href='bms4/sepia.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              74,
+              "黒8",
+              "x-Aria -afother-",
+              "1656",
+              "<a href='http://liz.nothing.sh/ridis/'>ridis</a>",
+              "<a href='bms4/x-aria.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              43,
+              "黒8",
+              "約束 -HappyHyperStarmiX- (AFOTHER)",
+              "1744",
+              "<a href='http://cool-create.cc/'>beatMARIO</a>",
+              "<a href='bms4/btm_yaku.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              83,
+              "黒9",
+              "<A name='9'>A BEAUTIFUL SKY -OB style- MANIAQ</A>",
+              "1750",
+              "<a href='http://m-mikiya.hp.infoseek.co.jp/'>recognize m.</a><br>",
+              "<a href='bms4/rm_btsky.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              80,
+              "黒9",
+              "Party 4U (MANIAQ)",
+              "1746",
+              "<a href='http://www2u.biglobe.ne.jp/~cranky/'>cranky</a>",
+              "<a href='bms4/party4u.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              12,
+              "黒9",
+              "★LittlE HearTs★(AFOTHER)",
+              "1748",
+              "<a href='http://nekomimi.name/'>ねこみみ魔法使い</a>",
+              "<a href='bms4/nm23_nm05.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              15,
+              "黒10",
+              "<A name='10'>7SP:雪の少女-MorningDash!Mix-[MANIAQ]</A>",
+              "160484",
+              "<a href='http://web.archive.org/web/20120510090937/http://knm.sakura.ne.jp/index2.html'>猫蟹丸</a>",
+              "<a href='bms4/snowgarl.zip'>DL</a>",
+              "",
+            ],
+
+            [
+              46,
+              "黒11",
+              "<A name='11'>Last! Least! Regrets!! (MANIAQ)</A>",
+              "1070",
+              "<a href='http://cool-create.cc/'>beatMARIO</a>",
+              "<a href='bms4/llr.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              5,
+              "黒12",
+              "<A name='12'>Air -EXTREME-</A>",
+              "742",
+              "<a href='http://kobe.cool.ne.jp/linker/'>SHIKI</a>",
+              "<a href='bms4/air.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              85,
+              "黒12",
+              "Cynthia -with moon light- (7-MANIAQ)",
+              "748",
+              "<a href='http://65535.bms.ms/'>maxXx65535</a>",
+              "<a href='bms4/65535_cynthia.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              24,
+              "黒12",
+              "G e n g a o z o _ G O D",
+              "131877",
+              "<a href='http://malie.noor.jp/'>455(-45)</a>",
+              "<a href='bms4/gengaozo.zip'>DL</a>",
+              "",
+            ],
+
+            [
+              13,
+              "黒12",
+              "★LittlE HearTs★(MANIAQ)",
+              "96",
+              "<a href='http://nekomimi.name/'>ねこみみ魔法使い</a>",
+              "<a href='bms4/nm23_nm05.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              19,
+              "黒12",
+              "日溜りの街－あ！－(MANIAQ)",
+              "1778",
+              "<a href='http://web.archive.org/web/20041211212724/http://knm.sakura.ne.jp/pms/key/key11.html'>猫蟹丸</a>",
+              "<a href='bms4/hidamari_A.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              84,
+              "黒13",
+              "<A name='13'>A BEAUTIFUL SKY -OB style- GOD</A>",
+              "1780",
+              "<a href='http://m-mikiya.hp.infoseek.co.jp/'>recognize m.</a><br>",
+              "<a href='bms4/rm_btsky.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              8,
+              "黒13",
+              "Love & Justice [MANIAQ]",
+              "96149",
+              "<a href='http://www3.pf-x.net/~boxism-8500/'>フロン / ラズベリル(BACO)</a>",
+              "<a href='bms4/LoveJustice.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              81,
+              "黒13",
+              "Party 4U (EXTREME)",
+              "1787",
+              "<a href='http://www2u.biglobe.ne.jp/~cranky/'>cranky</a>",
+              "<a href='bms4/party4u.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              67,
+              "黒13",
+              "★SweeT DiscoverY★ (MANIAQ)",
+              "1772",
+              "<a href='http://sasakure.bms.ms/'>sasakure.UK</a>",
+              "<a href='bms4/sweet.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              32,
+              "黒13",
+              "冥界帰航(MANIAQ)",
+              "105827",
+              "<a href='http://mikomikosun3.blog135.fc2.com/'>ZUN(Arr.sun3)</a>",
+              "<a href='bms4/meikai.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              47,
+              "黒14",
+              "<A name='14'>Last! Least! Regrets!! (GOD)</A>",
+              "1072",
+              "<a href='http://cool-create.cc/'>beatMARIO</a>",
+              "<a href='bms4/llr.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              36,
+              "黒15",
+              "<A name='15'>5.1.1(ReMix)[GoD]</A>",
+              "1316",
+              "<a href='https://web.archive.org/web/20070107082819/http://yoshinoya.dnsalias.com:8888/knm/2005_511.lzh'>猫蟹丸</a>",
+              "<a href='bms4/511.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              30,
+              "黒16",
+              "<A name='16'>A c i - L - G O D</A>",
+              "354",
+              "<a href='http://malie.noor.jp/'>裏吉川(-45)</a>",
+              "<a href='bms4/aciL.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              19,
+              "黒16",
+              "日溜りの街－あ！－(EXTREME)",
+              "1678",
+              "<a href='http://web.archive.org/web/20041211212724/http://knm.sakura.ne.jp/pms/key/key11.html'>猫蟹丸</a>",
+              "<a href='bms4/hidamari_A.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              16,
+              "黒17",
+              "<A name='17'>7SP:雪の少女-MorningDash!Mix-[EXTREME]</A>",
+              "160485",
+              "<a href='http://web.archive.org/web/20120510090937/http://knm.sakura.ne.jp/index2.html'>猫蟹丸</a>",
+              "<a href='bms4/snowgarl.zip'>DL</a>",
+              "",
+            ],
+
+            [
+              72,
+              "黒17",
+              "la noche (MANIAQ)",
+              "1080",
+              "<a href='http://www.zms.or.jp/~novark/prestissimo/'>NAGI(prestissimo)</a>",
+              "<a href='bms4/la_noche.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              44,
+              "黒18",
+              "<A name='18'>約束 -HappyHyperStarmiX- (MANIAQ)</A>",
+              "524",
+              "<a href='http://cool-create.cc/'>beatMARIO</a>",
+              "<a href='bms4/btm_yaku.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              50,
+              "黒19",
+              "<A name='19'>☆ twinklesky ☆ _16 MANIAQ</A>",
+              "1086",
+              "<a href='http://dl.dropboxusercontent.com/s/yboez1yj4lrw350/fz.html'>fether</a>",
+              "<a href='bms4/twinklesky.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              6,
+              "黒20",
+              "<A name='20'>Air -GOD-</A>",
+              "545",
+              "<a href='http://kobe.cool.ne.jp/linker/'>SHIKI</a>",
+              "<a href='bms4/air.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              9,
+              "黒21",
+              "<A name='21'>Love & Justice [EXTREME]</A>",
+              "96145",
+              "<a href='http://www3.pf-x.net/~boxism-8500/'>フロン / ラズベリル(BACO)</a>",
+              "<a href='bms4/LoveJustice.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              33,
+              "黒22",
+              "<A name='22'>冥界帰航(GOD)</A>",
+              "105828",
+              "<a href='http://mikomikosun3.blog135.fc2.com/'>ZUN(Arr.sun3)</a>",
+              "<a href='bms4/meikai.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              17,
+              "黒23",
+              "<A name='23'>7SP:雪の少女-MorningDash!Mix-[GOD]</A>",
+              "160486",
+              "<a href='http://web.archive.org/web/20120510090937/http://knm.sakura.ne.jp/index2.html'>猫蟹丸</a>",
+              "<a href='bms4/snowgarl.zip'>DL</a>",
+              "",
+            ],
+
+            [
+              25,
+              "黒23",
+              "G e n g a o z o _ 2 4 A F O",
+              "120398",
+              "<a href='http://malie.noor.jp/'>455(-45)</a>",
+              "<a href='bms4/gengaozo.zip'>DL</a>",
+              "",
+            ],
+
+            [
+              14,
+              "黒23",
+              "★LittlE HearTs★(GOD)",
+              "77",
+              "<a href='http://nekomimi.name/'>ねこみみ魔法使い</a>",
+              "<a href='bms4/nm23_nm05.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              26,
+              "黒24",
+              "<A name='24'>G e n g a o z o _ 2 4 M A N I A Q</A>",
+              "120399",
+              "<a href='http://malie.noor.jp/'>455(-45)</a>",
+              "<a href='bms4/gengaozo.zip'>DL</a>",
+              "",
+            ],
+
+            [
+              10,
+              "黒24",
+              "Love & Justice [GOD]",
+              "96180",
+              "<a href='http://www3.pf-x.net/~boxism-8500/'>フロン / ラズベリル(BACO)</a>",
+              "<a href='bms4/LoveJustice.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              20,
+              "黒24",
+              "日溜りの街－あ！－(HELL)",
+              "15629",
+              "<a href='http://web.archive.org/web/20041211212724/http://knm.sakura.ne.jp/pms/key/key11.html'>猫蟹丸</a>",
+              "<a href='bms4/hidamari_A.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              27,
+              "黒25",
+              "<A name='25'>G e n g a o z o _ 2 4 E X T</A>",
+              "120400",
+              "<a href='http://malie.noor.jp/'>455(-45)</a>",
+              "<a href='bms4/gengaozo.zip'>DL</a>",
+              "",
+            ],
+
+            [
+              21,
+              "黒25",
+              "日溜りの街－あ！－(GOD)",
+              "11169",
+              "<a href='http://web.archive.org/web/20041211212724/http://knm.sakura.ne.jp/pms/key/key11.html'>猫蟹丸</a>",
+              "<a href='bms4/hidamari_A.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              31,
+              "黒26",
+              "<A name='26'>Blue-White Crazybits [GOD]</A>",
+              "153021",
+              "<a href='http://www.yamajet.com/music/behappy2/'>234</a>",
+              "<a href='bms4/crazybits.zip'>DL</a>",
+              "",
+            ],
+
+            [
+              28,
+              "黒26",
+              "G e n g a o z o _ 2 4 H E L L",
+              "120401",
+              "<a href='http://malie.noor.jp/'>455(-45)</a>",
+              "<a href='bms4/gengaozo.zip'>DL</a>",
+              "",
+            ],
+            [
+              22,
+              "黒26",
+              "日溜りの街－あ！－(BMS MASTER)",
+              "10939",
+              "<a href='http://web.archive.org/web/20041211212724/http://knm.sakura.ne.jp/pms/key/key11.html'>猫蟹丸</a>",
+              "<a href='bms4/hidamari_A.rar'>DL</a>",
+              "",
+            ],
+
+            [
+              29,
+              "黒27",
+              "<A name='27'>G e n g a o z o _ 2 4 G O D</A>",
+              "120402",
+              "<a href='http://malie.noor.jp/'>455(-45)</a>",
+              "<a href='bms4/gengaozo.zip'>DL</a>",
+              "",
+            ],
+          ];
+          for (var i = 0; i < mname.length; i++) {
+            if (
+              mname[i][0] == 69 ||
+              mname[i][0] == 2 ||
+              mname[i][0] == 23 ||
+              mname[i][0] == 82 ||
+              mname[i][0] == 34 ||
+              mname[i][0] == 70 ||
+              mname[i][0] == 35 ||
+              mname[i][0] == 83 ||
+              mname[i][0] == 15 ||
+              mname[i][0] == 46 ||
+              mname[i][0] == 5 ||
+              mname[i][0] == 84 ||
+              mname[i][0] == 47 ||
+              mname[i][0] == 36 ||
+              mname[i][0] == 30 ||
+              mname[i][0] == 16 ||
+              mname[i][0] == 44 ||
+              mname[i][0] == 50 ||
+              mname[i][0] == 6 ||
+              mname[i][0] == 9 ||
+              mname[i][0] == 33 ||
+              mname[i][0] == 17 ||
+              mname[i][0] == 26 ||
+              mname[i][0] == 27 ||
+              mname[i][0] == 31 ||
+              mname[i][0] == 29
+            )
+              document.write(
+                "<tr height='10' style='background-color:#555555'><td colspan='7'>",
+              );
+            document.write(
+              "<tr class='tr_ng' id='#tr" +
+                mname[i][0] +
+                "' style='color:black;font-size:12px' height='14'>" +
+                "<td width='34'>" +
+                mname[i][1] +
+                "<td><input type=button value='   '>" +
+                "<td width='16'><a href='http://www.dream-pro.info/~lavalse/LR2IR/search.cgi?mode=ranking&bmsid=" +
+                mname[i][3] +
+                "'>IR</a>" +
+                "<td>" +
+                mname[i][2] +
+                "<td>" +
+                mname[i][4] +
+                "<td>" +
+                mname[i][5] +
+                "<td>" +
+                mname[i][6] +
+                "\n",
+            );
+          }
+
+          //-->
+        </script>
+      </tr>
+    </table>
+    <div align="center">
+      <strong><a href="index.html">TOP</a></strong>
+    </div>
+    <div align="right">
+      <input
+        type="button"
+        value="初期化"
+        onClick="location.reload()&deletedt()" />
+    </div>
+    <br />
+    <!-- St-HP-F -->
+
+    <!-- En-HP-F -->
+  </body>
+</html>
