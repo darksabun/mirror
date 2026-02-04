@@ -86,7 +86,7 @@ jobs:
         run: |
           git config --local user.email "${{ secrets.COMMIT_EMAIL }}"
           git config --local user.name "GitHub Action"
-          git commit -m "DARKSABUN | Automatically update the file list" -a
+          git commit -m "Mirror | Automatically update the file list" -a
       - name: Push changes
         uses: ad-m/github-push-action@master
         with:
